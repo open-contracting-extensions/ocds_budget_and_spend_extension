@@ -1,0 +1,84 @@
+{
+  "version": "1.1",
+  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-1-contract-planning.json",
+  "publishedDate": "2018-08-20T00:00:00Z",
+  "publisher": {
+    "name": "Department of Education"
+  },
+  "license": "http://opendatacommons.org/licenses/pddl/1.0/",
+  "publicationPolicy": "https://github.com/open-contracting/sample-data/",
+  "releases": [
+    {
+      "ocid": "ocds-4f64a2-exbas-01",
+      "id": "ocds-4f64a2-exbas-01-planning",
+      "date": "2018-01-01T09:00:00Z",
+      "tag": [
+        "planning"
+      ],
+      "initiationType": "tender",
+      "parties": [
+        {
+          "id": "EX-EXAMPLE-0235",
+          "name": "Department of Education",
+          "roles": [
+            "buyer"
+          ],
+          "identifier": {
+            "scheme": "EX-EXAMPLE",
+            "id": "0235",
+            "legalName": "Department of Education"
+          }
+        }
+      ],
+      "buyer": {
+        "name": "Department of Education",
+        "id": "EX-EXAMPLE-0235"
+      },
+      "planning": {
+        "rationale": "Purchase of chairs for schools",
+        "budget": {
+          "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
+          "amount": {
+            "amount": 10000,
+            "currency": "USD"
+          }
+        }
+      },
+      "tender": {
+        "id": "01",
+        "title": "Proposed tender for chairs",
+        "description": "We will be purchasing chairs during the coming year.",
+        "status": "planning",
+        "items": [
+          {
+            "id": "01",
+            "description": "Chairs",
+            "classification": {
+              "scheme": "CPV",
+              "id": "39112000",
+              "description": "Chairs"
+            }
+          }
+        ],
+        "value": {
+          "amount": 10000,
+          "currency": "USD"
+        },
+        "minValue": {
+          "amount": 2000,
+          "currency": "USD"
+        },
+        "procurementMethod": "open",
+        "mainProcurementCategory": "goods",
+        "tenderPeriod": {
+          "startDate": "2018-02-01T00:00:00Z",
+          "durationInDays": 30
+        },
+        "contractPeriod":{
+          "startDate":"2018-04-01T00:00:00Z",
+          "endDate":"2020-12-31T23:23:59Z"
+        }
+      }
+    }
+  ]
+}

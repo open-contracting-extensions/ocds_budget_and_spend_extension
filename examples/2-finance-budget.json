@@ -1,0 +1,42 @@
+{
+  "version": "1.1",
+  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-2-finance-budget.json",
+  "publishedDate": "2018-08-20T00:00:00Z",
+  "publisher": {
+    "name": "Finance Department"
+  },
+  "license": "http://opendatacommons.org/licenses/pddl/1.0/",
+  "publicationPolicy": "https://github.com/open-contracting/sample-data/",
+  "releases": [
+    {
+      "ocid": "ocds-4f64a2-exbas-01",
+      "id": "budget-system-identifier-12345",
+      "date": "2018-01-10T09:00:00Z",
+      "tag": [
+        "planningUpdate"
+      ],
+      "initiationType": "tender",
+      "planning": {
+        "budget": {
+          "budgetBreakdown":[{
+            "id":"2018/ED01/ED01-FAC/EQ01",
+            "period":{
+                "startDate":"2018-01-01T00:00:00Z",
+                "endDate":"2018-12-31T23:23:59Z"
+            },
+            "classifications":{
+              "Dept":"ED01",
+              "Team":"ED01-FAC",
+              "Economic":"Goods",
+              "Func":"EQ01"
+            },
+            "measures":{
+              "Committed":5000
+            }
+          }],
+          "financialBreakdownFieldMapping":"ofdp.json#budget.csv"
+        }
+      }
+    }
+  ]
+}

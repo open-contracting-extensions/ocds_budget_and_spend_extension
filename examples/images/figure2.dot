@@ -1,0 +1,15 @@
+digraph G {
+  {
+    procurement [label="Procurement System" shape=square style=bold fixedsize=true width=2]
+    finance [label="Finance System" shape=square style=bold fixedsize=true width=2]
+    portal [label="OCDS Portal" shape=square style=bold fixedsize=true width=2]
+    tenderRelease [label="OCDS Releases\n (Tender/Award)" shape=circle fixedsize=true width=2]
+    planningRelease [label="OCDS Releases\n (Planning \n /Implementation)" shape=circle fixedsize=true width=2]
+    compiledRelease [label="Compiled Releases" shape=circle fixedsize=true width=2]
+  }
+  procurement -> tenderRelease
+  finance -> planningRelease
+  tenderRelease  -> portal
+  planningRelease -> portal
+  portal -> compiledRelease
+}

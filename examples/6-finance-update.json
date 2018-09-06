@@ -1,0 +1,44 @@
+{
+  "version": "1.1",
+  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-6-finance-update.json",
+  "publishedDate": "2018-08-20T00:00:00Z",
+  "publisher": {
+    "name": "Finance Department"
+  },
+  "license": "http://opendatacommons.org/licenses/pddl/1.0/",
+  "publicationPolicy": "https://github.com/open-contracting/sample-data/",
+  "releases": [
+    {
+      "ocid": "ocds-4f64a2-exbas-01",
+      "id": "budget-system-identifier-34666531",
+      "date": "2018-11-01T09:00:00Z",
+      "tag": [
+        "implementation"
+      ],
+      "initiationType": "tender",
+      "contracts": [
+        {
+          "id": "ocds-4f64a2-exbas-04-contract-1",
+          "awardID": "ocds-4f64a2-exbas-04-award-1",
+          "implementation": {
+            "financialProgress": {
+              "breakdown": [
+                 {
+                  "id": "2018/ED01/ED01-FAC/EQ01",
+                  "period": {
+                    "startDate": "2018-01-01T00:00:00Z",
+                    "endDate": "2018-12-31T23:23:59Z"
+                  },
+                  "measures": {
+                    "Committed": 5000,
+                    "Paid":5000
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
