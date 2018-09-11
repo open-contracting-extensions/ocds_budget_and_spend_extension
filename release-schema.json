@@ -20,7 +20,7 @@
                 "[A-Za-z0-9._-]": {
                   "type": [
                     "number",
-                    null
+                    "null"
                   ]
                 }
               }
@@ -76,7 +76,7 @@
               "type": [
                 "string",
                 "number",
-                null
+                "null"
               ]
             }
           }
@@ -110,7 +110,7 @@
               "type": [
                 "string",
                 "number",
-                null
+                "null"
               ]
             }
           }
@@ -123,7 +123,7 @@
             "[A-Za-z0-9._-]": {
               "type": [
                 "number",
-                null
+                "null"
               ]
             }
           }
