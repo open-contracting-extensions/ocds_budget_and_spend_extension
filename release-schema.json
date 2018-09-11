@@ -3,28 +3,33 @@
     "Implementation": {
       "properties": {
         "financialProgress": {
-          "totalSpend": {
-            "title": "Total spend",
-            "description": "The total spend on this contract at the date of last update. Note that the exact fiscal measure this number represents may vary between data publishers (e.g. amount invoiced vs. amount transferred to the bank account of the supplier).",
-            "$ref": "#/definitions/Value"
-          },
-          "measures": {
-            "title": "Measures",
-            "description": "This measures section reports aggregated financial progress figures for this contract (i.e. without breakdown by budget classifications). Measures must be provided as a set of key-value pairs, where the key should be the name of the measure used within a related Fiscal Data Package dataset or other budget and spending dataset. The value is the value of this measure when last updated, and must be provided as a number in the same default currency as any aggregate reported budget or spending figures.",
-            "type": "object",
-            "patternProperties": {
-              "[A-Za-z0-9._-]": {
-                "type": [
-                  "number",
-                  null
-                ]
+          "title": "Financial progress",
+          "description": "TODO",
+          "type": "object",
+          "properties": {
+            "totalSpend": {
+              "title": "Total spend",
+              "description": "The total spend on this contract at the date of last update. Note that the exact fiscal measure this number represents may vary between data publishers (e.g. amount invoiced vs. amount transferred to the bank account of the supplier).",
+              "$ref": "#/definitions/Value"
+            },
+            "measures": {
+              "title": "Measures",
+              "description": "This measures section reports aggregated financial progress figures for this contract (i.e. without breakdown by budget classifications). Measures must be provided as a set of key-value pairs, where the key should be the name of the measure used within a related Fiscal Data Package dataset or other budget and spending dataset. The value is the value of this measure when last updated, and must be provided as a number in the same default currency as any aggregate reported budget or spending figures.",
+              "type": "object",
+              "patternProperties": {
+                "[A-Za-z0-9._-]": {
+                  "type": [
+                    "number",
+                    null
+                  ]
+                }
               }
+            },
+            "breakdown": {
+              "title": "Financial progress breakdown",
+              "description": "This section contains a breakdown of financial progress, allowing various measures (amount invoiced, amount accrued, amount paid etc.) to be disaggregated by source, period and budget classification",
+              "$ref": "#/definitions/FinancialProgressBreakdown"
             }
-          },
-          "breakdown": {
-            "title": "Financial progress breakdown",
-            "description": "This section contains a breakdown of financial progress, allowing various measures (amount invoiced, amount accrued, amount paid etc.) to be disaggregated by source, period and budget classification",
-            "$ref": "#/definitions/FinancialProgressBreakdown"
           }
         }
       }

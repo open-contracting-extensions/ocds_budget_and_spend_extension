@@ -1,0 +1,7 @@
+contracts.id,classifications/Dept,classifications/Economic,classifications/Func,classifications/Team,classifications/Year,measures/Paid,Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Committed,Modified,Paid
+ocds-...-contract-1,ED01,Goods,EQ01,ED01-FAC,2015,3000,2015,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,20000,20000,15000
+ocds-...-contract-1,ED01,Goods,EQ01,ED01-FAC,2016,1000,2016,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,18000,18000,18000
+ocds-...-contract-1,ED01,Goods,EQ01,ED01-FAC,2017,950,2017,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,10000,10000,18000
+ocds-...-contract-2,ED01,Goods,EQ01,ED01-FAC,2015,50,2015,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,20000,20000,15000
+ocds-...-contract-2,ED01,Goods,EQ01,ED01-FAC,2016,1000,2016,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,18000,18000,18000
+ocds-...-contract-2,ED01,Goods,EQ01,ED01-FAC,2017,1600,2017,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,10000,10000,18000

@@ -127,6 +127,10 @@ A suitably sophisticated tool could go further, using the `columnType` data from
 |------|----------|------|------|------|
 | FY17 | Education | Education Facilities | Goods | Equipment |  
 
+### Making links
+
+
+
 ### Comparing data
 
 The OCDS release shows the budget allocations and executions **at the level of a single contracting process and for each contract**. 
@@ -142,12 +146,12 @@ To understand how much of the total budget line the contracts in our example mak
 In our simplified example, comparing budgets would show:
 
 | Year | Contracting process budget | Total of budget line | %age contracting process of budget |
-|------|----------------------------|----------------------|
+|------|----------------------------|----------------------|-------|
 | 2015 | 5000 | 20000 | 25% |
 | 2016 | 3000 | 18000 | 16.6% | 
 | 2017 | 1000 | 10000 | 10% | 
 
-At the contract level, we would then have:
+At the contract level, we can then generate the following summary:
 
 | Contract ID  | Supplier    | Year | Contract amount paid | Budget line execution total | %age of budget taken by contract | 
 |---------------------|-------------|------|----------------------|-----------------------------|----------------------------------| 
@@ -158,5 +162,5 @@ At the contract level, we would then have:
 | ocds-...-contract-2 | Chair Co    | 2016 | 1000  | 18000 | 5.6%| 
 | ocds-...-contract-2 | Chair Co    | 2017 | 1600  | 18000 | 8.9%| 
 
-
+This shows how, over time, the share of the budget allocated to particular suppliers has shifted. 
 
