@@ -158,7 +158,6 @@ Note that if a compiledRelease was generated at this point from these two data r
         {
           "id": "ocds-4f64a2-exbas-04-contract-1",
           "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "date": "2018-03-16T09:00:00Z",
           "status": "active"
         }
       ]
@@ -325,7 +324,6 @@ When a compiledRelease is created, it will combine array entries to provide the 
         {
           "id": "ocds-4f64a2-exbas-04-contract-1",
           "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "date": "2018-03-16T09:00:00Z",
           "status": "terminated",
           "period": {
             "startDate": "2018-05-01T00:00:00Z",
@@ -538,7 +536,6 @@ Below is the compiledRelease that would be available **at the end of the process
   "contracts": [
     {
       "awardID": "ocds-4f64a2-exbas-04-award-1",
-      "date": "2018-03-16T09:00:00Z",
       "dateSigned": "2018-03-16T09:00:00Z",
       "id": "ocds-4f64a2-exbas-04-contract-1",
       "status": "terminated",

@@ -1,16 +1,19 @@
 {
-   "extensions": [],
+   "extensions": [
+      "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+   ],
    "packages": [
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-10-finance-update-final.json#budget-system-identifier-95729675",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-2-finance-budget.json#budget-system-identifier-12345",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-4-contract-award.json#ocds-4f64a2-exbas-04-award",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-5-finance-commitment.json#budget-system-identifier-87654",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-6-finance-update.json#budget-system-identifier-34666531",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-7-finance-commitment-2.json#budget-system-identifier-346235753",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-8-finance-commitment-3.json#budget-system-identifier-85451683",
-      "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-9-contract-close.json#ocds-4f64a2-exbas-09-close"
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753",
+      "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
    ],
    "publishedDate": "2018-08-20T13:02:00Z",
    "publisher": {
@@ -47,7 +50,6 @@
             "contracts": [
                {
                   "awardID": "ocds-4f64a2-exbas-04-award-1",
-                  "date": "2018-03-16T09:00:00Z",
                   "dateSigned": "2018-03-16T09:00:00Z",
                   "id": "ocds-4f64a2-exbas-04-contract-1",
                   "implementation": {
@@ -66,6 +68,14 @@
                      "financialProgress": {
                         "breakdown": [
                            {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": "2018"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
                               "id": "2018/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": 5000,
@@ -77,6 +87,14 @@
                               }
                            },
                            {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": "2019"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
                               "id": "2019/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": 5000,
@@ -89,6 +107,14 @@
                               }
                            },
                            {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": " 2020"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
                               "id": "2020/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": 2000,
@@ -158,7 +184,7 @@
                   },
                   "id": "GB-COH-11111111",
                   "identifier": {
-                     "id": "11111111.0",
+                     "id": "11111111",
                      "legalName": "AnyCorp Ltd",
                      "scheme": "GB-COH"
                   },
@@ -193,7 +219,7 @@
                      }
                   ],
                   "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
-                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
+                  "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
                },
                "rationale": "Purchase of chairs for schools"
             },
@@ -245,28 +271,28 @@
                "tag": [
                   "planning"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-1-contract-planning.json#ocds-4f64a2-exbas-01-planning"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning"
             },
             {
                "date": "2021-01-01T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-10-finance-update-final.json#budget-system-identifier-95729675"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675"
             },
             {
                "date": "2018-01-10T09:00:00Z",
                "tag": [
                   "planningUpdate"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-2-finance-budget.json#budget-system-identifier-12345"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345"
             },
             {
                "date": "2018-02-01T09:00:00Z",
                "tag": [
                   "tender"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-3-contract-tender.json#ocds-4f64a2-exbas-03-tender"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender"
             },
             {
                "date": "2018-03-16T09:00:00Z",
@@ -274,42 +300,42 @@
                   "award",
                   "contract"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-4-contract-award.json#ocds-4f64a2-exbas-04-award"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award"
             },
             {
                "date": "2018-03-16T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-5-finance-commitment.json#budget-system-identifier-87654"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654"
             },
             {
                "date": "2018-11-01T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-6-finance-update.json#budget-system-identifier-34666531"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531"
             },
             {
                "date": "2018-11-02T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-7-finance-commitment-2.json#budget-system-identifier-346235753"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753"
             },
             {
                "date": "2019-11-01T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-8-finance-commitment-3.json#budget-system-identifier-85451683"
+               "url": "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683"
             },
             {
                "date": "2020-02-01T09:00:00Z",
                "tag": [
                   "implementation"
                ],
-               "url": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-9-contract-close.json#ocds-4f64a2-exbas-09-close"
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
             }
          ],
          "versionedRelease": {
@@ -372,6 +398,14 @@
                               "releaseTag": [
                                  "award",
                                  "contract"
+                              ],
+                              "value": "AnyCorp Ltd"
+                           },
+                           {
+                              "releaseDate": "2020-02-01T09:00:00Z",
+                              "releaseID": "ocds-4f64a2-exbas-09-close",
+                              "releaseTag": [
+                                 "implementation"
                               ],
                               "value": "AnyCorp Cycle Provision"
                            }
@@ -437,17 +471,6 @@
                            "contract"
                         ],
                         "value": "ocds-4f64a2-exbas-04-award-1"
-                     }
-                  ],
-                  "date": [
-                     {
-                        "releaseDate": "2018-03-16T09:00:00Z",
-                        "releaseID": "ocds-4f64a2-exbas-04-award",
-                        "releaseTag": [
-                           "award",
-                           "contract"
-                        ],
-                        "value": "2018-03-16T09:00:00Z"
                      }
                   ],
                   "dateSigned": [
@@ -541,6 +564,68 @@
                      "financialProgress": {
                         "breakdown": [
                            {
+                              "classifications": {
+                                 "Dept": [
+                                    {
+                                       "releaseDate": "2018-03-16T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-87654",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01"
+                                    }
+                                 ],
+                                 "Economic": [
+                                    {
+                                       "releaseDate": "2018-03-16T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-87654",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "Goods"
+                                    }
+                                 ],
+                                 "Func": [
+                                    {
+                                       "releaseDate": "2018-03-16T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-87654",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "EQ01"
+                                    }
+                                 ],
+                                 "Team": [
+                                    {
+                                       "releaseDate": "2018-03-16T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-87654",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01-FAC"
+                                    }
+                                 ],
+                                 "Year": [
+                                    {
+                                       "releaseDate": "2018-03-16T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-87654",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "2018"
+                                    }
+                                 ]
+                              },
+                              "fiscalBreakdownFieldMapping": [
+                                 {
+                                    "releaseDate": "2018-03-16T09:00:00Z",
+                                    "releaseID": "budget-system-identifier-87654",
+                                    "releaseTag": [
+                                       "implementation"
+                                    ],
+                                    "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                                 }
+                              ],
                               "id": "2018/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": [
@@ -588,6 +673,68 @@
                               }
                            },
                            {
+                              "classifications": {
+                                 "Dept": [
+                                    {
+                                       "releaseDate": "2018-11-02T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-346235753",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01"
+                                    }
+                                 ],
+                                 "Economic": [
+                                    {
+                                       "releaseDate": "2018-11-02T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-346235753",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "Goods"
+                                    }
+                                 ],
+                                 "Func": [
+                                    {
+                                       "releaseDate": "2018-11-02T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-346235753",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "EQ01"
+                                    }
+                                 ],
+                                 "Team": [
+                                    {
+                                       "releaseDate": "2018-11-02T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-346235753",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01-FAC"
+                                    }
+                                 ],
+                                 "Year": [
+                                    {
+                                       "releaseDate": "2018-11-02T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-346235753",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "2019"
+                                    }
+                                 ]
+                              },
+                              "fiscalBreakdownFieldMapping": [
+                                 {
+                                    "releaseDate": "2018-11-02T09:00:00Z",
+                                    "releaseID": "budget-system-identifier-346235753",
+                                    "releaseTag": [
+                                       "implementation"
+                                    ],
+                                    "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                                 }
+                              ],
                               "id": "2019/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": [
@@ -645,6 +792,76 @@
                               }
                            },
                            {
+                              "classifications": {
+                                 "Dept": [
+                                    {
+                                       "releaseDate": "2019-11-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-85451683",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01"
+                                    }
+                                 ],
+                                 "Economic": [
+                                    {
+                                       "releaseDate": "2019-11-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-85451683",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "Goods"
+                                    }
+                                 ],
+                                 "Func": [
+                                    {
+                                       "releaseDate": "2019-11-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-85451683",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "EQ01"
+                                    }
+                                 ],
+                                 "Team": [
+                                    {
+                                       "releaseDate": "2019-11-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-85451683",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "ED01-FAC"
+                                    }
+                                 ],
+                                 "Year": [
+                                    {
+                                       "releaseDate": "2019-11-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-85451683",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": "2020"
+                                    },
+                                    {
+                                       "releaseDate": "2021-01-01T09:00:00Z",
+                                       "releaseID": "budget-system-identifier-95729675",
+                                       "releaseTag": [
+                                          "implementation"
+                                       ],
+                                       "value": " 2020"
+                                    }
+                                 ]
+                              },
+                              "fiscalBreakdownFieldMapping": [
+                                 {
+                                    "releaseDate": "2019-11-01T09:00:00Z",
+                                    "releaseID": "budget-system-identifier-85451683",
+                                    "releaseTag": [
+                                       "implementation"
+                                    ],
+                                    "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                                 }
+                              ],
                               "id": "2020/ED01/ED01-FAC/EQ01",
                               "measures": {
                                  "Committed": [
@@ -1008,7 +1225,7 @@
                               "award",
                               "contract"
                            ],
-                           "value": "11111111.0"
+                           "value": "11111111"
                         }
                      ],
                      "legalName": [
@@ -1175,14 +1392,14 @@
                         "value": "Administrative: Education; Economic: Goods; Functional: Equipment"
                      }
                   ],
-                  "financialBreakdownFieldMapping": [
+                  "fiscalBreakdownFieldMapping": [
                      {
                         "releaseDate": "2018-01-10T09:00:00Z",
                         "releaseID": "budget-system-identifier-12345",
                         "releaseTag": [
                            "planningUpdate"
                         ],
-                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
+                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
                      }
                   ]
                },
@@ -1226,6 +1443,23 @@
                      "releaseID": "ocds-4f64a2-exbas-01-planning",
                      "releaseTag": [
                         "planning"
+                     ],
+                     "value": "We will be purchasing chairs during the coming year."
+                  },
+                  {
+                     "releaseDate": "2018-02-01T09:00:00Z",
+                     "releaseID": "ocds-4f64a2-exbas-03-tender",
+                     "releaseTag": [
+                        "tender"
+                     ],
+                     "value": "We are purchasing chairs suitable for school classrooms."
+                  },
+                  {
+                     "releaseDate": "2018-03-16T09:00:00Z",
+                     "releaseID": "ocds-4f64a2-exbas-04-award",
+                     "releaseTag": [
+                        "award",
+                        "contract"
                      ],
                      "value": "We will be purchasing chairs during the coming year."
                   }
@@ -1396,6 +1630,23 @@
                      "releaseID": "ocds-4f64a2-exbas-01-planning",
                      "releaseTag": [
                         "planning"
+                     ],
+                     "value": "Proposed tender for chairs"
+                  },
+                  {
+                     "releaseDate": "2018-02-01T09:00:00Z",
+                     "releaseID": "ocds-4f64a2-exbas-03-tender",
+                     "releaseTag": [
+                        "tender"
+                     ],
+                     "value": "Tender for chairs"
+                  },
+                  {
+                     "releaseDate": "2018-03-16T09:00:00Z",
+                     "releaseID": "ocds-4f64a2-exbas-04-award",
+                     "releaseTag": [
+                        "award",
+                        "contract"
                      ],
                      "value": "Proposed tender for chairs"
                   }

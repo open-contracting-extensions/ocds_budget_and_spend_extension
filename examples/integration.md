@@ -129,7 +129,15 @@ A suitably sophisticated tool could go further, using the `columnType` data from
 
 ### Making links
 
+Where the systems used to publish OCDS data and Budget/Spending data for public consumption provide RESTFul URI structures then it may be possible to construct links that help users navigate between budget, contracting and spend systems.
 
+For example: 
+
+* a budget system may support querystring parameters for each classification in order to filter the information it displays, such that a URI could be constructed that links from contracting data to the budget information.
+
+> E.g. http://budget.example.gov/details?Year=2017&Economic=Goods&Func=EQ01&Team=ED01-FAC&Dept=ED01
+
+* a contracting system may provide an API that will return all budget or financialProgress related to a particular combination of budget classifications, such that the budget system can list contracts related to a given budget line. 
 
 ### Comparing data
 
