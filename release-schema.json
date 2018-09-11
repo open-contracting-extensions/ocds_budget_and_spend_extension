@@ -4,7 +4,7 @@
       "properties": {
         "financialProgress": {
           "title": "Financial progress",
-          "description": "TODO",
+          "description": "The financial progress section allows high-level and detailed information on amounts committed or spent to date for this particular contract. This may be used alongside the transactions section, which allows for details of each individual payment to be recorded.",
           "type": "object",
           "properties": {
             "totalSpend": {
