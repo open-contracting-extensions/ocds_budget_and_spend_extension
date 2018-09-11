@@ -1,0 +1,511 @@
+{
+  "profile": "fiscal-data-package",
+  "keywords": [
+    "ocds"
+  ],
+  "name": "ocds-fdp-coordination-example",
+  "title": "Open Contracting Data Standard and Open Fiscal Data Package integration example",
+  "description": "An example dataset created to illustrate connections between the Open Contracting Data Standard and the Open Fiscal Data Package.",
+  "homepage": "https://github.com/open-contracting/ocds_budget_breakdown_extension",
+  "version": "0.1",
+  "contributors": [
+    {
+      "title": "OCDS Helpdesk",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "columnTypes": [
+    "https://frictionlessdata.io/taxonomies/fiscal/budgets.json"
+  ],
+  "resources": [
+    {
+      "name": "budget-2018",
+      "path": "budget-2018.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "date",
+            "format": "default",
+            "title": "Year",
+            "description": "Financial year of budget",
+            "columnType": "date:fiscal-year"
+          },
+          {
+            "name": "Dept",
+            "type": "string",
+            "format": "default",
+            "title": "Department Code",
+            "columnType": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "DeptName",
+            "type": "string",
+            "format": "default",
+            "title": "Department Name",
+            "columnType": "administrative-classification:generic:level1:label",
+            "labelOf": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "Team",
+            "type": "string",
+            "format": "default",
+            "title": "Team Code",
+            "columnType": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "TeamName",
+            "type": "string",
+            "format": "default",
+            "title": "Team Name",
+            "columnType": "administrative-classification:generic:level2:label",
+            "labelOf": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "Economic",
+            "type": "string",
+            "format": "default",
+            "title": "Economic Classification",
+            "columnType": "economic-classification:generic:code"
+          },
+          {
+            "name": "Func",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification",
+            "columnType": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "FuncDesc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Description)",
+            "columnType": "functional-classification:generic:level1:label",
+            "labelOf": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "Func2",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2)",
+            "columnType": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Func2Desc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2) (Description)",
+            "columnType": "functional-classification:generic:level2:label",
+            "labelOf": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Committed",
+            "type": "number",
+            "format": "default",
+            "title": "Allocated budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
+            "name": "Modified",
+            "type": "number",
+            "format": "default",
+            "title": "Modified budget",
+            "normalize": {
+              "Phase": "Modified"
+            },
+            "columnType": "value-kind:code"
+          }
+        ],
+        "extraFields": [
+          {
+            "name": "Fiscal amount",
+            "type": "number",
+            "columnType": "value",
+            "normalizationTarget": true
+          },
+          {
+            "name": "Currency",
+            "type": "string",
+            "columnType": "value-currency:code",
+            "constant": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "budget-2019",
+      "path": "budget-2019.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "date",
+            "format": "default",
+            "title": "Year",
+            "description": "Financial year of budget",
+            "columnType": "date:fiscal-year"
+          },
+          {
+            "name": "Dept",
+            "type": "string",
+            "format": "default",
+            "title": "Department Code",
+            "columnType": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "DeptName",
+            "type": "string",
+            "format": "default",
+            "title": "Department Name",
+            "columnType": "administrative-classification:generic:level1:label",
+            "labelOf": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "Team",
+            "type": "string",
+            "format": "default",
+            "title": "Team Code",
+            "columnType": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "TeamName",
+            "type": "string",
+            "format": "default",
+            "title": "Team Name",
+            "columnType": "administrative-classification:generic:level2:label",
+            "labelOf": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "Economic",
+            "type": "string",
+            "format": "default",
+            "title": "Economic Classification",
+            "columnType": "economic-classification:generic:code"
+          },
+          {
+            "name": "Func",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification",
+            "columnType": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "FuncDesc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Description)",
+            "columnType": "functional-classification:generic:level1:label",
+            "labelOf": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "Func2",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2)",
+            "columnType": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Func2Desc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2) (Description)",
+            "columnType": "functional-classification:generic:level2:label",
+            "labelOf": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Committed",
+            "type": "number",
+            "format": "default",
+            "title": "Allocated budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
+            "name": "Modified",
+            "type": "number",
+            "format": "default",
+            "title": "Modified budget",
+            "normalize": {
+              "Phase": "Modified"
+            },
+            "columnType": "value-kind:code"
+          }
+        ],
+        "extraFields": [
+          {
+            "name": "Fiscal amount",
+            "type": "number",
+            "columnType": "value",
+            "normalizationTarget": true
+          },
+          {
+            "name": "Currency",
+            "type": "string",
+            "columnType": "value-currency:code",
+            "constant": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "budget-2020",
+      "path": "budget-2020.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "date",
+            "format": "default",
+            "title": "Year",
+            "description": "Financial year of budget",
+            "columnType": "date:fiscal-year"
+          },
+          {
+            "name": "Dept",
+            "type": "string",
+            "format": "default",
+            "title": "Department Code",
+            "columnType": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "DeptName",
+            "type": "string",
+            "format": "default",
+            "title": "Department Name",
+            "columnType": "administrative-classification:generic:level1:label",
+            "labelOf": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "Team",
+            "type": "string",
+            "format": "default",
+            "title": "Team Code",
+            "columnType": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "TeamName",
+            "type": "string",
+            "format": "default",
+            "title": "Team Name",
+            "columnType": "administrative-classification:generic:level2:label",
+            "labelOf": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "Economic",
+            "type": "string",
+            "format": "default",
+            "title": "Economic Classification",
+            "columnType": "economic-classification:generic:code"
+          },
+          {
+            "name": "Func",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification",
+            "columnType": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "FuncDesc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Description)",
+            "columnType": "functional-classification:generic:level1:label",
+            "labelOf": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "Func2",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2)",
+            "columnType": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Func2Desc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2) (Description)",
+            "columnType": "functional-classification:generic:level2:label",
+            "labelOf": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Committed",
+            "type": "number",
+            "format": "default",
+            "title": "Allocated budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
+            "name": "Modified",
+            "type": "number",
+            "format": "default",
+            "title": "Modified budget",
+            "normalize": {
+              "Phase": "Modified"
+            },
+            "columnType": "value-kind:code"
+          }
+        ],
+        "extraFields": [
+          {
+            "name": "Fiscal amount",
+            "type": "number",
+            "columnType": "value",
+            "normalizationTarget": true
+          },
+          {
+            "name": "Currency",
+            "type": "string",
+            "columnType": "value-currency:code",
+            "constant": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "execution",
+      "path": "execution.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "date",
+            "format": "default",
+            "title": "Year",
+            "description": "Financial year of budget",
+            "columnType": "date:fiscal-year"
+          },
+          {
+            "name": "Dept",
+            "type": "string",
+            "format": "default",
+            "title": "Department Code",
+            "columnType": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "DeptName",
+            "type": "string",
+            "format": "default",
+            "title": "Department Name",
+            "columnType": "administrative-classification:generic:level1:label",
+            "labelOf": "administrative-classification:generic:level1:code"
+          },
+          {
+            "name": "Team",
+            "type": "string",
+            "format": "default",
+            "title": "Team Code",
+            "columnType": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "TeamName",
+            "type": "string",
+            "format": "default",
+            "title": "Team Name",
+            "columnType": "administrative-classification:generic:level2:label",
+            "labelOf": "administrative-classification:generic:level2:code"
+          },
+          {
+            "name": "Economic",
+            "type": "string",
+            "format": "default",
+            "title": "Economic Classification",
+            "columnType": "economic-classification:generic:code"
+          },
+          {
+            "name": "Func",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification",
+            "columnType": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "FuncDesc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Description)",
+            "columnType": "functional-classification:generic:level1:label",
+            "labelOf": "functional-classification:generic:level1:code"
+          },
+          {
+            "name": "Func2",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2)",
+            "columnType": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Func2Desc",
+            "type": "string",
+            "format": "default",
+            "title": "Functional Classification (Level 2) (Description)",
+            "columnType": "functional-classification:generic:level2:label",
+            "labelOf": "functional-classification:generic:level2:code"
+          },
+          {
+            "name": "Committed",
+            "type": "number",
+            "format": "default",
+            "title": "Allocated budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
+           {
+            "name": "Modified",
+            "type": "number",
+            "format": "default",
+            "title": "Modified budget",
+            "normalize": {
+              "Phase": "Modified"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
+            "name": "Paid",
+            "type": "number",
+            "format": "default",
+            "title": "Amount paid",
+            "normalize": {
+              "Phase": "Paid"
+            },
+            "columnType": "value-kind:code"
+          }
+        ],
+        "extraFields": [
+          {
+            "name": "Fiscal amount",
+            "type": "number",
+            "columnType": "value",
+            "normalizationTarget": true
+          },
+          {
+            "name": "Currency",
+            "type": "string",
+            "columnType": "value-currency:code",
+            "constant": "GBP"
+          }
+        ]
+      }
+    }
+  ]
+}

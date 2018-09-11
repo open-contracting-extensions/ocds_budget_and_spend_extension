@@ -193,7 +193,7 @@
                      }
                   ],
                   "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
-                  "financialBreakdownFieldMapping": "ofdp.json#budget.csv"
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
                },
                "rationale": "Purchase of chairs for schools"
             },
@@ -1182,7 +1182,7 @@
                         "releaseTag": [
                            "planningUpdate"
                         ],
-                        "value": "ofdp.json#budget.csv"
+                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
                      }
                   ]
                },

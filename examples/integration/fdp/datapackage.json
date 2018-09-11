@@ -3,10 +3,10 @@
   "keywords": [
     "ocds"
   ],
-  "name": "ocds-fdp-integration-example",
+  "name": "ocds-fdp-coordination-example",
   "title": "Open Contracting Data Standard and Open Fiscal Data Package integration example",
-  "description": "An example dataset created to test integration between the Open Contracting Data Standard and the Open Fiscal Data Package.",
-  "homepage": "https://github.com/open-contracting/standard/issues/483",
+  "description": "An example dataset created to illustrate connections between the Open Contracting Data Standard and the Open Fiscal Data Package.",
+  "homepage": "https://github.com/open-contracting/ocds_budget_breakdown_extension",
   "version": "0.1",
   "contributors": [
     {
@@ -26,8 +26,8 @@
   ],
   "resources": [
     {
-      "name": "example-budget-dataset",
-      "path": "budget.csv",
+      "name": "budget-and-spend",
+      "path": "budget-and-spend.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -36,7 +36,7 @@
             "type": "date",
             "format": "default",
             "title": "Year",
-            "description": "Financial year of budget",
+            "description": "Financial year",
             "columnType": "date:fiscal-year"
           },
           {
@@ -92,21 +92,6 @@
             "labelOf": "functional-classification:generic:level1:code"
           },
           {
-            "name": "Func2",
-            "type": "string",
-            "format": "default",
-            "title": "Functional Classification (Level 2)",
-            "columnType": "functional-classification:generic:level2:code"
-          },
-          {
-            "name": "Func2Desc",
-            "type": "string",
-            "format": "default",
-            "title": "Functional Classification (Level 2) (Description)",
-            "columnType": "functional-classification:generic:level2:label",
-            "labelOf": "functional-classification:generic:level2:code"
-          },
-          {
             "name": "Committed",
             "type": "number",
             "format": "default",
@@ -116,13 +101,23 @@
             },
             "columnType": "value-kind:code"
           },
-          {
+           {
             "name": "Modified",
             "type": "number",
             "format": "default",
             "title": "Modified budget",
             "normalize": {
               "Phase": "Modified"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
+            "name": "Paid",
+            "type": "number",
+            "format": "default",
+            "title": "Amount paid",
+            "normalize": {
+              "Phase": "Paid"
             },
             "columnType": "value-kind:code"
           }

@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-3-contract-tender.json",
+  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json",
   "publishedDate": "2018-08-20T00:00:00Z",
   "publisher": {
     "name": "Department of Education"
@@ -36,8 +36,8 @@
       },
       "tender": {
         "id": "01",
-        "title": "Proposed tender for chairs",
-        "description": "We will be purchasing chairs during the coming year.",
+        "title": "Tender for chairs",
+        "description": "We are purchasing chairs suitable for school classrooms.",
         "status": "active",
         "items": [
           {

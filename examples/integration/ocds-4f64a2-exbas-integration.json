@@ -1,0 +1,399 @@
+{
+  "publishedDate": "2018-01-01T09:00:00Z",
+  "publisher": {
+    "name": "Department of Education"
+  },
+  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/ocds-4f64a2-exbas-integration.json",
+  "version": "1.1",
+  "extensions": ["https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json","https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"],
+  "releases": [
+    {
+      "ocid": "ocds-4f64a2-exbas-integration",
+      "id": "ocds-4f64a2-exbas-integration-compiled",
+      "date": "2018-01-01T09:00:00Z",
+      "initiationType": "tender",
+      "tag": [
+        "compiled"
+      ],
+      "parties": [
+        {
+          "id": "EX-EXAMPLE-0235",
+          "identifier": {
+            "id": "0235",
+            "legalName": "Department of Education",
+            "scheme": "EX-EXAMPLE"
+          },
+          "name": "Department of Education",
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-11111111",
+          "name": "AnyCorp Ltd",
+          "identifier": {
+            "id": "11111111",
+            "legalName": "AnyCorp Ltd",
+            "scheme": "GB-COH"
+          },
+          "roles": [
+            "supplier"
+          ],
+          "address": {
+            "countryName": "United Kingdom",
+            "locality": "Anytown",
+            "postalCode": "AA1 1AA",
+            "region": "Any County",
+            "streetAddress": "1 Anytown Lane"
+          },
+          "contactPoint": {
+            "email": "contracts@anycorp.example",
+            "faxNumber": "11111 111 112",
+            "name": "Contracts Team",
+            "telephone": "11111 111 111",
+            "url": "http://www.anycorp.example"
+          }
+        },
+        {
+          "id": "GB-COH-22222222",
+          "name": "Chairs Co.",
+          "identifier": {
+            "id": "22222222",
+            "legalName": "Chairs Co",
+            "scheme": "GB-COH"
+          },
+          "roles": [
+            "supplier"
+          ],
+          "address": {
+            "countryName": "United Kingdom",
+            "locality": "Othertown",
+            "postalCode": "OT1 1HR",
+            "region": "County Other",
+            "streetAddress": "1 Other Lane"
+          }
+        }
+      ],
+      "buyer": {
+        "id": "EX-EXAMPLE-0235",
+        "name": "Department of Education"
+      },
+      "planning": {
+        "rationale": "Purchase of chairs for schools",
+        "budget": {
+          "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
+          "amount": {
+            "amount": 8000,
+            "currency": "USD"
+          },
+          "budgetBreakdown": [
+            {
+              "classifications": {
+                "Dept": "ED01",
+                "Economic": "Goods",
+                "Func": "EQ01",
+                "Team": "ED01-FAC",
+                "Year": "2015"
+              },
+              "id": "2015/ED01/ED01-FAC/EQ01",
+              "measures": {
+                "Committed": 5000
+              },
+              "period": {
+                "startDate": "2015-01-01T00:00:00Z",
+                "endDate": "2015-12-31T23:23:59Z"
+              },
+              "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+            },
+            {
+              "classifications": {
+                "Dept": "ED01",
+                "Economic": "Goods",
+                "Func": "EQ01",
+                "Team": "ED01-FAC",
+                "Year": "2016"
+              },
+              "id": "2016/ED01/ED01-FAC/EQ01",
+              "measures": {
+                "Committed": 3000
+              },
+              "period": {
+                "startDate": "2016-01-01T00:00:00Z",
+                "endDate": "2016-12-31T23:23:59Z"
+              },
+              "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+            },
+            {
+              "classifications": {
+                "Dept": "ED01",
+                "Economic": "Goods",
+                "Func": "EQ01",
+                "Team": "ED01-FAC",
+                "Year": "2017"
+              },
+              "id": "2017/ED01/ED01-FAC/EQ01",
+              "measures": {
+                "Committed": 1000
+              },
+              "period": {
+                "startDate": "2017-01-01T00:00:00Z",
+                "endDate": "2017-12-31T23:23:59Z"
+              },
+              "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+            }
+          ]
+        }
+      },
+      "tender": {
+        "id": "01",
+        "title": "Tender for chairs",
+        "description": "Purchase of chairs for school classrooms.",
+        "contractPeriod": {
+          "startDate": "2015-02-15T00:00:00Z",
+          "endDate": "2017-12-31T23:23:59Z"
+        },
+        "items": [
+          {
+            "classification": {
+              "description": "Chairs",
+              "id": "39112000",
+              "scheme": "CPV"
+            },
+            "description": "Chairs",
+            "id": "01"
+          }
+        ],
+        "mainProcurementCategory": "goods",
+        "minValue": {
+          "amount": 2000,
+          "currency": "USD"
+        },
+        "value": {
+          "amount": 10000,
+          "currency": "USD"
+        },
+        "numberOfTenderers": 8,
+        "procurementMethod": "open",
+        "status": "active",
+        "tenderPeriod": {
+          "durationInDays": 31,
+          "endDate": "2015-01-01T00:00:00Z",
+          "startDate": "2015-01-31T00:00:00Z"
+        }
+      },
+      "awards": [
+        {
+          "id": "ocds-4f64a2-exbas-integration-04-award-1",
+          "date": "2015-02-05T09:00:00Z",
+          "contractPeriod": {
+            "startDate": "2015-02-15T00:00:00Z",
+            "endDate": "2017-12-31T23:59:00Z"
+          },
+          "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
+          "suppliers": [
+            {
+              "id": "GB-COH-11111111",
+              "name": "AnyCorp Ltd"
+            }
+          ],
+          "value": {
+            "amount": 5000,
+            "currency": "USD"
+          }
+        },
+        {
+          "id": "ocds-4f64a2-exbas-integration-04-award-2",
+          "date": "2015-02-05T09:00:00Z",
+          "contractPeriod": {
+            "startDate": "2015-02-15T00:00:00Z",
+            "endDate": "2017-12-31T23:59:00Z"
+          },
+          "description": "Chairs Co have been awarded a contract to supply additional chairs if required over the next three years.",
+          "suppliers": [
+            {
+              "id": "GB-COH-22222222",
+              "name": "Chairs Co"
+            }
+          ],
+          "value": {
+            "amount": 3000,
+            "currency": "USD"
+          }
+        }
+      ],
+      "contracts": [
+        {
+          "id": "ocds-4f64a2-exbas-integration-04-contract-1",
+          "awardID": "ocds-4f64a2-exbas-integration-04-award-1",
+          "dateSigned": "2015-02-15T09:00:00Z",
+          "period": {
+            "startDate": "2015-02-15T00:00:00Z",
+            "endDate": "2017-12-31T23:59:00Z"
+          },
+          "status": "active",
+          "value": {
+            "amount": 5000,
+            "currency": "USD"
+          },
+          "implementation": {
+            "financialProgress": {
+              "breakdown": [
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2015"
+                  },
+                  "id": "2015/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 3000
+                  },
+                  "period": {
+                    "startDate": "2015-01-01T00:00:00Z",
+                    "endDate": "2015-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                },
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2016"
+                  },
+                  "id": "2016/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 1000
+                  },
+                  "period": {
+                    "startDate": "2016-01-01T00:00:00Z",
+                    "endDate": "2016-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                },
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2017"
+                  },
+                  "id": "2017/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 950
+                  },
+                  "period": {
+                    "startDate": "2017-01-01T00:00:00Z",
+                    "endDate": "2017-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "classification": {
+                "description": "Chairs",
+                "id": "39112000",
+                "scheme": "CPV"
+              },
+              "description": "Chairs",
+              "id": "01"
+            }
+          ]
+        },
+        {
+          "id": "ocds-4f64a2-exbas-integration-04-contract-2",
+          "awardID": "ocds-4f64a2-exbas-integration-04-award-2",
+          "date": "2015-02-15T09:00:00Z",
+          "dateSigned": "2015-02-15T09:00:00Z",
+          "period": {
+            "startDate": "2015-02-15T00:00:00Z",
+            "endDate": "2017-12-31T23:59:00Z"
+          },
+          "status": "active",
+          "value": {
+            "amount": 3000,
+            "currency": "USD"
+          },
+          "implementation": {
+            "financialProgress": {
+              "breakdown": [
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2015"
+                  },
+                  "id": "2015/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 50
+                  },
+                  "period": {
+                    "startDate": "2015-01-01T00:00:00Z",
+                    "endDate": "2015-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                },
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2016"
+                  },
+                  "id": "2016/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 1000
+                  },
+                  "period": {
+                    "startDate": "2016-01-01T00:00:00Z",
+                    "endDate": "2016-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                },
+                {
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Team": "ED01-FAC",
+                    "Year": "2017"
+                  },
+                  "id": "2017/ED01/ED01-FAC/EQ01",
+                  "measures": {
+                    "Paid": 1600
+                  },
+                  "period": {
+                    "startDate": "2017-01-01T00:00:00Z",
+                    "endDate": "2017-12-31T23:23:59Z"
+                  },
+                  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "classification": {
+                "description": "Chairs",
+                "id": "39112000",
+                "scheme": "CPV"
+              },
+              "description": "Chairs",
+              "id": "01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

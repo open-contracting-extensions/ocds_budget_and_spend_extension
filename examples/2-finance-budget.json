@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-2-finance-budget.json",
+  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json",
   "publishedDate": "2018-08-20T00:00:00Z",
   "publisher": {
     "name": "Finance Department"
@@ -34,7 +34,7 @@
               "Committed":5000
             }
           }],
-          "financialBreakdownFieldMapping":"ofdp.json#budget.csv"
+          "fiscalBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-8-finance-commitment-3.json",
+  "uri": "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json",
   "publishedDate": "2018-08-20T00:00:00Z",
   "publisher": {
     "name": "Finance Department"
@@ -23,17 +23,25 @@
           "implementation": {
             "financialProgress": {
               "breakdown": [
-                 {
+                {
                   "id": "2019/ED01/ED01-FAC/EQ01",
                   "period": {
                     "startDate": "2019-01-01T00:00:00Z",
                     "endDate": "2019-12-31T23:23:59Z"
                   },
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Team": "ED01-FAC",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Year": "2019"
+                  },
                   "measures": {
                     "Committed": 5000,
-                    "Modified":3000,
-                    "Paid":3000
-                  }
+                    "Modified": 3000,
+                    "Paid": 3000
+                  },
+                  "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                 },
                 {
                   "id": "2020/ED01/ED01-FAC/EQ01",
@@ -41,9 +49,17 @@
                     "startDate": "2020-01-01T00:00:00Z",
                     "endDate": "2020-12-31T23:23:59Z"
                   },
+                  "classifications": {
+                    "Dept": "ED01",
+                    "Team": "ED01-FAC",
+                    "Economic": "Goods",
+                    "Func": "EQ01",
+                    "Year": "2020"
+                  },
                   "measures": {
                     "Committed": 2000
-                  }
+                  },
+                  "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                 }
               ]
             }

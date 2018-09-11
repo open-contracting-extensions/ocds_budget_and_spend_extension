@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-4f64a2-exbas-01-4-contract-award.json",
+  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json",
   "publishedDate": "2018-08-20T00:00:00Z",
   "publisher": {
     "name": "Department of Education"
@@ -38,7 +38,7 @@
           ],
           "identifier": {
             "scheme": "GB-COH",
-            "id": "11111111.0",
+            "id": "11111111",
             "legalName": "AnyCorp Ltd"
           },
           "address": {
@@ -105,7 +105,7 @@
           "suppliers": [
             {
               "id": "GB-COH-11111111",
-              "name": "AnyCorp Cycle Provision"
+              "name": "AnyCorp Ltd"
             }
           ],
           "value": {
@@ -122,7 +122,6 @@
         {
           "id": "ocds-4f64a2-exbas-04-contract-1",
           "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "date": "2018-03-16T09:00:00Z",
           "status": "active",
           "period": {
             "startDate": "2018-05-01T00:00:00Z",
