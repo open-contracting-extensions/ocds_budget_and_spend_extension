@@ -7,7 +7,10 @@
   },
   "license": "http://opendatacommons.org/licenses/pddl/1.0/",
   "publicationPolicy": "https://github.com/open-contracting/sample-data/",
-  "extensions": ["https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json","https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"],
+  "extensions": [
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+  ],
   "releases": [
     {
       "ocid": "ocds-4f64a2-exbas-01",
@@ -19,23 +22,25 @@
       "initiationType": "tender",
       "planning": {
         "budget": {
-          "budgetBreakdown":[{
-            "id":"2018/ED01/ED01-FAC/EQ01",
-            "period":{
-                "startDate":"2018-01-01T00:00:00Z",
-                "endDate":"2018-12-31T23:23:59Z"
-            },
-            "classifications":{
-              "Dept":"ED01",
-              "Team":"ED01-FAC",
-              "Economic":"Goods",
-              "Func":"EQ01"
-            },
-            "measures":{
-              "Committed":5000
+          "budgetBreakdown": [
+            {
+              "id": "2018/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2018-01-01T00:00:00Z",
+                "endDate": "2018-12-31T23:23:59Z"
+              },
+              "classifications": {
+                "Dept": "ED01",
+                "Team": "ED01-FAC",
+                "Economic": "Goods",
+                "Func": "EQ01"
+              },
+              "measures": {
+                "Committed": 5000
+              }
             }
-          }],
-          "fiscalBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
+          ],
+          "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
         }
       }
     }

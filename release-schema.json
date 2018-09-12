@@ -28,11 +28,10 @@
             "breakdown": {
               "title": "Financial progress breakdown",
               "description": "This section contains a breakdown of financial progress, allowing various measures (amount invoiced, amount accrued, amount paid etc.) to be disaggregated by source, period and budget classification",
-              "type":"array",
-              "items":{
-                "$ref": "#/definitions/FinancialProgressBreakdown"  
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FinancialProgressBreakdown"
               }
-              
             }
           }
         }

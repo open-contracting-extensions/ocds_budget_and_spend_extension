@@ -101,7 +101,7 @@
             },
             "columnType": "value-kind:code"
           },
-           {
+          {
             "name": "Modified",
             "type": "number",
             "format": "default",
