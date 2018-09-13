@@ -53,28 +53,28 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 ```json
 {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "ocds-4f64a2-exbas-01-planning",
-      "planning": {
-        "rationale": "Purchase of chairs for schools",
-        "budget": {
-          "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
-          "amount": {
-            "amount": 10000,
-            "currency": "USD"
-          }
-        }
-      },
-      "tender": {
-        "id": "01",
-        "title": "Proposed tender for chairs",
-        "description": "We will be purchasing chairs during the coming year.",
-        "status": "planning",
-        "value": {
-          "amount": 10000,
-          "currency": "USD"
-        }
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "ocds-4f64a2-exbas-01-planning",
+  "planning": {
+    "rationale": "Purchase of chairs for schools",
+    "budget": {
+      "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
+      "amount": {
+        "amount": 10000,
+        "currency": "USD"
+      }
     }
+  },
+  "tender": {
+    "id": "01",
+    "title": "Proposed tender for chairs",
+    "description": "We will be purchasing chairs during the coming year.",
+    "status": "planning",
+    "value": {
+      "amount": 10000,
+      "currency": "USD"
+    }
+  }
 }
 ```
 
@@ -84,35 +84,36 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 ```json
 {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-12345",
-      "tag": [
-        "planningUpdate"
-      ],
-      "initiationType": "tender",
-      "planning": {
-        "budget": {
-          "budgetBreakdown":[{
-            "id":"2018/ED01/ED01-FAC/EQ01",
-            "period":{
-                "startDate":"2018-01-01T00:00:00Z",
-                "endDate":"2018-12-31T23:23:59Z"
-            },
-            "classifications":{
-              "Dept":"ED01",
-              "Team":"ED01-FAC",
-              "Economic":"Goods",
-              "Func":"EQ01"
-            },
-            "measures":{
-              "Committed":5000
-            }
-          }],
-          "financialBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "budget-system-identifier-12345",
+  "tag": [
+    "planningUpdate"
+  ],
+  "initiationType": "tender",
+  "planning": {
+    "budget": {
+      "budgetBreakdown": [
+        {
+          "id": "2018/ED01/ED01-FAC/EQ01",
+          "period": {
+              "startDate": "2018-01-01T00:00:00Z",
+              "endDate": "2018-12-31T23:23:59Z"
+          },
+          "classifications": {
+            "Dept": "ED01",
+            "Team": "ED01-FAC",
+            "Economic": "Goods",
+            "Func": "EQ01"
+          },
+          "measures": {
+            "Committed": 5000
+          }
         }
-      }
+      ],
+      "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
     }
-
+  }
+}
 ```
 
 Note that if a compiledRelease was generated at this point from these two data releases, it would contain **both** the budget amount sought by the education department, and the budget commitment made, showing that the overall project budget sought, and planned tender amount, is USD 10000, but that only USD 5000 is committed at present. 
@@ -127,44 +128,44 @@ Note that if a compiledRelease was generated at this point from these two data r
 
 ```json
 {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "ocds-4f64a2-exbas-04-award",
-      "tag": [
-        "award",
-        "contract"
-      ],
-      "awards": [
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "ocds-4f64a2-exbas-04-award",
+  "tag": [
+    "award",
+    "contract"
+  ],
+  "awards": [
+    {
+      "id": "ocds-4f64a2-exbas-04-award-1",
+      "date": "2018-03-15T09:00:00Z",
+      "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
+      "suppliers": [
         {
-          "id": "ocds-4f64a2-exbas-04-award-1",
-          "date": "2018-03-15T09:00:00Z",
-          "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
-          "suppliers": [
-            {
-              "id": "GB-COH-11111111",
-              "name": "AnyCorp Cycle Provision"
-            }
-          ],
-          "value": {
-            "amount": 10000,
-            "currency": "USD"
-          },
-          "contractPeriod": {
-            "startDate": "2018-05-01T00:00:00Z",
-            "endDate": "2020-12-31T23:59:00Z"
-          }
+          "id": "GB-COH-11111111",
+          "name": "AnyCorp Cycle Provision"
         }
       ],
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "status": "active"
-        }
-      ]
+      "value": {
+        "amount": 10000,
+        "currency": "USD"
+      },
+      "contractPeriod": {
+        "startDate": "2018-05-01T00:00:00Z",
+        "endDate": "2020-12-31T23:59:00Z"
+      }
     }
+  ],
+  "contracts": [
+    {
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "status": "active"
+    }
+  ]
+}
 ```
 
-At this point, there is both a contracting process identifier `"ocid":"ocds-4f64a2-exbas-01"`, and a contract identifier `"contracts":[{"id":"ocds-4f64a2-exbas-04-contract-1"}]`. The finance system will need both these identifiers in order to publish information about the budget committed to this specific contract. 
+At this point, there is both a contracting process identifier `"ocid": "ocds-4f64a2-exbas-01"`, and a contract identifier `"contracts": [{"id": "ocds-4f64a2-exbas-04-contract-1"}]`. The finance system will need both these identifiers in order to publish information about the budget committed to this specific contract. 
 
 The contract has been awarded for up to USD 10000 for three years, but at present only budget for the first year is secured. 
 
@@ -174,39 +175,38 @@ Where the finance system does not deal at the contract level (recognising that a
 
 *Extract from [5-finance-commitment.json](5-finance-commitment.json)*
 
-```json
- 
+```json 
+{
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "budget-system-identifier-87654",
+  "date": "2018-03-16T09:00:00Z",
+  "tag": [
+    "implementation"
+  ],
+  "initiationType": "tender",
+  "contracts": [
     {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-87654",
-      "date": "2018-03-16T09:00:00Z",
-      "tag": [
-        "implementation"
-      ],
-      "initiationType": "tender",
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "implementation": {
-            "financialProgress": {
-              "breakdown": [
-                {
-                  "id": "2018/ED01/ED01-FAC/EQ01",
-                  "period": {
-                    "startDate": "2018-01-01T00:00:00Z",
-                    "endDate": "2018-12-31T23:23:59Z"
-                  },
-                  "measures": {
-                    "Committed": 5000
-                  }
-                }
-              ]
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "implementation": {
+        "financialProgress": {
+          "breakdown": [
+            {
+              "id": "2018/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2018-01-01T00:00:00Z",
+                "endDate": "2018-12-31T23:23:59Z"
+              },
+              "measures": {
+                "Committed": 5000
+              }
             }
-          }
+          ]
         }
-      ]
+      }
     }
+  ]
+}
 ```
 
 (6) As invoices are processed, the Finance Department publish a new release showing the amount paid to date in the last financial period
@@ -214,38 +214,38 @@ Where the finance system does not deal at the contract level (recognising that a
 *Extract from [6-finance-update.json](6-finance-update.json)*
 
 ```json
- {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-34666531",
-      "date": "2018-11-01T09:00:00Z",
-      "tag": [
-        "implementation"
-      ],
-      "initiationType": "tender",
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "implementation": {
-            "financialProgress": {
-              "breakdown": [
-                 {
-                  "id": "2018/ED01/ED01-FAC/EQ01",
-                  "period": {
-                    "startDate": "2018-01-01T00:00:00Z",
-                    "endDate": "2018-12-31T23:23:59Z"
-                  },
-                  "measures": {
-                    "Committed": 5000,
-                    "Paid":5000
-                  }
-                }
-              ]
+{
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "budget-system-identifier-34666531",
+  "date": "2018-11-01T09:00:00Z",
+  "tag": [
+    "implementation"
+  ],
+  "initiationType": "tender",
+  "contracts": [
+    {
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "implementation": {
+        "financialProgress": {
+          "breakdown": [
+             {
+              "id": "2018/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2018-01-01T00:00:00Z",
+                "endDate": "2018-12-31T23:23:59Z"
+              },
+              "measures": {
+                "Committed": 5000,
+                "Paid": 5000
+              }
             }
-          }
+          ]
         }
-      ]
+      }
     }
+  ]
+}
 ```
 
 **Note:** The names of measures here (Committed / Paid) are arbitrary, and are not specified by OCDS or OCDS extensions. Instead they can reflect any terms in use within the corresponding Fiscal Data Package to represent various budget planning and execution measures. A `"financialBreakdownFieldMapping"` property can be used to point to a Fiscal Data Package JSON file that contains labels and definitions for these measures. 
@@ -264,48 +264,48 @@ When a compiledRelease is created, it will combine array entries to provide the 
 
 ```json
  {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-85451683",
-      "date": "2019-11-01T09:00:00Z",
-      "tag": [
-        "implementation"
-      ],
-      "initiationType": "tender",
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "implementation": {
-            "financialProgress": {
-              "breakdown": [
-                 {
-                  "id": "2019/ED01/ED01-FAC/EQ01",
-                  "period": {
-                    "startDate": "2019-01-01T00:00:00Z",
-                    "endDate": "2019-12-31T23:23:59Z"
-                  },
-                  "measures": {
-                    "Committed": 5000,
-                    "Modified":3000,
-                    "Paid":3000
-                  }
-                },
-                {
-                  "id": "2020/ED01/ED01-FAC/EQ01",
-                  "period": {
-                    "startDate": "2020-01-01T00:00:00Z",
-                    "endDate": "2020-12-31T23:23:59Z"
-                  },
-                  "measures": {
-                    "Committed": 2000
-                  }
-                }
-              ]
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "budget-system-identifier-85451683",
+  "date": "2019-11-01T09:00:00Z",
+  "tag": [
+    "implementation"
+  ],
+  "initiationType": "tender",
+  "contracts": [
+    {
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "implementation": {
+        "financialProgress": {
+          "breakdown": [
+             {
+              "id": "2019/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2019-01-01T00:00:00Z",
+                "endDate": "2019-12-31T23:23:59Z"
+              },
+              "measures": {
+                "Committed": 5000,
+                "Modified":3000,
+                "Paid":3000
+              }
+            },
+            {
+              "id": "2020/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2020-01-01T00:00:00Z",
+                "endDate": "2020-12-31T23:23:59Z"
+              },
+              "measures": {
+                "Committed": 2000
+              }
             }
-          }
+          ]
         }
-      ]
+      }
     }
+  ]
+}
 ```
 
 (9) The final chairs are delivered, and the **Department of Education** publishes an audit report, and updates the contract status to terminated to indicate all work is complete. 
@@ -313,39 +313,39 @@ When a compiledRelease is created, it will combine array entries to provide the 
 *Extract from [9-contract-close.json](9-contract-close.json)*
 
 ```json
+{
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "ocds-4f64a2-exbas-09-close",
+  "date": "2020-02-01T09:00:00Z",
+  "tag": [
+    "implementation"
+  ],
+  "contracts": [
     {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "ocds-4f64a2-exbas-09-close",
-      "date": "2020-02-01T09:00:00Z",
-      "tag": [
-        "implementation"
-      ],
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "status": "terminated",
-          "period": {
-            "startDate": "2018-05-01T00:00:00Z",
-            "endDate": "2020-12-31T23:59:00Z"
-          },
-          "implementation": {
-            "documents": [
-              {
-                "id": "7.0",
-                "documentType": "finalAudit",
-                "title": "Final Audit",
-                "description": "Final audit report from the delivery of the chairs.",
-                "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html",
-                "datePublished": "2020-02-10T10:30:00Z",
-                "format": "text/html",
-                "language": "en"
-              }
-            ]
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "status": "terminated",
+      "period": {
+        "startDate": "2018-05-01T00:00:00Z",
+        "endDate": "2020-12-31T23:59:00Z"
+      },
+      "implementation": {
+        "documents": [
+          {
+            "id": "7.0",
+            "documentType": "finalAudit",
+            "title": "Final Audit",
+            "description": "Final audit report from the delivery of the chairs.",
+            "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html",
+            "datePublished": "2020-02-10T10:30:00Z",
+            "format": "text/html",
+            "language": "en"
           }
-        }
-      ]
+        ]
+      }
     }
+  ]
+}
 ```
 
 (10) The final payments are processed through the finance system, and year end completed. The **Finance Department** publishes a release that shows the final payment made.
@@ -354,37 +354,37 @@ When a compiledRelease is created, it will combine array entries to provide the 
 
 ```json
 {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-95729675",
-      "date": "2021-01-01T09:00:00Z",
-      "tag": [
-        "implementation"
-      ],
-      "initiationType": "tender",
-      "contracts": [
-        {
-          "id": "ocds-4f64a2-exbas-04-contract-1",
-          "awardID": "ocds-4f64a2-exbas-04-award-1",
-          "status":"terminated",
-          "implementation": {
-            "financialProgress": {
-              "breakdown": [
-                {
-                  "id": "2020/ED01/ED01-FAC/EQ01",
-                  "period": {
-                    "startDate": "2020-01-01T00:00:00Z",
-                    "endDate": "2020-12-31T23:23:59Z"
-                  },
-                  "measures": {
-                    "Paid":1950
-                  }
-                }
-              ]
+  "ocid": "ocds-4f64a2-exbas-01",
+  "id": "budget-system-identifier-95729675",
+  "date": "2021-01-01T09:00:00Z",
+  "tag": [
+    "implementation"
+  ],
+  "initiationType": "tender",
+  "contracts": [
+    {
+      "id": "ocds-4f64a2-exbas-04-contract-1",
+      "awardID": "ocds-4f64a2-exbas-04-award-1",
+      "status": "terminated",
+      "implementation": {
+        "financialProgress": {
+          "breakdown": [
+            {
+              "id": "2020/ED01/ED01-FAC/EQ01",
+              "period": {
+                "startDate": "2020-01-01T00:00:00Z",
+                "endDate": "2020-12-31T23:23:59Z"
+              },
+              "measures": {
+                "Paid": 1950
+              }
             }
-          }
+          ]
         }
-      ]
-    } 
+      }
+    }
+  ]
+}
 ```
 
 ## Record

@@ -38,35 +38,37 @@ The columns in this budget file are described by a Fiscal Data Package [datapack
 
 *Extract from [datapackage.json](integration/fdp/datapackage.json)*
 
-```
+```json
 {
-"resources": [
+  "resources": [
     {
       "name": "budget-and-spend",
       "path": "budget-and-spend.csv",
       "profile": "tabular-data-resource",
       "schema": {
- "fields": [
-   {
-     "name": "Year",
-     "type": "date",
-     "format": "default",
-     "title": "Year",
-     "description": "Financial year",
-     "columnType": "date:fiscal-year"
-   },
-   {
-     "name": "Dept",
-     "type": "string",
-     "format": "default",
-     "title": "Department Code",
-     "columnType": "administrative-classification:generic:level1:code"
-   },
-   {
-     "...":"..."
-   }
+        "fields": [
+          {
+            "name": "Year",
+            "type": "date",
+            "format": "default",
+            "title": "Year",
+            "description": "Financial year",
+            "columnType": "date:fiscal-year"
+          },
+          {
+            "name": "Dept",
+            "type": "string",
+            "format": "default",
+            "title": "Department Code",
+            "columnType": "administrative-classification:generic:level1:code"
+          },
+          {
+            "...": "..."
+          }
+        ]
       }
-  }
+    }
+  ]
 }
 ```
 
@@ -84,7 +86,7 @@ Each extended breakdown entry contains a `financialBreakdownFieldMapping` field 
 
 *Extract of [OCDS compiled release](integration/ocds-4f64a2-exbas-integration.json) showing `contracts/implementation/financialProgress/breakdown` section*.
 
-```
+```json
 {
   "classifications": {
     "Dept": "ED01",
