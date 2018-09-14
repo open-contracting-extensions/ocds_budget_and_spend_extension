@@ -84,30 +84,31 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 ```json
 {
-  "ocid": "ocds-4f64a2-exbas-01",
-  "id": "budget-system-identifier-12345",
-  "tag": [
-    "planningUpdate"
-  ],
-  "initiationType": "tender",
-  "planning": {
-    "budget": {
-      "budgetBreakdown": [
-        {
-          "id": "2018/ED01/ED01-FAC/EQ01",
-          "period": {
-              "startDate": "2018-01-01T00:00:00Z",
-              "endDate": "2018-12-31T23:23:59Z"
-          },
-          "classifications": {
-            "Dept": "ED01",
-            "Team": "ED01-FAC",
-            "Economic": "Goods",
-            "Func": "EQ01"
-          },
-          "measures": {
-            "Committed": 5000
-          }
+      "ocid": "ocds-4f64a2-exbas-01",
+      "id": "budget-system-identifier-12345",
+      "tag": [
+        "planningUpdate"
+      ],
+      "initiationType": "tender",
+      "planning": {
+        "budget": {
+          "budgetBreakdown":[{
+            "id":"2018/ED01/ED01-FAC/EQ01",
+            "period":{
+                "startDate":"2018-01-01T00:00:00Z",
+                "endDate":"2018-12-31T23:23:59Z"
+            },
+            "classifications":{
+              "Dept":"ED01",
+              "Team":"ED01-FAC",
+              "Economic":"Goods",
+              "Func":"EQ01"
+            },
+            "measures":{
+              "Committed":5000
+            }
+          }],
+          "fiscalBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
         }
       ],
       "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
@@ -248,7 +249,7 @@ Where the finance system does not deal at the contract level (recognising that a
 }
 ```
 
-**Note:** The names of measures here (Committed / Paid) are arbitrary, and are not specified by OCDS or OCDS extensions. Instead they can reflect any terms in use within the corresponding Fiscal Data Package to represent various budget planning and execution measures. A `"financialBreakdownFieldMapping"` property can be used to point to a Fiscal Data Package JSON file that contains labels and definitions for these measures. 
+**Note:** The names of measures here (Committed / Paid) are arbitrary, and are not specified by OCDS or OCDS extensions. Instead they can reflect any terms in use within the corresponding Fiscal Data Package to represent various budget planning and execution measures. A `"fiscalBreakdownFieldMapping"` property can be used to point to a Fiscal Data Package JSON file that contains labels and definitions for these measures. 
 
 (7) As commitments are made for the next financial year, the **Finance Department** may publish a new release providing an additional entry in the `financialProgress` array. 
 
@@ -471,7 +472,7 @@ Below is the compiledRelease that would be available **at the end of the process
         }
       ],
       "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
-      "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
+      "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
     },
     "rationale": "Purchase of chairs for schools"
   },

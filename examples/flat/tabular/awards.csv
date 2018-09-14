@@ -1,0 +1,3 @@
+ocid,id,awards/0/id,awards/0/date,awards/0/contractPeriod/startDate,awards/0/contractPeriod/endDate,awards/0/description,awards/0/value/amount,awards/0/value/currency
+ocds-4f64a2-exbas-flat,ocds-4f64a2-exbas-flat-compiled,ocds-4f64a2-exbas-integration-04-award-1,2015-02-05T09:00:00Z,2015-02-15T00:00:00Z,2017-12-31T23:59:00Z,AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.,5000,USD
+ocds-4f64a2-exbas-flat,ocds-4f64a2-exbas-flat-compiled,ocds-4f64a2-exbas-integration-04-award-2,2015-02-05T09:00:00Z,2015-02-15T00:00:00Z,2017-12-31T23:59:00Z,Chairs Co have been awarded a contract to supply chairs on a hire-purchase basis.,3000,USD

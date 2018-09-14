@@ -92,7 +92,7 @@ For example, in the case below where a contracting process is anticipated to cov
 
 ## Describing a contracting process funded from multiple sources
 
-The `sourceParty` field provided by the [budget breakdown](https://github.com/open-contracting/ocds_budget_breakdown_extension) extension can be used, alongside, if required, different `financialBreakdownFieldMapping` properties. 
+The `sourceParty` field provided by the [budget breakdown](https://github.com/open-contracting/ocds_budget_breakdown_extension) extension can be used, alongside, if required, different `fiscalBreakdownFieldMapping` properties. 
 
 For example, in the extract below, we see an allocation of aid, combined with an allocation from the national budget of a country. 
 
@@ -113,31 +113,41 @@ For example, in the extract below, we see an allocation of aid, combined with an
             "Country": "Zambia",
             "Year": "2018"
           },
-          "measures": {
-            "Committed": 7000
-          },
-          "sourceParty": {
-            "id": "GB-GOV-1",
-            "name": "Department for International Development"
-          },
-          "financialBreakdownFieldMapping": "http://example.gov.uk/aidBudget/2018/datapackage.json#aid"
-        },
-        {
-          "id": "FA22/Fac/Facilities",
-          "classifications": {
-            "Dept": "FA22",
-            "Economic": "Services",
-            "Func": "Facilities",
-            "Team": "Fac"
-          },
-          "measures": {
-            "Committed": 3000
-          },
-          "sourceParty": {
-            "id": "ZM-GOV-22",
-            "name": "Education Department"
-          },
-          "financialBreakdownFieldMapping": "http://example.gov.zm/nationalBudget/2018/datapackage.json#budget"
+          "budgetBreakdown": [
+            {
+              "id": "01",
+              "classifications": {
+                "Sector":"Education",
+                "Country":"Zambia",
+                "Year":"2018"
+              },
+              "measures": {
+                "Committed": 7000
+              },
+              "sourceParty":{
+                "id":"GB-GOV-1",
+                "name":"Department for International Development"
+              },
+              "fiscalBreakdownFieldMapping":"http://example.gov.uk/aidBudget/2018/datapackage.json#aid"
+            },
+            {
+              "id": "FA22/Fac/Facilities",
+              "classifications": {
+                "Dept": "FA22",
+                "Economic": "Services",
+                "Func": "Facilities",
+                "Team": "Fac"
+              },
+              "measures": {
+                "Committed": 3000
+              },
+              "sourceParty":{
+                "id":"ZM-GOV-22",
+                "name":"Education Department"
+              },
+              "fiscalBreakdownFieldMapping":"http://example.gov.zm/nationalBudget/2018/datapackage.json#budget"
+            }
+          ]
         }
       ]
     }
