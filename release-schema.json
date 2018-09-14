@@ -129,26 +129,6 @@
         },
         "fiscalBreakdownFieldMapping": {
           "$ref": "#/definitions/FiscalBreakdownFieldMapping"
-        },
-        "id": {
-          "description": "An identifier for this particular budget or spending breakdown."
-        },
-        "description": {
-          "description": "A short free text description of this budget or spending breakdown. This may be displayed in user interfaces to help users interpret this entry. This may be automatically generated from structured data or may be manually entered."
-        },
-        "amount": {
-          "description": "The value of this budget or spending breakdown entry. Note that the exact fiscal measure this number represents may vary between data publishers "
-        },
-        "uri": {
-          "title": "Linked data",
-          "description": "When additional machine-readable data about this budget or spending entry is included in a separate online dataset, this field should include a URI that can be dereferenced to directly access that information."
-        },
-        "period": {
-          "title": "Period",
-          "description": "The period covered by this budget or spending breakdown."
-        },
-        "sourceParty": {
-          "description": "The organization or other party related to this budget or spending breakdown entry. If the amount or measures related to this entry are positive, this indicates a flow of resources from the party to the contracting process. If the amounts are negative, it indicates a payment from the contracting process to this party."
         }
       }
     },
