@@ -63,7 +63,7 @@ We want to be able to see who the supplier is for each financialProgress breakdo
 
 The image below shows the two columns added to achieve this. 
 
-![Index Match columns are indicated in yellow](flat-formula.png)
+![Index Match columns are indicated in yellow](images/flat-formula.png)
 
 Column E has the formula:
 
@@ -81,4 +81,10 @@ Note: n cases where there is more than one supplier for an award, this approach 
 
 #### Joining to Financial Data
 
-We can use the same Index(Match) approach to combine between 
+We can use the same Index(Match) approach to merge the data in OCDS, with the data from a Fiscal Data Package file. Assuming:
+
+* The budget/spending data file is published as a single table (or can be converted into one)
+* The buddget/spending data file includes only a single row for each combination of classifications;
+* The budget/spending data file is small enough to open in Excel
+
+Then by paste it in as an additional table, you can fetch any measure it contains by using Index(Match) across all the classifications.
