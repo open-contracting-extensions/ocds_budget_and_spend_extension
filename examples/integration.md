@@ -80,7 +80,7 @@ Contracting information is expressed using a set of OCDS releases. The [coordina
 
 The [OCDS file](integration/ocds-4f64a2-exbas-integration.json) shows the compiled release that contains both a `planning/budget/budgetBreakdown` section showing the budget committed from a budget line **for this particular contracting process**, and `contracts/implementation/financialProgress/breakdown` section showing the amount paid from a budget line, again for this specific contracting process.
 
-Each extended breakdown entry contains a `financialBreakdownFieldMapping` field pointing to the relevant [datapackage.json](integration/fdp/datapackage.json), and using a fragment identifier (#) to point to the particular resource inside that file that describes each of the classifications and measures, and the budget level data file that the contacting level measures can be compared to. 
+Each extended breakdown entry contains a `fiscalBreakdownFieldMapping` field pointing to the relevant [datapackage.json](integration/fdp/datapackage.json), and using a fragment identifier (#) to point to the particular resource inside that file that describes each of the classifications and measures, and the budget level data file that the contacting level measures can be compared to. 
 
 *Extract of [OCDS compiled release](integration/ocds-4f64a2-exbas-integration.json) showing `contracts/implementation/financialProgress/breakdown` section*.
 
@@ -101,7 +101,7 @@ Each extended breakdown entry contains a `financialBreakdownFieldMapping` field 
     "startDate": "2017-01-01T00:00:00Z",
     "endDate": "2017-12-31T23:23:59Z"
   },
-  "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend.csv"
+  "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/fdp/datapackage.json#budget-and-spend"
 }
 ```
 

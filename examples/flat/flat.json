@@ -3,13 +3,13 @@
   "publisher": {
     "name": "Department of Education"
   },
-  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/integration/ocds-4f64a2-exbas-integration.json",
+  "uri": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/flat/ocds-4f64a2-exbas-flat.json",
   "version": "1.1",
   "extensions": ["https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json","https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"],
   "releases": [
     {
-      "ocid": "ocds-4f64a2-exbas-integration",
-      "id": "ocds-4f64a2-exbas-integration-compiled",
+      "ocid": "ocds-4f64a2-exbas-flat",
+      "id": "ocds-4f64a2-exbas-flat-compiled",
       "date": "2018-01-01T09:00:00Z",
       "initiationType": "tender",
       "tag": [
@@ -79,7 +79,7 @@
         "name": "Department of Education"
       },
       "planning": {
-        "rationale": "Purchase of chairs for schools",
+        "rationale": "Provision of chairs for schools",
         "budget": {
           "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
           "amount": {
@@ -147,7 +147,7 @@
       "tender": {
         "id": "01",
         "title": "Tender for chairs",
-        "description": "Purchase of chairs for school classrooms.",
+        "description": "Provision of chairs for school classrooms.",
         "contractPeriod": {
           "startDate": "2015-02-15T00:00:00Z",
           "endDate": "2017-12-31T23:23:59Z"
@@ -208,7 +208,7 @@
             "startDate": "2015-02-15T00:00:00Z",
             "endDate": "2017-12-31T23:59:00Z"
           },
-          "description": "Chairs Co have been awarded a contract to supply additional chairs if required over the next three years.",
+          "description": "Chairs Co have been awarded a contract to supply chairs on a hire-purchase basis.",
           "suppliers": [
             {
               "id": "GB-COH-22222222",
@@ -326,8 +326,8 @@
                 {
                   "classifications": {
                     "Dept": "ED01",
-                    "Economic": "Goods",
-                    "Func": "EQ01",
+                    "Economic": "Services",
+                    "Func": "SE01",
                     "Team": "ED01-FAC",
                     "Year": "2015"
                   },
@@ -344,8 +344,8 @@
                 {
                   "classifications": {
                     "Dept": "ED01",
-                    "Economic": "Goods",
-                    "Func": "EQ01",
+                    "Economic": "Services",
+                    "Func": "SE01",
                     "Team": "ED01-FAC",
                     "Year": "2016"
                   },
@@ -362,8 +362,8 @@
                 {
                   "classifications": {
                     "Dept": "ED01",
-                    "Economic": "Goods",
-                    "Func": "EQ01",
+                    "Economic": "Services",
+                    "Func": "SE01",
                     "Team": "ED01-FAC",
                     "Year": "2017"
                   },
