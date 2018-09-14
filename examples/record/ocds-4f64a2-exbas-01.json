@@ -1,345 +1,345 @@
 {
-  "extensions": [
-    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
-    "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
-  ],
-  "packages": [
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753",
-    "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
-  ],
-  "publishedDate": "2018-08-20T13:02:00Z",
-  "publisher": {
-    "name": "Department of Education"
-  },
-  "records": [
-    {
-      "compiledRelease": {
-        "awards": [
-          {
-            "contractPeriod": {
-              "endDate": "2020-12-31T23:59:00Z",
-              "startDate": "2018-05-01T00:00:00Z"
-            },
-            "date": "2018-03-15T09:00:00Z",
-            "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
-            "id": "ocds-4f64a2-exbas-04-award-1",
-            "suppliers": [
-              {
-                "id": "GB-COH-11111111",
-                "name": "AnyCorp Cycle Provision"
-              }
-            ],
-            "value": {
-              "amount": 10000,
-              "currency": "USD"
-            }
-          }
-        ],
-        "buyer": {
-          "id": "EX-EXAMPLE-0235",
-          "name": "Department of Education"
-        },
-        "contracts": [
-          {
-            "awardID": "ocds-4f64a2-exbas-04-award-1",
-            "dateSigned": "2018-03-16T09:00:00Z",
-            "id": "ocds-4f64a2-exbas-04-contract-1",
-            "implementation": {
-              "documents": [
-                {
-                  "datePublished": "2020-02-10T10:30:00Z",
-                  "description": "Final audit report from the delivery of the chairs.",
-                  "documentType": "finalAudit",
-                  "format": "text/html",
-                  "id": "7.0",
-                  "language": "en",
-                  "title": "Final Audit",
-                  "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html"
-                }
-              ],
-              "financialProgress": {
-                "breakdown": [
-                  {
-                    "classifications": {
-                      "Dept": "ED01",
-                      "Economic": "Goods",
-                      "Func": "EQ01",
-                      "Team": "ED01-FAC",
-                      "Year": "2018"
-                    },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2018/ED01/ED01-FAC/EQ01",
-                    "measures": {
-                      "Committed": 5000,
-                      "Paid": 5000
-                    },
-                    "period": {
-                      "endDate": "2018-12-31T23:23:59Z",
-                      "startDate": "2018-01-01T00:00:00Z"
-                    }
+   "extensions": [
+      "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+   ],
+   "packages": [
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753",
+      "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683",
+      "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
+   ],
+   "publishedDate": "2018-08-20T13:02:00Z",
+   "publisher": {
+      "name": "Department of Education"
+   },
+   "records": [
+      {
+         "compiledRelease": {
+            "awards": [
+               {
+                  "contractPeriod": {
+                     "endDate": "2020-12-31T23:59:00Z",
+                     "startDate": "2018-05-01T00:00:00Z"
                   },
-                  {
-                    "classifications": {
-                      "Dept": "ED01",
-                      "Economic": "Goods",
-                      "Func": "EQ01",
-                      "Team": "ED01-FAC",
-                      "Year": "2019"
-                    },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2019/ED01/ED01-FAC/EQ01",
-                    "measures": {
-                      "Committed": 5000,
-                      "Modified": 3000,
-                      "Paid": 3000
-                    },
-                    "period": {
-                      "endDate": "2019-12-31T23:23:59Z",
-                      "startDate": "2019-01-01T00:00:00Z"
-                    }
-                  },
-                  {
-                    "classifications": {
-                      "Dept": "ED01",
-                      "Economic": "Goods",
-                      "Func": "EQ01",
-                      "Team": "ED01-FAC",
-                      "Year": " 2020"
-                    },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2020/ED01/ED01-FAC/EQ01",
-                    "measures": {
-                      "Committed": 2000,
-                      "Paid": 1950
-                    },
-                    "period": {
-                      "endDate": "2020-12-31T23:23:59Z",
-                      "startDate": "2020-01-01T00:00:00Z"
-                    }
+                  "date": "2018-03-15T09:00:00Z",
+                  "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
+                  "id": "ocds-4f64a2-exbas-04-award-1",
+                  "suppliers": [
+                     {
+                        "id": "GB-COH-11111111",
+                        "name": "AnyCorp Cycle Provision"
+                     }
+                  ],
+                  "value": {
+                     "amount": 10000,
+                     "currency": "USD"
                   }
-                ]
-              }
-            },
-            "items": [
-              {
-                "classification": {
-                  "description": "Chairs",
-                  "id": "39112000",
-                  "scheme": "CPV"
-                },
-                "description": "Chairs",
-                "id": "01"
-              }
+               }
             ],
-            "period": {
-              "endDate": "2020-12-31T23:59:00Z",
-              "startDate": "2018-05-01T00:00:00Z"
+            "buyer": {
+               "id": "EX-EXAMPLE-0235",
+               "name": "Department of Education"
             },
-            "status": "terminated",
-            "value": {
-              "amount": 10000,
-              "currency": "USD"
+            "contracts": [
+               {
+                  "awardID": "ocds-4f64a2-exbas-04-award-1",
+                  "dateSigned": "2018-03-16T09:00:00Z",
+                  "id": "ocds-4f64a2-exbas-04-contract-1",
+                  "implementation": {
+                     "documents": [
+                        {
+                           "datePublished": "2020-02-10T10:30:00Z",
+                           "description": "Final audit report from the delivery of the chairs.",
+                           "documentType": "finalAudit",
+                           "format": "text/html",
+                           "id": "7.0",
+                           "language": "en",
+                           "title": "Final Audit",
+                           "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html"
+                        }
+                     ],
+                     "financialProgress": {
+                        "breakdown": [
+                           {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": "2018"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
+                              "id": "2018/ED01/ED01-FAC/EQ01",
+                              "measures": {
+                                 "Committed": 5000,
+                                 "Paid": 5000
+                              },
+                              "period": {
+                                 "endDate": "2018-12-31T23:23:59Z",
+                                 "startDate": "2018-01-01T00:00:00Z"
+                              }
+                           },
+                           {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": "2019"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
+                              "id": "2019/ED01/ED01-FAC/EQ01",
+                              "measures": {
+                                 "Committed": 5000,
+                                 "Modified": 3000,
+                                 "Paid": 3000
+                              },
+                              "period": {
+                                 "endDate": "2019-12-31T23:23:59Z",
+                                 "startDate": "2019-01-01T00:00:00Z"
+                              }
+                           },
+                           {
+                              "classifications": {
+                                 "Dept": "ED01",
+                                 "Economic": "Goods",
+                                 "Func": "EQ01",
+                                 "Team": "ED01-FAC",
+                                 "Year": " 2020"
+                              },
+                              "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
+                              "id": "2020/ED01/ED01-FAC/EQ01",
+                              "measures": {
+                                 "Committed": 2000,
+                                 "Paid": 1950
+                              },
+                              "period": {
+                                 "endDate": "2020-12-31T23:23:59Z",
+                                 "startDate": "2020-01-01T00:00:00Z"
+                              }
+                           }
+                        ]
+                     }
+                  },
+                  "items": [
+                     {
+                        "classification": {
+                           "description": "Chairs",
+                           "id": "39112000",
+                           "scheme": "CPV"
+                        },
+                        "description": "Chairs",
+                        "id": "01"
+                     }
+                  ],
+                  "period": {
+                     "endDate": "2020-12-31T23:59:00Z",
+                     "startDate": "2018-05-01T00:00:00Z"
+                  },
+                  "status": "terminated",
+                  "value": {
+                     "amount": 10000,
+                     "currency": "USD"
+                  }
+               }
+            ],
+            "date": "2021-01-01T09:00:00Z",
+            "id": "ocds-4f64a2-exbas-01-compiled",
+            "initiationType": "tender",
+            "ocid": "ocds-4f64a2-exbas-01",
+            "parties": [
+               {
+                  "id": "EX-EXAMPLE-0235",
+                  "identifier": {
+                     "id": "0235",
+                     "legalName": "Department of Education",
+                     "scheme": "EX-EXAMPLE"
+                  },
+                  "name": "Department of Education",
+                  "roles": [
+                     "buyer"
+                  ]
+               },
+               {
+                  "address": {
+                     "countryName": "United Kingdom",
+                     "locality": "Anytown",
+                     "postalCode": "AA1 1AA",
+                     "region": "Any County",
+                     "streetAddress": "1 Anytown Lane"
+                  },
+                  "contactPoint": {
+                     "email": "contracts@anycorp.example",
+                     "faxNumber": "11111 111 112",
+                     "name": "Contracts Team",
+                     "telephone": "11111 111 111",
+                     "url": "http://www.anycorp.example"
+                  },
+                  "id": "GB-COH-11111111",
+                  "identifier": {
+                     "id": "11111111",
+                     "legalName": "AnyCorp Ltd",
+                     "scheme": "GB-COH"
+                  },
+                  "name": "AnyCorp Ltd",
+                  "roles": [
+                     "supplier"
+                  ]
+               }
+            ],
+            "planning": {
+               "budget": {
+                  "amount": {
+                     "amount": 10000,
+                     "currency": "USD"
+                  },
+                  "budgetBreakdown": [
+                     {
+                        "classifications": {
+                           "Dept": "ED01",
+                           "Economic": "Goods",
+                           "Func": "EQ01",
+                           "Team": "ED01-FAC"
+                        },
+                        "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018",
+                        "id": "2018/ED01/ED01-FAC/EQ01",
+                        "measures": {
+                           "Committed": 5000
+                        },
+                        "period": {
+                           "endDate": "2018-12-31T23:23:59Z",
+                           "startDate": "2018-01-01T00:00:00Z"
+                        }
+                     }
+                  ],
+                  "description": "Administrative: Education; Economic: Goods; Functional: Equipment"
+               },
+               "rationale": "Purchase of chairs for schools"
+            },
+            "tag": [
+               "compiled"
+            ],
+            "tender": {
+               "contractPeriod": {
+                  "endDate": "2020-12-31T23:23:59Z",
+                  "startDate": "2018-04-01T00:00:00Z"
+               },
+               "description": "We will be purchasing chairs during the coming year.",
+               "id": "01",
+               "items": [
+                  {
+                     "classification": {
+                        "description": "Chairs",
+                        "id": "39112000",
+                        "scheme": "CPV"
+                     },
+                     "description": "Chairs",
+                     "id": "01"
+                  }
+               ],
+               "mainProcurementCategory": "goods",
+               "minValue": {
+                  "amount": 2000,
+                  "currency": "USD"
+               },
+               "numberOfTenderers": 8,
+               "procurementMethod": "open",
+               "status": "active",
+               "tenderPeriod": {
+                  "durationInDays": 30,
+                  "endDate": "2018-03-01T00:00:00Z",
+                  "startDate": "2018-02-01T00:00:00Z"
+               },
+               "title": "Proposed tender for chairs",
+               "value": {
+                  "amount": 10000,
+                  "currency": "USD"
+               }
             }
-          }
-        ],
-        "date": "2021-01-01T09:00:00Z",
-        "id": "ocds-4f64a2-exbas-01-compiled",
-        "initiationType": "tender",
-        "ocid": "ocds-4f64a2-exbas-01",
-        "parties": [
-          {
-            "id": "EX-EXAMPLE-0235",
-            "identifier": {
-              "id": "0235",
-              "legalName": "Department of Education",
-              "scheme": "EX-EXAMPLE"
-            },
-            "name": "Department of Education",
-            "roles": [
-              "buyer"
-            ]
-          },
-          {
-            "address": {
-              "countryName": "United Kingdom",
-              "locality": "Anytown",
-              "postalCode": "AA1 1AA",
-              "region": "Any County",
-              "streetAddress": "1 Anytown Lane"
-            },
-            "contactPoint": {
-              "email": "contracts@anycorp.example",
-              "faxNumber": "11111 111 112",
-              "name": "Contracts Team",
-              "telephone": "11111 111 111",
-              "url": "http://www.anycorp.example"
-            },
-            "id": "GB-COH-11111111",
-            "identifier": {
-              "id": "11111111",
-              "legalName": "AnyCorp Ltd",
-              "scheme": "GB-COH"
-            },
-            "name": "AnyCorp Ltd",
-            "roles": [
-              "supplier"
-            ]
-          }
-        ],
-        "planning": {
-          "budget": {
-            "amount": {
-              "amount": 10000,
-              "currency": "USD"
-            },
-            "budgetBreakdown": [
-              {
-                "classifications": {
-                  "Dept": "ED01",
-                  "Economic": "Goods",
-                  "Func": "EQ01",
-                  "Team": "ED01-FAC"
-                },
-                "id": "2018/ED01/ED01-FAC/EQ01",
-                "measures": {
-                  "Committed": 5000
-                },
-                "period": {
-                  "endDate": "2018-12-31T23:23:59Z",
-                  "startDate": "2018-01-01T00:00:00Z"
-                }
-              }
-            ],
-            "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
-            "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
-          },
-          "rationale": "Purchase of chairs for schools"
-        },
-        "tag": [
-          "compiled"
-        ],
-        "tender": {
-          "contractPeriod": {
-            "endDate": "2020-12-31T23:23:59Z",
-            "startDate": "2018-04-01T00:00:00Z"
-          },
-          "description": "We will be purchasing chairs during the coming year.",
-          "id": "01",
-          "items": [
+         },
+         "ocid": "ocds-4f64a2-exbas-01",
+         "releases": [
             {
-              "classification": {
-                "description": "Chairs",
-                "id": "39112000",
-                "scheme": "CPV"
-              },
-              "description": "Chairs",
-              "id": "01"
+               "date": "2018-01-01T09:00:00Z",
+               "tag": [
+                  "planning"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning"
+            },
+            {
+               "date": "2021-01-01T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675"
+            },
+            {
+               "date": "2018-01-10T09:00:00Z",
+               "tag": [
+                  "planningUpdate"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345"
+            },
+            {
+               "date": "2018-02-01T09:00:00Z",
+               "tag": [
+                  "tender"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender"
+            },
+            {
+               "date": "2018-03-16T09:00:00Z",
+               "tag": [
+                  "award",
+                  "contract"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award"
+            },
+            {
+               "date": "2018-03-16T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654"
+            },
+            {
+               "date": "2018-11-01T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531"
+            },
+            {
+               "date": "2018-11-02T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753"
+            },
+            {
+               "date": "2019-11-01T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683"
+            },
+            {
+               "date": "2020-02-01T09:00:00Z",
+               "tag": [
+                  "implementation"
+               ],
+               "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
             }
-          ],
-          "mainProcurementCategory": "goods",
-          "minValue": {
-            "amount": 2000,
-            "currency": "USD"
-          },
-          "numberOfTenderers": 8,
-          "procurementMethod": "open",
-          "status": "active",
-          "tenderPeriod": {
-            "durationInDays": 30,
-            "endDate": "2018-03-01T00:00:00Z",
-            "startDate": "2018-02-01T00:00:00Z"
-          },
-          "title": "Proposed tender for chairs",
-          "value": {
-            "amount": 10000,
-            "currency": "USD"
-          }
-        }
-      },
-      "ocid": "ocds-4f64a2-exbas-01",
-      "releases": [
-        {
-          "date": "2018-01-01T09:00:00Z",
-          "tag": [
-            "planning"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning"
-        },
-        {
-          "date": "2021-01-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675"
-        },
-        {
-          "date": "2018-01-10T09:00:00Z",
-          "tag": [
-            "planningUpdate"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345"
-        },
-        {
-          "date": "2018-02-01T09:00:00Z",
-          "tag": [
-            "tender"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender"
-        },
-        {
-          "date": "2018-03-16T09:00:00Z",
-          "tag": [
-            "award",
-            "contract"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award"
-        },
-        {
-          "date": "2018-03-16T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654"
-        },
-        {
-          "date": "2018-11-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531"
-        },
-        {
-          "date": "2018-11-02T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753"
-        },
-        {
-          "date": "2019-11-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683"
-        },
-        {
-          "date": "2020-02-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
-        }
-      ]
-    }
-  ],
-  "uri": "http://standard.open-contracting.org/examples/1.1/records/ocds-213czf-000-00001.json",
-  "version": "1.1"
+         ]
+      }
+   ],
+   "uri": "http://standard.open-contracting.org/examples/1.1/records/ocds-213czf-000-00001.json",
+   "version": "1.1"
 }

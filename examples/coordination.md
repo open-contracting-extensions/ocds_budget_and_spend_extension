@@ -84,36 +84,36 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 ```json
 {
-      "ocid": "ocds-4f64a2-exbas-01",
-      "id": "budget-system-identifier-12345",
-      "tag": [
-        "planningUpdate"
-      ],
-      "initiationType": "tender",
-      "planning": {
-        "budget": {
-          "budgetBreakdown":[{
-            "id":"2018/ED01/ED01-FAC/EQ01",
-            "period":{
-                "startDate":"2018-01-01T00:00:00Z",
-                "endDate":"2018-12-31T23:23:59Z"
+    "ocid": "ocds-4f64a2-exbas-01",
+    "id": "budget-system-identifier-12345",
+    "date": "2018-01-10T09:00:00Z",
+    "tag": [
+      "planningUpdate"
+    ],
+    "initiationType": "tender",
+    "planning": {
+      "budget": {
+        "budgetBreakdown": [
+          {
+            "id": "2018/ED01/ED01-FAC/EQ01",
+            "period": {
+              "startDate": "2018-01-01T00:00:00Z",
+              "endDate": "2018-12-31T23:23:59Z"
             },
-            "classifications":{
-              "Dept":"ED01",
-              "Team":"ED01-FAC",
-              "Economic":"Goods",
-              "Func":"EQ01"
+            "classifications": {
+              "Dept": "ED01",
+              "Team": "ED01-FAC",
+              "Economic": "Goods",
+              "Func": "EQ01"
             },
-            "measures":{
-              "Committed":5000
-            }
-          }],
-          "fiscalBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
-        }
-      ],
-      "financialBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget.csv"
+            "measures": {
+              "Committed": 5000
+            },
+            "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
+          }
+        ]
+      }
     }
-  }
 }
 ```
 
