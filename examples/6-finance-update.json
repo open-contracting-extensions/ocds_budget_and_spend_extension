@@ -7,7 +7,10 @@
   },
   "license": "http://opendatacommons.org/licenses/pddl/1.0/",
   "publicationPolicy": "https://github.com/open-contracting/sample-data/",
-  "extensions": ["https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json","https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"],
+  "extensions": [
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+  ],
   "releases": [
     {
       "ocid": "ocds-4f64a2-exbas-01",
@@ -35,13 +38,13 @@
                     "Team": "ED01-FAC",
                     "Economic": "Goods",
                     "Func": "EQ01",
-                    "Year":"2018"
+                    "Year": "2018"
                   },
                   "measures": {
                     "Committed": 5000,
                     "Paid": 5000
                   },
-                  "fiscalBreakdownFieldMapping":"https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                  "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                 }
               ]
             }

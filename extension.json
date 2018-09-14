@@ -11,8 +11,6 @@
   "schemas": [
     "release-schema.json"
   ],
-  "codelists": [
-  ],
   "compatibility": [
     "1.1"
   ],

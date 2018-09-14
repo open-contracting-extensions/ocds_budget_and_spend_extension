@@ -1,5 +1,4 @@
 Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Func2,Func2Desc,Committed,Modified,Paid
 2018,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,5000,,5000
 2019,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,5000,3000,2000
-2020,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,2000,1950
-
+2020,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,2000,1950,

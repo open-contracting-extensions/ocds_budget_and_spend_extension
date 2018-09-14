@@ -7,7 +7,10 @@
   },
   "license": "http://opendatacommons.org/licenses/pddl/1.0/",
   "publicationPolicy": "https://github.com/open-contracting/sample-data/",
-  "extensions": ["https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json","https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"],
+  "extensions": [
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+  ],
   "releases": [
     {
       "ocid": "ocds-4f64a2-exbas-01",
@@ -65,9 +68,9 @@
           "startDate": "2018-02-01T00:00:00Z",
           "endDate": "2018-03-01T00:00:00Z"
         },
-        "contractPeriod":{
-          "startDate":"2018-04-01T00:00:00Z",
-          "endDate":"2020-12-31T23:23:59Z"
+        "contractPeriod": {
+          "startDate": "2018-04-01T00:00:00Z",
+          "endDate": "2020-12-31T23:23:59Z"
         }
       }
     }
