@@ -72,7 +72,7 @@ The columns in this budget file are described by a Fiscal Data Package [datapack
 }
 ```
 
-This contains a `name` field which matches a column from [budget-and-spend.csv](integration/fdp/budget-and-spend.csv), as well as a `label`, and `columnType` for each column. The Fiscal Data Package defines a number of other possible properties, including properties that indicate when one column is `labelOf` another, or when columns should be considered ordered, using a `prior` property. 
+This contains a `name` field which matches a column from [budget-and-spend.csv](integration/fdp/budget-and-spend.csv), as well as a `title`, and `columnType` for each column. The Fiscal Data Package defines a number of other possible properties, including properties that indicate when one column is `labelOf` another, or when columns should be considered ordered, using a `prior` property. 
 
 > Note: In practice, this data might be split across data files by year, and in separate files for budget and spend. Or it may be provided through an API. The coordination example shows how each `budgetBreakdown` or `implementation/financialProgress/breakdown` can make use of a different `fiscalBreakdownFieldMapping` file if required. 
 
@@ -117,15 +117,15 @@ Using the OCDS data alone, an interface wishing to display budget classification
 |------|----------|------|------|------|
 | ED01 | Goods    | EQ01 | ED01-FAC | 2017 |
 
-However, by using the field titles and meta-data provided in the [datapackage.json](integration/fdp/datapackage.json) file, an interface is able to provide more user friendly labels, such as:
+However, by using the field titles and meta-data provided in the [datapackage.json](integration/fdp/datapackage.json) file, an interface is able to provide more user friendly column titles, such as:
 
-| Department | Economic Classification | Functional Classification | Team | Year |
+| Department Code | Economic Classification | Functional Classification | Team | Year |
 |------|----------|------|------|------|
 | ED01 | Goods    | EQ01 | ED01-FAC | 2017 |
 
 A suitably sophisticated tool could go further, using the `columnType` data from the [datapackage.json](integration/fdp/datapackage.json) file to format dates and classifications appropriately, to order the display of fields, and to extract labels for codes, such as:
 
-| Year | Department | Team |  Economic Classification | Functional Classification | 
+| Year | Department Code | Team |  Economic Classification | Functional Classification | 
 |------|----------|------|------|------|
 | FY17 | Education | Education Facilities | Goods | Equipment |  
 
