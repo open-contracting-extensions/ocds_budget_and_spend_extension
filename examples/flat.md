@@ -32,7 +32,7 @@ Each table will contains:
 * An additional identifier that can be used in picking out this row (usually the last of the initial set of /id columns);
 * A set of columns providing data;
 
-![Flat table. Identifier columns are in blue and green, and data in orange](flat-table.png)
+![Flat table. Identifier columns are in blue and green, and data in orange](images/flat-table.png)
 
 The combination of all the initial `id` columns in a sheet should always be unique, and can be used as a composite 'foreign key' to join tables together. In a spreadsheet it is possible to use 'Index Match' formulas to fetch data across tables. 
 
