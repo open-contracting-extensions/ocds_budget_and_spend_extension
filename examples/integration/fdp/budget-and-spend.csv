@@ -1,7 +1,1 @@
-Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Committed,Modified,Paid
-2015,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,2000,2000,3000
-2015,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,20000,20000,15000
-2016,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,5000,5000,6000
-2016,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,18000,18000,18000
-2017,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,10000,10000,11000
-2017,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,10000,10000,18000
+Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Approved,Committed,Modified,Paid2015,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,2000,2000,2000,30002015,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,20000,20000,20000,150002016,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,5000,5000,5000,60002016,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,18000,18000,18000,180002017,ED01,Education,ED01-FAC,Education Facilities,Services,SE01,Managed facilities,10000,10000,10000,110002017,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,10000,10000,10000,18000

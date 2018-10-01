@@ -91,11 +91,21 @@
             "columnType": "functional-classification:generic:level1:label",
             "labelOf": "functional-classification:generic:level1:code"
           },
+           {
+            "name": "Approved",
+            "type": "number",
+            "format": "default",
+            "title": "Approved budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
           {
             "name": "Committed",
             "type": "number",
             "format": "default",
-            "title": "Allocated budget",
+            "title": "Committed budget",
             "normalize": {
               "Phase": "Committed"
             },

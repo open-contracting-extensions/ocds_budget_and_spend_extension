@@ -100,7 +100,7 @@
               },
               "id": "2015/ED01/ED01-FAC/EQ01",
               "measures": {
-                "Committed": 5000
+                "Approved": 5000
               },
               "period": {
                 "startDate": "2015-01-01T00:00:00Z",
@@ -118,7 +118,7 @@
               },
               "id": "2016/ED01/ED01-FAC/EQ01",
               "measures": {
-                "Committed": 3000
+                "Approved": 3000
               },
               "period": {
                 "startDate": "2016-01-01T00:00:00Z",
@@ -136,7 +136,7 @@
               },
               "id": "2017/ED01/ED01-FAC/EQ01",
               "measures": {
-                "Committed": 1000
+                "Approved": 1000
               },
               "period": {
                 "startDate": "2017-01-01T00:00:00Z",

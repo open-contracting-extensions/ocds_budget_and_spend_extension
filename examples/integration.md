@@ -23,14 +23,15 @@ The government create a website that will show:
 
 In this example we use a very simple budget file for the Department for Education, in which they allocate resources between 'Equipment' (i.e. buying chairs and tables) and 'Managed services' (i.e. paying for a company to provide chairs and tables on a rental basis). 
 
-| Year | Dept | DeptName  | Team     | TeamName      | Economic | Func | FuncDesc    | Committed | Modified | Paid  | 
-|------|------|-----------|----------|----------------------|----------|------|--------------------|-----------|----------|-------| 
-| 2015 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 2000      | 2000     | 3000  | 
-| 2015 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment   | 20000     | 20000    | 15000 | 
-| 2016 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 5000      | 5000     | 6000  | 
-| 2016 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment   | 18000     | 18000    | 18000 | 
-| 2017 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 10000     | 10000    | 11000 | 
-| 2017 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment   | 10000     | 10000    | 18000 | 
+| Year | Dept | DeptName  | Team     | TeamName             | Economic | Func | FuncDesc           | Approved | Committed | Modified | Paid  | 
+|------|------|-----------|----------|----------------------|----------|------|--------------------|----------|-----------|----------|-------| 
+| 2015 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 2000     | 2000      | 2000     | 3000  | 
+| 2015 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment          | 20000    | 20000     | 20000    | 15000 | 
+| 2016 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 5000     | 5000      | 5000     | 6000  | 
+| 2016 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment          | 18000    | 18000     | 18000    | 18000 | 
+| 2017 | ED01 | Education | ED01-FAC | Education Facilities | Services | SE01 | Managed facilities | 10000    | 10000     | 10000    | 11000 | 
+| 2017 | ED01 | Education | ED01-FAC | Education Facilities | Goods    | EQ01 | Equipment          | 10000    | 10000     | 10000    | 18000 | 
+
 
 In this example, the information is maintained in a single government wide budget dataset ([budget-and-spend.csv](integration/fdp/budget-and-spend.csv)) which is updated regularly. The extract from this above shows that in 2015, more money was allocated to buying equipment directly, with some minor planned and executed spend on managed facilities. By 2017, more an equal amount is being spent on managed facilities, and on directly purchased equipment.
 
