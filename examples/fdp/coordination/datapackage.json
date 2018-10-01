@@ -107,6 +107,16 @@
             "labelOf": "functional-classification:generic:level2:code"
           },
           {
+            "name":"Approved",
+            "type": "number",
+            "format": "default",
+            "title": "Allocated budget",
+            "normalize": {
+              "Phase": "Committed"
+            },
+            "columnType": "value-kind:code"
+          },
+          {
             "name": "Committed",
             "type": "number",
             "format": "default",

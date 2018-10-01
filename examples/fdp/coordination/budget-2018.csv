@@ -1,2 +1,2 @@
-Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Func2,Func2Desc,Committed,Modified
-2018,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,5000,
+Year,Dept,DeptName,Team,TeamName,Economic,Func,FuncDesc,Func2,Func2Desc,Approved,Committed,Modified
+2018,ED01,Education,ED01-FAC,Education Facilities,Goods,EQ01,Equipment,,,5000,5000,

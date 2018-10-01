@@ -36,7 +36,7 @@
                 "Func": "EQ01"
               },
               "measures": {
-                "Committed": 5000
+                "Approved": 5000
               },
               "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
             }

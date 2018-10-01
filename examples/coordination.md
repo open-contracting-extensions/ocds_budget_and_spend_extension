@@ -107,7 +107,7 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
               "Func": "EQ01"
             },
             "measures": {
-              "Committed": 5000
+              "Approved": 5000
             },
             "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
           }
@@ -463,7 +463,7 @@ Below is the compiledRelease that would be available **at the end of the process
           },
           "id": "2018/ED01/ED01-FAC/EQ01",
           "measures": {
-            "Committed": 5000
+            "Approved": 5000
           },
           "period": {
             "endDate": "2018-12-31T23:23:59Z",
