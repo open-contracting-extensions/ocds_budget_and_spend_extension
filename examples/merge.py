@@ -33,7 +33,7 @@ with open('record/ocds-4f64a2-exbas-01.json', 'w') as f:
         'publisher': package['publisher'],
         'publishedDate': '2018-08-20T13:02:00Z',
         'version': '1.1',
-        'extensions': ['https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json'],
+        'extensions': ['https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/extension.json'],
         'records': [{
             'ocid': 'ocds-4f64a2-exbas-01',
             'releases': releases,
@@ -48,7 +48,7 @@ with open('record/ocds-4f64a2-exbas-01-withversions.json', 'w') as f:
         'publisher': package['publisher'],
         'publishedDate': '2018-08-20T13:02:00Z',
         'version': '1.1',
-        'extensions': ['https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json'],
+        'extensions': ['https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/extension.json'],
         'records': [{
             'ocid': 'ocds-4f64a2-exbas-01',
             'releases': releases,
@@ -64,7 +64,7 @@ with open('record/ocds-4f64a2-exbas-01-full-releases.json', 'w') as f:
         'publisher': package['publisher'],
         'publishedDate': '2018-08-20T13:02:00Z',
         'version': '1.1',
-        'extensions': ['https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json'],
+        'extensions': ['https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json','https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/extension.json'],
         'records': [{
             'ocid': 'ocds-4f64a2-exbas-01',
             'releases': release_list,

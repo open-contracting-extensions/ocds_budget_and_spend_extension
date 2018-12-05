@@ -6,7 +6,7 @@
   "name": "ocds-fdp-coordination-example",
   "title": "Open Contracting Data Standard and Open Fiscal Data Package integration example",
   "description": "An example dataset created to illustrate connections between the Open Contracting Data Standard and the Open Fiscal Data Package.",
-  "homepage": "https://github.com/open-contracting/ocds_budget_breakdown_extension",
+  "homepage": "https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension",
   "version": "0.1",
   "contributors": [
     {

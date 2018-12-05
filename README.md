@@ -1,6 +1,6 @@
 # Open Contracting Budgets and Spend Extension
 
-The Budgets and Spend extension extends [budget breakdown](https://github.com/open-contracting/ocds_budget_breakdown_extension/blob/master/README.md) and the contract implementation section to allow the publication of detailed budget allocations and execution for a contracting process.
+The Budgets and Spend extension extends [budget breakdown](https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension/blob/master/README.md) and the contract implementation section to allow the publication of detailed budget allocations and execution for a contracting process.
 
 A [discussion paper providing background approach taken is available here](https://docs.google.com/document/d/1b43JeG5YQ62tGTTbP7jTE4XqUxYzG-r-emgRILZPRn4/edit). 
 
@@ -8,7 +8,7 @@ This repository is under active development, and currently contains a [worked ex
 
 ## In summary
 
-This extension introduces three new features that build on the [budget breakdown](https://github.com/open-contracting/ocds_budget_breakdown_extension/blob/master/README.md) extension:
+This extension introduces three new features that build on the [budget breakdown](https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension/blob/master/README.md) extension:
 
 * `classifications` - allowing functional, economic and administrative classifications to be provided for each budget breakdown item;
 * `measures` - allowing different budget measures (planned, committed, executed etc.) to be expressed at the contracting process level for each set of budget classifications;

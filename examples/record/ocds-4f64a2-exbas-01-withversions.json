@@ -1,7 +1,7 @@
 {
   "extensions": [
-    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json",
-    "https://raw.githubusercontent.com/open-contracting/ocds_budget_and_spend_extension/master/extension.json"
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/extension.json"
   ],
   "packages": [
     "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",

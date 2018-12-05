@@ -92,7 +92,7 @@ For example, in the case below where a contracting process is anticipated to cov
 
 ## Describing a contracting process funded from multiple sources
 
-The `sourceParty` field provided by the [budget breakdown](https://github.com/open-contracting/ocds_budget_breakdown_extension) extension can be used, alongside, if required, different `fiscalBreakdownFieldMapping` properties. 
+The `sourceParty` field provided by the [budget breakdown](https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension) extension can be used, alongside, if required, different `fiscalBreakdownFieldMapping` properties. 
 
 For example, in the extract below, we see an allocation of aid, combined with an allocation from the national budget of a country. 
 
