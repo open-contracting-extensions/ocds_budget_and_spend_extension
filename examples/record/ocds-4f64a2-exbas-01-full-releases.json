@@ -1708,16 +1708,16 @@
               }
             ],
             "roles": [
-              [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "buyer"
-                }
-              ]
+              {
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": [
+                  "buyer"
+                ]
+              }
             ]
           },
           {
@@ -1883,17 +1883,17 @@
               }
             ],
             "roles": [
-              [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "supplier"
-                }
-              ]
+              {
+                "releaseDate": "2018-03-16T09:00:00Z",
+                "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseTag": [
+                  "award",
+                  "contract"
+                ],
+                "value": [
+                  "supplier"
+                ]
+              }
             ]
           }
         ],
