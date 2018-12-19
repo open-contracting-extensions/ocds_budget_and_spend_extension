@@ -16,7 +16,20 @@ import pandas as pd
 fdp = pd.read_csv("fdp/budget-and-spend.csv")
 ocds = pd.read_csv("financialProgress-extract.csv")
 
-merged = pd.merge(ocds, fdp, how='left', left_on=['classifications/Year','classifications/Dept','classifications/Economic','classifications/Team','classifications/Func'], right_on=['Year','Dept','Economic','Team','Func'])
+merged = pd.merge(ocds, fdp, how='left',
+                  left_on=[
+                      'classifications/Year',
+                      'classifications/Dept',
+                      'classifications/Economic',
+                      'classifications/Team',
+                      'classifications/Func',
+                  ],
+                  right_on=[
+                      'Year',
+                      'Dept',
+                      'Economic',
+                      'Team',
+                      'Func',
+                  ])
+
 merged.to_csv("budget-contracting-compared.csv", index=False)
-
-
