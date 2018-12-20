@@ -223,4 +223,3 @@ cat examples/*.json | jq -crM | ocdskit --pretty compile --package --published-d
 cat examples/*.json | jq -crM | ocdskit --pretty compile --package --linked-releases --published-date 2018-08-20T13:02:00Z --uri https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01.json > examples/record/ocds-4f64a2-exbas-01.json
 cat examples/*.json | jq -crM | ocdskit --pretty compile --package --linked-releases --published-date 2018-08-20T13:02:00Z --versioned --uri https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01-withversions.json > examples/record/ocds-4f64a2-exbas-01-withversions.json
 ```
-
