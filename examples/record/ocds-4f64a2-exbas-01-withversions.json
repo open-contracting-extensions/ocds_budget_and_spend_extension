@@ -1,36 +1,227 @@
 {
+  "uri": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01-withversions.json",
+  "publisher": {
+    "name": "Finance Department"
+  },
+  "publishedDate": "2018-08-20T13:02:00Z",
+  "license": "http://opendatacommons.org/licenses/pddl/1.0/",
+  "publicationPolicy": "https://github.com/open-contracting/sample-data/",
+  "version": "1.1",
   "extensions": [
     "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
     "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/extension.json"
   ],
   "packages": [
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753",
-    "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683",
-    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json",
+    "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json"
   ],
-  "publishedDate": "2018-08-20T13:02:00Z",
-  "publisher": {
-    "name": "Department of Education"
-  },
   "records": [
     {
+      "ocid": "ocds-4f64a2-exbas-01",
+      "releases": [
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning",
+          "date": "2018-01-01T09:00:00Z",
+          "tag": [
+            "planning"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345",
+          "date": "2018-01-10T09:00:00Z",
+          "tag": [
+            "planningUpdate"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender",
+          "date": "2018-02-01T09:00:00Z",
+          "tag": [
+            "tender"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award",
+          "date": "2018-03-16T09:00:00Z",
+          "tag": [
+            "award",
+            "contract"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654",
+          "date": "2018-03-16T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531",
+          "date": "2018-11-01T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753",
+          "date": "2018-11-02T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683",
+          "date": "2019-11-01T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close",
+          "date": "2020-02-01T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675",
+          "date": "2021-01-01T09:00:00Z",
+          "tag": [
+            "implementation"
+          ]
+        }
+      ],
       "compiledRelease": {
+        "tag": [
+          "compiled"
+        ],
+        "id": "ocds-4f64a2-exbas-01-2021-01-01T09:00:00Z",
+        "date": "2021-01-01T09:00:00Z",
+        "ocid": "ocds-4f64a2-exbas-01",
+        "initiationType": "tender",
+        "parties": [
+          {
+            "id": "EX-EXAMPLE-0235",
+            "name": "Department of Education",
+            "roles": [
+              "buyer"
+            ],
+            "identifier": {
+              "scheme": "EX-EXAMPLE",
+              "id": "0235",
+              "legalName": "Department of Education"
+            }
+          },
+          {
+            "id": "GB-COH-11111111",
+            "name": "AnyCorp Ltd",
+            "roles": [
+              "supplier"
+            ],
+            "identifier": {
+              "scheme": "GB-COH",
+              "id": "11111111",
+              "legalName": "AnyCorp Ltd"
+            },
+            "address": {
+              "streetAddress": "1 Anytown Lane",
+              "locality": "Anytown",
+              "region": "Any County",
+              "postalCode": "AA1 1AA",
+              "countryName": "United Kingdom"
+            },
+            "contactPoint": {
+              "name": "Contracts Team",
+              "email": "contracts@anycorp.example",
+              "telephone": "11111 111 111",
+              "faxNumber": "11111 111 112",
+              "url": "http://www.anycorp.example"
+            }
+          }
+        ],
+        "buyer": {
+          "name": "Department of Education",
+          "id": "EX-EXAMPLE-0235"
+        },
+        "planning": {
+          "rationale": "Purchase of chairs for schools",
+          "budget": {
+            "description": "Administrative: Education; Economic: Goods; Functional: Equipment",
+            "amount": {
+              "amount": 10000,
+              "currency": "USD"
+            },
+            "budgetBreakdown": [
+              {
+                "id": "2018/ED01/ED01-FAC/EQ01",
+                "period": {
+                  "startDate": "2018-01-01T00:00:00Z",
+                  "endDate": "2018-12-31T23:23:59Z"
+                },
+                "classifications": {
+                  "Dept": "ED01",
+                  "Team": "ED01-FAC",
+                  "Economic": "Goods",
+                  "Func": "EQ01"
+                },
+                "measures": {
+                  "Committed": 5000
+                },
+                "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
+              }
+            ]
+          }
+        },
+        "tender": {
+          "id": "01",
+          "title": "Proposed tender for chairs",
+          "description": "We will be purchasing chairs during the coming year.",
+          "status": "active",
+          "items": [
+            {
+              "id": "01",
+              "description": "Chairs",
+              "classification": {
+                "scheme": "CPV",
+                "id": "39112000",
+                "description": "Chairs"
+              }
+            }
+          ],
+          "value": {
+            "amount": 10000,
+            "currency": "USD"
+          },
+          "minValue": {
+            "amount": 2000,
+            "currency": "USD"
+          },
+          "procurementMethod": "open",
+          "mainProcurementCategory": "goods",
+          "tenderPeriod": {
+            "startDate": "2018-02-01T00:00:00Z",
+            "durationInDays": 30,
+            "endDate": "2018-03-01T00:00:00Z"
+          },
+          "contractPeriod": {
+            "startDate": "2018-04-01T00:00:00Z",
+            "endDate": "2020-12-31T23:23:59Z"
+          },
+          "numberOfTenderers": 8
+        },
         "awards": [
           {
-            "contractPeriod": {
-              "endDate": "2020-12-31T23:59:00Z",
-              "startDate": "2018-05-01T00:00:00Z"
-            },
+            "id": "ocds-4f64a2-exbas-04-award-1",
             "date": "2018-03-15T09:00:00Z",
             "description": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years.",
-            "id": "ocds-4f64a2-exbas-04-award-1",
             "suppliers": [
               {
                 "id": "GB-COH-11111111",
@@ -40,335 +231,790 @@
             "value": {
               "amount": 10000,
               "currency": "USD"
+            },
+            "contractPeriod": {
+              "startDate": "2018-05-01T00:00:00Z",
+              "endDate": "2020-12-31T23:59:00Z"
             }
           }
         ],
-        "buyer": {
-          "id": "EX-EXAMPLE-0235",
-          "name": "Department of Education"
-        },
         "contracts": [
           {
-            "awardID": "ocds-4f64a2-exbas-04-award-1",
-            "dateSigned": "2018-03-16T09:00:00Z",
             "id": "ocds-4f64a2-exbas-04-contract-1",
-            "implementation": {
-              "documents": [
-                {
-                  "datePublished": "2020-02-10T10:30:00Z",
-                  "description": "Final audit report from the delivery of the chairs.",
-                  "documentType": "finalAudit",
-                  "format": "text/html",
-                  "id": "7.0",
-                  "language": "en",
-                  "title": "Final Audit",
-                  "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html"
+            "awardID": "ocds-4f64a2-exbas-04-award-1",
+            "status": "terminated",
+            "period": {
+              "startDate": "2018-05-01T00:00:00Z",
+              "endDate": "2020-12-31T23:59:00Z"
+            },
+            "dateSigned": "2018-03-16T09:00:00Z",
+            "value": {
+              "amount": 10000,
+              "currency": "USD"
+            },
+            "items": [
+              {
+                "id": "01",
+                "description": "Chairs",
+                "classification": {
+                  "scheme": "CPV",
+                  "id": "39112000",
+                  "description": "Chairs"
                 }
-              ],
+              }
+            ],
+            "implementation": {
               "financialProgress": {
                 "breakdown": [
                   {
+                    "id": "2018/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": "2018-01-01T00:00:00Z",
+                      "endDate": "2018-12-31T23:23:59Z"
+                    },
                     "classifications": {
                       "Dept": "ED01",
+                      "Team": "ED01-FAC",
                       "Economic": "Goods",
                       "Func": "EQ01",
-                      "Team": "ED01-FAC",
                       "Year": "2018"
                     },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2018/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": 5000,
                       "Paid": 5000
                     },
-                    "period": {
-                      "endDate": "2018-12-31T23:23:59Z",
-                      "startDate": "2018-01-01T00:00:00Z"
-                    }
+                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                   },
                   {
+                    "id": "2019/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": "2019-01-01T00:00:00Z",
+                      "endDate": "2019-12-31T23:23:59Z"
+                    },
                     "classifications": {
                       "Dept": "ED01",
+                      "Team": "ED01-FAC",
                       "Economic": "Goods",
                       "Func": "EQ01",
-                      "Team": "ED01-FAC",
                       "Year": "2019"
                     },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2019/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": 5000,
                       "Modified": 3000,
                       "Paid": 3000
                     },
-                    "period": {
-                      "endDate": "2019-12-31T23:23:59Z",
-                      "startDate": "2019-01-01T00:00:00Z"
-                    }
+                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                   },
                   {
+                    "id": "2020/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": "2020-01-01T00:00:00Z",
+                      "endDate": "2020-12-31T23:23:59Z"
+                    },
                     "classifications": {
                       "Dept": "ED01",
+                      "Team": "ED01-FAC",
                       "Economic": "Goods",
                       "Func": "EQ01",
-                      "Team": "ED01-FAC",
                       "Year": " 2020"
                     },
-                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution",
-                    "id": "2020/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": 2000,
                       "Paid": 1950
                     },
-                    "period": {
-                      "endDate": "2020-12-31T23:23:59Z",
-                      "startDate": "2020-01-01T00:00:00Z"
-                    }
+                    "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
                   }
                 ]
-              }
-            },
-            "items": [
-              {
-                "classification": {
-                  "description": "Chairs",
-                  "id": "39112000",
-                  "scheme": "CPV"
-                },
-                "description": "Chairs",
-                "id": "01"
-              }
-            ],
-            "period": {
-              "endDate": "2020-12-31T23:59:00Z",
-              "startDate": "2018-05-01T00:00:00Z"
-            },
-            "status": "terminated",
-            "value": {
-              "amount": 10000,
-              "currency": "USD"
+              },
+              "documents": [
+                {
+                  "id": "7.0",
+                  "documentType": "finalAudit",
+                  "title": "Final Audit",
+                  "description": "Final audit report from the delivery of the chairs.",
+                  "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html",
+                  "datePublished": "2020-02-10T10:30:00Z",
+                  "format": "text/html",
+                  "language": "en"
+                }
+              ]
             }
           }
-        ],
-        "date": "2021-01-01T09:00:00Z",
-        "id": "ocds-4f64a2-exbas-01-compiled",
-        "initiationType": "tender",
+        ]
+      },
+      "versionedRelease": {
         "ocid": "ocds-4f64a2-exbas-01",
+        "initiationType": [
+          {
+            "releaseID": "ocds-4f64a2-exbas-01-planning",
+            "releaseDate": "2018-01-01T09:00:00Z",
+            "releaseTag": [
+              "planning"
+            ],
+            "value": "tender"
+          }
+        ],
         "parties": [
           {
             "id": "EX-EXAMPLE-0235",
-            "identifier": {
-              "id": "0235",
-              "legalName": "Department of Education",
-              "scheme": "EX-EXAMPLE"
-            },
-            "name": "Department of Education",
-            "roles": [
-              "buyer"
-            ]
-          },
-          {
-            "address": {
-              "countryName": "United Kingdom",
-              "locality": "Anytown",
-              "postalCode": "AA1 1AA",
-              "region": "Any County",
-              "streetAddress": "1 Anytown Lane"
-            },
-            "contactPoint": {
-              "email": "contracts@anycorp.example",
-              "faxNumber": "11111 111 112",
-              "name": "Contracts Team",
-              "telephone": "11111 111 111",
-              "url": "http://www.anycorp.example"
-            },
-            "id": "GB-COH-11111111",
-            "identifier": {
-              "id": "11111111",
-              "legalName": "AnyCorp Ltd",
-              "scheme": "GB-COH"
-            },
-            "name": "AnyCorp Ltd",
-            "roles": [
-              "supplier"
-            ]
-          }
-        ],
-        "planning": {
-          "budget": {
-            "amount": {
-              "amount": 10000,
-              "currency": "USD"
-            },
-            "budgetBreakdown": [
+            "name": [
               {
-                "classifications": {
-                  "Dept": "ED01",
-                  "Economic": "Goods",
-                  "Func": "EQ01",
-                  "Team": "ED01-FAC"
-                },
-                "fiscalBreakdownFieldMapping": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018",
-                "id": "2018/ED01/ED01-FAC/EQ01",
-                "measures": {
-                  "Committed": 5000
-                },
-                "period": {
-                  "endDate": "2018-12-31T23:23:59Z",
-                  "startDate": "2018-01-01T00:00:00Z"
-                }
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "Department of Education"
               }
             ],
-            "description": "Administrative: Education; Economic: Goods; Functional: Equipment"
-          },
-          "rationale": "Purchase of chairs for schools"
-        },
-        "tag": [
-          "compiled"
-        ],
-        "tender": {
-          "contractPeriod": {
-            "endDate": "2020-12-31T23:23:59Z",
-            "startDate": "2018-04-01T00:00:00Z"
-          },
-          "description": "We will be purchasing chairs during the coming year.",
-          "id": "01",
-          "items": [
-            {
-              "classification": {
-                "description": "Chairs",
-                "id": "39112000",
-                "scheme": "CPV"
-              },
-              "description": "Chairs",
-              "id": "01"
-            }
-          ],
-          "mainProcurementCategory": "goods",
-          "minValue": {
-            "amount": 2000,
-            "currency": "USD"
-          },
-          "numberOfTenderers": 8,
-          "procurementMethod": "open",
-          "status": "active",
-          "tenderPeriod": {
-            "durationInDays": 30,
-            "endDate": "2018-03-01T00:00:00Z",
-            "startDate": "2018-02-01T00:00:00Z"
-          },
-          "title": "Proposed tender for chairs",
-          "value": {
-            "amount": 10000,
-            "currency": "USD"
-          }
-        }
-      },
-      "ocid": "ocds-4f64a2-exbas-01",
-      "releases": [
-        {
-          "date": "2018-01-01T09:00:00Z",
-          "tag": [
-            "planning"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/1-contract-planning.json#ocds-4f64a2-exbas-01-planning"
-        },
-        {
-          "date": "2021-01-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/10-finance-update.json#budget-system-identifier-95729675"
-        },
-        {
-          "date": "2018-01-10T09:00:00Z",
-          "tag": [
-            "planningUpdate"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/2-finance-budget.json#budget-system-identifier-12345"
-        },
-        {
-          "date": "2018-02-01T09:00:00Z",
-          "tag": [
-            "tender"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/3-contract-tender.json#ocds-4f64a2-exbas-03-tender"
-        },
-        {
-          "date": "2018-03-16T09:00:00Z",
-          "tag": [
-            "award",
-            "contract"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/4-contract-award.json#ocds-4f64a2-exbas-04-award"
-        },
-        {
-          "date": "2018-03-16T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/5-finance-commitment.json#budget-system-identifier-87654"
-        },
-        {
-          "date": "2018-11-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/6-finance-update.json#budget-system-identifier-34666531"
-        },
-        {
-          "date": "2018-11-02T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/7-finance-commitment-2.json#budget-system-identifier-346235753"
-        },
-        {
-          "date": "2019-11-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "hhttps://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/8-finance-commitment-3.json#budget-system-identifier-85451683"
-        },
-        {
-          "date": "2020-02-01T09:00:00Z",
-          "tag": [
-            "implementation"
-          ],
-          "url": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/9-contract-close.json#ocds-4f64a2-exbas-09-close"
-        }
-      ],
-      "versionedRelease": {
-        "awards": [
-          {
-            "contractPeriod": {
-              "endDate": [
+            "roles": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": [
+                  "buyer"
+                ]
+              }
+            ],
+            "identifier": {
+              "scheme": [
                 {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
                   "releaseTag": [
-                    "award",
-                    "contract"
+                    "planning"
                   ],
-                  "value": "2020-12-31T23:59:00Z"
+                  "value": "EX-EXAMPLE"
                 }
               ],
-              "startDate": [
+              "id": [
                 {
-                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
+                  "releaseTag": [
+                    "planning"
+                  ],
+                  "value": "0235"
+                }
+              ],
+              "legalName": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
+                  "releaseTag": [
+                    "planning"
+                  ],
+                  "value": "Department of Education"
+                }
+              ]
+            }
+          },
+          {
+            "id": "GB-COH-11111111",
+            "name": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
+                "releaseTag": [
+                  "award",
+                  "contract"
+                ],
+                "value": "AnyCorp Ltd"
+              }
+            ],
+            "roles": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
+                "releaseTag": [
+                  "award",
+                  "contract"
+                ],
+                "value": [
+                  "supplier"
+                ]
+              }
+            ],
+            "identifier": {
+              "scheme": [
+                {
                   "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
                   "releaseTag": [
                     "award",
                     "contract"
                   ],
-                  "value": "2018-05-01T00:00:00Z"
+                  "value": "GB-COH"
+                }
+              ],
+              "id": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "11111111"
+                }
+              ],
+              "legalName": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "AnyCorp Ltd"
                 }
               ]
             },
+            "address": {
+              "streetAddress": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "1 Anytown Lane"
+                }
+              ],
+              "locality": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "Anytown"
+                }
+              ],
+              "region": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "Any County"
+                }
+              ],
+              "postalCode": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "AA1 1AA"
+                }
+              ],
+              "countryName": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            "contactPoint": {
+              "name": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "Contracts Team"
+                }
+              ],
+              "email": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "contracts@anycorp.example"
+                }
+              ],
+              "telephone": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "11111 111 111"
+                }
+              ],
+              "faxNumber": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "11111 111 112"
+                }
+              ],
+              "url": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "http://www.anycorp.example"
+                }
+              ]
+            }
+          }
+        ],
+        "buyer": {
+          "name": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "Department of Education"
+            }
+          ],
+          "id": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "EX-EXAMPLE-0235"
+            }
+          ]
+        },
+        "planning": {
+          "rationale": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "Purchase of chairs for schools"
+            }
+          ],
+          "budget": {
+            "description": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "Administrative: Education; Economic: Goods; Functional: Equipment"
+              }
+            ],
+            "amount": {
+              "amount": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
+                  "releaseTag": [
+                    "planning"
+                  ],
+                  "value": 10000
+                }
+              ],
+              "currency": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
+                  "releaseTag": [
+                    "planning"
+                  ],
+                  "value": "USD"
+                }
+              ]
+            },
+            "budgetBreakdown": [
+              {
+                "id": "2018/ED01/ED01-FAC/EQ01",
+                "period": {
+                  "startDate": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "2018-01-01T00:00:00Z"
+                    }
+                  ],
+                  "endDate": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "2018-12-31T23:23:59Z"
+                    }
+                  ]
+                },
+                "classifications": {
+                  "Dept": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "ED01"
+                    }
+                  ],
+                  "Team": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "ED01-FAC"
+                    }
+                  ],
+                  "Economic": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "Goods"
+                    }
+                  ],
+                  "Func": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": "EQ01"
+                    }
+                  ]
+                },
+                "measures": {
+                  "Committed": [
+                    {
+                      "releaseID": "budget-system-identifier-12345",
+                      "releaseDate": "2018-01-10T09:00:00Z",
+                      "releaseTag": [
+                        "planningUpdate"
+                      ],
+                      "value": 5000
+                    }
+                  ]
+                },
+                "fiscalBreakdownFieldMapping": [
+                  {
+                    "releaseID": "budget-system-identifier-12345",
+                    "releaseDate": "2018-01-10T09:00:00Z",
+                    "releaseTag": [
+                      "planningUpdate"
+                    ],
+                    "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tender": {
+          "id": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "01"
+            }
+          ],
+          "title": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "Proposed tender for chairs"
+            },
+            {
+              "releaseID": "ocds-4f64a2-exbas-03-tender",
+              "releaseDate": "2018-02-01T09:00:00Z",
+              "releaseTag": [
+                "tender"
+              ],
+              "value": "Tender for chairs"
+            },
+            {
+              "releaseID": "ocds-4f64a2-exbas-04-award",
+              "releaseDate": "2018-03-16T09:00:00Z",
+              "releaseTag": [
+                "award",
+                "contract"
+              ],
+              "value": "Proposed tender for chairs"
+            }
+          ],
+          "description": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "We will be purchasing chairs during the coming year."
+            },
+            {
+              "releaseID": "ocds-4f64a2-exbas-03-tender",
+              "releaseDate": "2018-02-01T09:00:00Z",
+              "releaseTag": [
+                "tender"
+              ],
+              "value": "We are purchasing chairs suitable for school classrooms."
+            },
+            {
+              "releaseID": "ocds-4f64a2-exbas-04-award",
+              "releaseDate": "2018-03-16T09:00:00Z",
+              "releaseTag": [
+                "award",
+                "contract"
+              ],
+              "value": "We will be purchasing chairs during the coming year."
+            }
+          ],
+          "status": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "planning"
+            },
+            {
+              "releaseID": "ocds-4f64a2-exbas-03-tender",
+              "releaseDate": "2018-02-01T09:00:00Z",
+              "releaseTag": [
+                "tender"
+              ],
+              "value": "active"
+            }
+          ],
+          "items": [
+            {
+              "id": "01",
+              "description": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-01-planning",
+                  "releaseDate": "2018-01-01T09:00:00Z",
+                  "releaseTag": [
+                    "planning"
+                  ],
+                  "value": "Chairs"
+                }
+              ],
+              "classification": {
+                "scheme": [
+                  {
+                    "releaseID": "ocds-4f64a2-exbas-01-planning",
+                    "releaseDate": "2018-01-01T09:00:00Z",
+                    "releaseTag": [
+                      "planning"
+                    ],
+                    "value": "CPV"
+                  }
+                ],
+                "id": [
+                  {
+                    "releaseID": "ocds-4f64a2-exbas-01-planning",
+                    "releaseDate": "2018-01-01T09:00:00Z",
+                    "releaseTag": [
+                      "planning"
+                    ],
+                    "value": "39112000"
+                  }
+                ],
+                "description": [
+                  {
+                    "releaseID": "ocds-4f64a2-exbas-01-planning",
+                    "releaseDate": "2018-01-01T09:00:00Z",
+                    "releaseTag": [
+                      "planning"
+                    ],
+                    "value": "Chairs"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": {
+            "amount": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": 10000
+              }
+            ],
+            "currency": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "USD"
+              }
+            ]
+          },
+          "minValue": {
+            "amount": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": 2000
+              }
+            ],
+            "currency": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "USD"
+              }
+            ]
+          },
+          "procurementMethod": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "open"
+            }
+          ],
+          "mainProcurementCategory": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-01-planning",
+              "releaseDate": "2018-01-01T09:00:00Z",
+              "releaseTag": [
+                "planning"
+              ],
+              "value": "goods"
+            }
+          ],
+          "tenderPeriod": {
+            "startDate": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "2018-02-01T00:00:00Z"
+              }
+            ],
+            "durationInDays": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": 30
+              }
+            ],
+            "endDate": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-03-tender",
+                "releaseDate": "2018-02-01T09:00:00Z",
+                "releaseTag": [
+                  "tender"
+                ],
+                "value": "2018-03-01T00:00:00Z"
+              }
+            ]
+          },
+          "contractPeriod": {
+            "startDate": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "2018-04-01T00:00:00Z"
+              }
+            ],
+            "endDate": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-01-planning",
+                "releaseDate": "2018-01-01T09:00:00Z",
+                "releaseTag": [
+                  "planning"
+                ],
+                "value": "2020-12-31T23:23:59Z"
+              }
+            ]
+          },
+          "numberOfTenderers": [
+            {
+              "releaseID": "ocds-4f64a2-exbas-04-award",
+              "releaseDate": "2018-03-16T09:00:00Z",
+              "releaseTag": [
+                "award",
+                "contract"
+              ],
+              "value": 8
+            }
+          ]
+        },
+        "awards": [
+          {
+            "id": "ocds-4f64a2-exbas-04-award-1",
             "date": [
               {
-                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseTag": [
                   "award",
                   "contract"
@@ -378,8 +1024,8 @@
             ],
             "description": [
               {
-                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseTag": [
                   "award",
                   "contract"
@@ -387,14 +1033,13 @@
                 "value": "AnyCorp Ltd have been awarded the contract to supply chairs over the next three years."
               }
             ],
-            "id": "ocds-4f64a2-exbas-04-award-1",
             "suppliers": [
               {
                 "id": "GB-COH-11111111",
                 "name": [
                   {
-                    "releaseDate": "2018-03-16T09:00:00Z",
                     "releaseID": "ocds-4f64a2-exbas-04-award",
+                    "releaseDate": "2018-03-16T09:00:00Z",
                     "releaseTag": [
                       "award",
                       "contract"
@@ -402,8 +1047,8 @@
                     "value": "AnyCorp Ltd"
                   },
                   {
-                    "releaseDate": "2020-02-01T09:00:00Z",
                     "releaseID": "ocds-4f64a2-exbas-09-close",
+                    "releaseDate": "2020-02-01T09:00:00Z",
                     "releaseTag": [
                       "implementation"
                     ],
@@ -415,8 +1060,8 @@
             "value": {
               "amount": [
                 {
-                  "releaseDate": "2018-03-16T09:00:00Z",
                   "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
                   "releaseTag": [
                     "award",
                     "contract"
@@ -426,8 +1071,8 @@
               ],
               "currency": [
                 {
-                  "releaseDate": "2018-03-16T09:00:00Z",
                   "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
                   "releaseTag": [
                     "award",
                     "contract"
@@ -435,37 +1080,40 @@
                   "value": "USD"
                 }
               ]
+            },
+            "contractPeriod": {
+              "startDate": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "2018-05-01T00:00:00Z"
+                }
+              ],
+              "endDate": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "2020-12-31T23:59:00Z"
+                }
+              ]
             }
           }
         ],
-        "buyer": {
-          "id": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "EX-EXAMPLE-0235"
-            }
-          ],
-          "name": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "Department of Education"
-            }
-          ]
-        },
         "contracts": [
           {
+            "id": "ocds-4f64a2-exbas-04-contract-1",
             "awardID": [
               {
-                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseTag": [
                   "award",
                   "contract"
@@ -473,10 +1121,53 @@
                 "value": "ocds-4f64a2-exbas-04-award-1"
               }
             ],
+            "status": [
+              {
+                "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
+                "releaseTag": [
+                  "award",
+                  "contract"
+                ],
+                "value": "active"
+              },
+              {
+                "releaseID": "ocds-4f64a2-exbas-09-close",
+                "releaseDate": "2020-02-01T09:00:00Z",
+                "releaseTag": [
+                  "implementation"
+                ],
+                "value": "terminated"
+              }
+            ],
+            "period": {
+              "startDate": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "2018-05-01T00:00:00Z"
+                }
+              ],
+              "endDate": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "2020-12-31T23:59:00Z"
+                }
+              ]
+            },
             "dateSigned": [
               {
-                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseID": "ocds-4f64a2-exbas-04-award",
+                "releaseDate": "2018-03-16T09:00:00Z",
                 "releaseTag": [
                   "award",
                   "contract"
@@ -484,101 +1175,133 @@
                 "value": "2018-03-16T09:00:00Z"
               }
             ],
-            "id": "ocds-4f64a2-exbas-04-contract-1",
-            "implementation": {
-              "documents": [
+            "value": {
+              "amount": [
                 {
-                  "datePublished": [
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": 10000
+                }
+              ],
+              "currency": [
+                {
+                  "releaseID": "ocds-4f64a2-exbas-04-award",
+                  "releaseDate": "2018-03-16T09:00:00Z",
+                  "releaseTag": [
+                    "award",
+                    "contract"
+                  ],
+                  "value": "USD"
+                }
+              ]
+            },
+            "items": [
+              {
+                "id": "01",
+                "description": [
+                  {
+                    "releaseID": "ocds-4f64a2-exbas-04-award",
+                    "releaseDate": "2018-03-16T09:00:00Z",
+                    "releaseTag": [
+                      "award",
+                      "contract"
+                    ],
+                    "value": "Chairs"
+                  }
+                ],
+                "classification": {
+                  "scheme": [
                     {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseDate": "2018-03-16T09:00:00Z",
                       "releaseTag": [
-                        "implementation"
+                        "award",
+                        "contract"
                       ],
-                      "value": "2020-02-10T10:30:00Z"
+                      "value": "CPV"
+                    }
+                  ],
+                  "id": [
+                    {
+                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseDate": "2018-03-16T09:00:00Z",
+                      "releaseTag": [
+                        "award",
+                        "contract"
+                      ],
+                      "value": "39112000"
                     }
                   ],
                   "description": [
                     {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseDate": "2018-03-16T09:00:00Z",
                       "releaseTag": [
-                        "implementation"
+                        "award",
+                        "contract"
                       ],
-                      "value": "Final audit report from the delivery of the chairs."
-                    }
-                  ],
-                  "documentType": [
-                    {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
-                      "releaseTag": [
-                        "implementation"
-                      ],
-                      "value": "finalAudit"
-                    }
-                  ],
-                  "format": [
-                    {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
-                      "releaseTag": [
-                        "implementation"
-                      ],
-                      "value": "text/html"
-                    }
-                  ],
-                  "id": "7.0",
-                  "language": [
-                    {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
-                      "releaseTag": [
-                        "implementation"
-                      ],
-                      "value": "en"
-                    }
-                  ],
-                  "title": [
-                    {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
-                      "releaseTag": [
-                        "implementation"
-                      ],
-                      "value": "Final Audit"
-                    }
-                  ],
-                  "url": [
-                    {
-                      "releaseDate": "2020-02-01T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-09-close",
-                      "releaseTag": [
-                        "implementation"
-                      ],
-                      "value": "http://example.com/reports/ocds-4f64a2-exbas-01.html"
+                      "value": "Chairs"
                     }
                   ]
                 }
-              ],
+              }
+            ],
+            "implementation": {
               "financialProgress": {
                 "breakdown": [
                   {
+                    "id": "2018/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": [
+                        {
+                          "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2018-01-01T00:00:00Z"
+                        }
+                      ],
+                      "endDate": [
+                        {
+                          "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2018-12-31T23:23:59Z"
+                        }
+                      ]
+                    },
                     "classifications": {
                       "Dept": [
                         {
-                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "ED01"
                         }
                       ],
+                      "Team": [
+                        {
+                          "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "ED01-FAC"
+                        }
+                      ],
                       "Economic": [
                         {
-                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -587,28 +1310,18 @@
                       ],
                       "Func": [
                         {
-                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "EQ01"
                         }
                       ],
-                      "Team": [
-                        {
-                          "releaseDate": "2018-03-16T09:00:00Z",
-                          "releaseID": "budget-system-identifier-87654",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "ED01-FAC"
-                        }
-                      ],
                       "Year": [
                         {
-                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -616,22 +1329,11 @@
                         }
                       ]
                     },
-                    "fiscalBreakdownFieldMapping": [
-                      {
-                        "releaseDate": "2018-03-16T09:00:00Z",
-                        "releaseID": "budget-system-identifier-87654",
-                        "releaseTag": [
-                          "implementation"
-                        ],
-                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
-                      }
-                    ],
-                    "id": "2018/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": [
                         {
-                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseID": "budget-system-identifier-87654",
+                          "releaseDate": "2018-03-16T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -640,8 +1342,8 @@
                       ],
                       "Paid": [
                         {
-                          "releaseDate": "2018-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-34666531",
+                          "releaseDate": "2018-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -649,45 +1351,66 @@
                         }
                       ]
                     },
-                    "period": {
-                      "endDate": [
-                        {
-                          "releaseDate": "2018-03-16T09:00:00Z",
-                          "releaseID": "budget-system-identifier-87654",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2018-12-31T23:23:59Z"
-                        }
-                      ],
-                      "startDate": [
-                        {
-                          "releaseDate": "2018-03-16T09:00:00Z",
-                          "releaseID": "budget-system-identifier-87654",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2018-01-01T00:00:00Z"
-                        }
-                      ]
-                    }
+                    "fiscalBreakdownFieldMapping": [
+                      {
+                        "releaseID": "budget-system-identifier-87654",
+                        "releaseDate": "2018-03-16T09:00:00Z",
+                        "releaseTag": [
+                          "implementation"
+                        ],
+                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                      }
+                    ]
                   },
                   {
+                    "id": "2019/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": [
+                        {
+                          "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2019-01-01T00:00:00Z"
+                        }
+                      ],
+                      "endDate": [
+                        {
+                          "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2019-12-31T23:23:59Z"
+                        }
+                      ]
+                    },
                     "classifications": {
                       "Dept": [
                         {
-                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "ED01"
                         }
                       ],
+                      "Team": [
+                        {
+                          "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "ED01-FAC"
+                        }
+                      ],
                       "Economic": [
                         {
-                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -696,28 +1419,18 @@
                       ],
                       "Func": [
                         {
-                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "EQ01"
                         }
                       ],
-                      "Team": [
-                        {
-                          "releaseDate": "2018-11-02T09:00:00Z",
-                          "releaseID": "budget-system-identifier-346235753",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "ED01-FAC"
-                        }
-                      ],
                       "Year": [
                         {
-                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -725,22 +1438,11 @@
                         }
                       ]
                     },
-                    "fiscalBreakdownFieldMapping": [
-                      {
-                        "releaseDate": "2018-11-02T09:00:00Z",
-                        "releaseID": "budget-system-identifier-346235753",
-                        "releaseTag": [
-                          "implementation"
-                        ],
-                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
-                      }
-                    ],
-                    "id": "2019/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": [
                         {
-                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseID": "budget-system-identifier-346235753",
+                          "releaseDate": "2018-11-02T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -749,8 +1451,8 @@
                       ],
                       "Modified": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -759,8 +1461,8 @@
                       ],
                       "Paid": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -768,45 +1470,66 @@
                         }
                       ]
                     },
-                    "period": {
-                      "endDate": [
-                        {
-                          "releaseDate": "2018-11-02T09:00:00Z",
-                          "releaseID": "budget-system-identifier-346235753",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2019-12-31T23:23:59Z"
-                        }
-                      ],
-                      "startDate": [
-                        {
-                          "releaseDate": "2018-11-02T09:00:00Z",
-                          "releaseID": "budget-system-identifier-346235753",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2019-01-01T00:00:00Z"
-                        }
-                      ]
-                    }
+                    "fiscalBreakdownFieldMapping": [
+                      {
+                        "releaseID": "budget-system-identifier-346235753",
+                        "releaseDate": "2018-11-02T09:00:00Z",
+                        "releaseTag": [
+                          "implementation"
+                        ],
+                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                      }
+                    ]
                   },
                   {
+                    "id": "2020/ED01/ED01-FAC/EQ01",
+                    "period": {
+                      "startDate": [
+                        {
+                          "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2020-01-01T00:00:00Z"
+                        }
+                      ],
+                      "endDate": [
+                        {
+                          "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "2020-12-31T23:23:59Z"
+                        }
+                      ]
+                    },
                     "classifications": {
                       "Dept": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "ED01"
                         }
                       ],
+                      "Team": [
+                        {
+                          "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
+                          "releaseTag": [
+                            "implementation"
+                          ],
+                          "value": "ED01-FAC"
+                        }
+                      ],
                       "Economic": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -815,36 +1538,26 @@
                       ],
                       "Func": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "EQ01"
                         }
                       ],
-                      "Team": [
-                        {
-                          "releaseDate": "2019-11-01T09:00:00Z",
-                          "releaseID": "budget-system-identifier-85451683",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "ED01-FAC"
-                        }
-                      ],
                       "Year": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
                           "value": "2020"
                         },
                         {
-                          "releaseDate": "2021-01-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-95729675",
+                          "releaseDate": "2021-01-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -852,22 +1565,11 @@
                         }
                       ]
                     },
-                    "fiscalBreakdownFieldMapping": [
-                      {
-                        "releaseDate": "2019-11-01T09:00:00Z",
-                        "releaseID": "budget-system-identifier-85451683",
-                        "releaseTag": [
-                          "implementation"
-                        ],
-                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
-                      }
-                    ],
-                    "id": "2020/ED01/ED01-FAC/EQ01",
                     "measures": {
                       "Committed": [
                         {
-                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-85451683",
+                          "releaseDate": "2019-11-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -876,8 +1578,8 @@
                       ],
                       "Paid": [
                         {
-                          "releaseDate": "2021-01-01T09:00:00Z",
                           "releaseID": "budget-system-identifier-95729675",
+                          "releaseDate": "2021-01-01T09:00:00Z",
                           "releaseTag": [
                             "implementation"
                           ],
@@ -885,798 +1587,98 @@
                         }
                       ]
                     },
-                    "period": {
-                      "endDate": [
-                        {
-                          "releaseDate": "2019-11-01T09:00:00Z",
-                          "releaseID": "budget-system-identifier-85451683",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2020-12-31T23:23:59Z"
-                        }
-                      ],
-                      "startDate": [
-                        {
-                          "releaseDate": "2019-11-01T09:00:00Z",
-                          "releaseID": "budget-system-identifier-85451683",
-                          "releaseTag": [
-                            "implementation"
-                          ],
-                          "value": "2020-01-01T00:00:00Z"
-                        }
-                      ]
-                    }
+                    "fiscalBreakdownFieldMapping": [
+                      {
+                        "releaseID": "budget-system-identifier-85451683",
+                        "releaseDate": "2019-11-01T09:00:00Z",
+                        "releaseTag": [
+                          "implementation"
+                        ],
+                        "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#execution"
+                      }
+                    ]
                   }
                 ]
-              }
-            },
-            "items": [
-              {
-                "classification": {
+              },
+              "documents": [
+                {
+                  "id": "7.0",
+                  "documentType": [
+                    {
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
+                      "releaseTag": [
+                        "implementation"
+                      ],
+                      "value": "finalAudit"
+                    }
+                  ],
+                  "title": [
+                    {
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
+                      "releaseTag": [
+                        "implementation"
+                      ],
+                      "value": "Final Audit"
+                    }
+                  ],
                   "description": [
                     {
-                      "releaseDate": "2018-03-16T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
                       "releaseTag": [
-                        "award",
-                        "contract"
+                        "implementation"
                       ],
-                      "value": "Chairs"
+                      "value": "Final audit report from the delivery of the chairs."
                     }
                   ],
-                  "id": [
+                  "url": [
                     {
-                      "releaseDate": "2018-03-16T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
                       "releaseTag": [
-                        "award",
-                        "contract"
+                        "implementation"
                       ],
-                      "value": "39112000"
+                      "value": "http://example.com/reports/ocds-4f64a2-exbas-01.html"
                     }
                   ],
-                  "scheme": [
+                  "datePublished": [
                     {
-                      "releaseDate": "2018-03-16T09:00:00Z",
-                      "releaseID": "ocds-4f64a2-exbas-04-award",
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
                       "releaseTag": [
-                        "award",
-                        "contract"
+                        "implementation"
                       ],
-                      "value": "CPV"
+                      "value": "2020-02-10T10:30:00Z"
+                    }
+                  ],
+                  "format": [
+                    {
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
+                      "releaseTag": [
+                        "implementation"
+                      ],
+                      "value": "text/html"
+                    }
+                  ],
+                  "language": [
+                    {
+                      "releaseID": "ocds-4f64a2-exbas-09-close",
+                      "releaseDate": "2020-02-01T09:00:00Z",
+                      "releaseTag": [
+                        "implementation"
+                      ],
+                      "value": "en"
                     }
                   ]
-                },
-                "description": [
-                  {
-                    "releaseDate": "2018-03-16T09:00:00Z",
-                    "releaseID": "ocds-4f64a2-exbas-04-award",
-                    "releaseTag": [
-                      "award",
-                      "contract"
-                    ],
-                    "value": "Chairs"
-                  }
-                ],
-                "id": "01"
-              }
-            ],
-            "period": {
-              "endDate": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "2020-12-31T23:59:00Z"
-                }
-              ],
-              "startDate": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "2018-05-01T00:00:00Z"
-                }
-              ]
-            },
-            "status": [
-              {
-                "releaseDate": "2018-03-16T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-04-award",
-                "releaseTag": [
-                  "award",
-                  "contract"
-                ],
-                "value": "active"
-              },
-              {
-                "releaseDate": "2020-02-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-09-close",
-                "releaseTag": [
-                  "implementation"
-                ],
-                "value": "terminated"
-              }
-            ],
-            "value": {
-              "amount": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": 10000
-                }
-              ],
-              "currency": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "USD"
                 }
               ]
             }
           }
-        ],
-        "initiationType": [
-          {
-            "releaseDate": "2018-01-01T09:00:00Z",
-            "releaseID": "ocds-4f64a2-exbas-01-planning",
-            "releaseTag": [
-              "planning"
-            ],
-            "value": "tender"
-          }
-        ],
-        "ocid": "ocds-4f64a2-exbas-01",
-        "parties": [
-          {
-            "id": "EX-EXAMPLE-0235",
-            "identifier": {
-              "id": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "0235"
-                }
-              ],
-              "legalName": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "Department of Education"
-                }
-              ],
-              "scheme": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "EX-EXAMPLE"
-                }
-              ]
-            },
-            "name": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "Department of Education"
-              }
-            ],
-            "roles": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": [
-                  "buyer"
-                ]
-              }
-            ]
-          },
-          {
-            "address": {
-              "countryName": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "United Kingdom"
-                }
-              ],
-              "locality": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "Anytown"
-                }
-              ],
-              "postalCode": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "AA1 1AA"
-                }
-              ],
-              "region": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "Any County"
-                }
-              ],
-              "streetAddress": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "1 Anytown Lane"
-                }
-              ]
-            },
-            "contactPoint": {
-              "email": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "contracts@anycorp.example"
-                }
-              ],
-              "faxNumber": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "11111 111 112"
-                }
-              ],
-              "name": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "Contracts Team"
-                }
-              ],
-              "telephone": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "11111 111 111"
-                }
-              ],
-              "url": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "http://www.anycorp.example"
-                }
-              ]
-            },
-            "id": "GB-COH-11111111",
-            "identifier": {
-              "id": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "11111111"
-                }
-              ],
-              "legalName": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "AnyCorp Ltd"
-                }
-              ],
-              "scheme": [
-                {
-                  "releaseDate": "2018-03-16T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-04-award",
-                  "releaseTag": [
-                    "award",
-                    "contract"
-                  ],
-                  "value": "GB-COH"
-                }
-              ]
-            },
-            "name": [
-              {
-                "releaseDate": "2018-03-16T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-04-award",
-                "releaseTag": [
-                  "award",
-                  "contract"
-                ],
-                "value": "AnyCorp Ltd"
-              }
-            ],
-            "roles": [
-              {
-                "releaseDate": "2018-03-16T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-04-award",
-                "releaseTag": [
-                  "award",
-                  "contract"
-                ],
-                "value": [
-                  "supplier"
-                ]
-              }
-            ]
-          }
-        ],
-        "planning": {
-          "budget": {
-            "amount": {
-              "amount": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": 10000
-                }
-              ],
-              "currency": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "USD"
-                }
-              ]
-            },
-            "budgetBreakdown": [
-              {
-                "classifications": {
-                  "Dept": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "ED01"
-                    }
-                  ],
-                  "Economic": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "Goods"
-                    }
-                  ],
-                  "Func": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "EQ01"
-                    }
-                  ],
-                  "Team": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "ED01-FAC"
-                    }
-                  ]
-                },
-                "fiscalBreakdownFieldMapping": [
-                  {
-                    "releaseDate": "2018-01-10T09:00:00Z",
-                    "releaseID": "budget-system-identifier-12345",
-                    "releaseTag": [
-                      "planningUpdate"
-                    ],
-                    "value": "https://raw.githubusercontent.com/ocds_budget_and_spend_extension/master/examples/fdp/coordination/datapackage.json#budget-2018"
-                  }
-                ],
-                "id": "2018/ED01/ED01-FAC/EQ01",
-                "measures": {
-                  "Committed": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": 5000
-                    }
-                  ]
-                },
-                "period": {
-                  "endDate": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "2018-12-31T23:23:59Z"
-                    }
-                  ],
-                  "startDate": [
-                    {
-                      "releaseDate": "2018-01-10T09:00:00Z",
-                      "releaseID": "budget-system-identifier-12345",
-                      "releaseTag": [
-                        "planningUpdate"
-                      ],
-                      "value": "2018-01-01T00:00:00Z"
-                    }
-                  ]
-                }
-              }
-            ],
-            "description": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "Administrative: Education; Economic: Goods; Functional: Equipment"
-              }
-            ]
-          },
-          "rationale": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "Purchase of chairs for schools"
-            }
-          ]
-        },
-        "tender": {
-          "contractPeriod": {
-            "endDate": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "2020-12-31T23:23:59Z"
-              }
-            ],
-            "startDate": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "2018-04-01T00:00:00Z"
-              }
-            ]
-          },
-          "description": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "We will be purchasing chairs during the coming year."
-            },
-            {
-              "releaseDate": "2018-02-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-03-tender",
-              "releaseTag": [
-                "tender"
-              ],
-              "value": "We are purchasing chairs suitable for school classrooms."
-            },
-            {
-              "releaseDate": "2018-03-16T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-04-award",
-              "releaseTag": [
-                "award",
-                "contract"
-              ],
-              "value": "We will be purchasing chairs during the coming year."
-            }
-          ],
-          "id": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "01"
-            }
-          ],
-          "items": [
-            {
-              "classification": {
-                "description": [
-                  {
-                    "releaseDate": "2018-01-01T09:00:00Z",
-                    "releaseID": "ocds-4f64a2-exbas-01-planning",
-                    "releaseTag": [
-                      "planning"
-                    ],
-                    "value": "Chairs"
-                  }
-                ],
-                "id": [
-                  {
-                    "releaseDate": "2018-01-01T09:00:00Z",
-                    "releaseID": "ocds-4f64a2-exbas-01-planning",
-                    "releaseTag": [
-                      "planning"
-                    ],
-                    "value": "39112000"
-                  }
-                ],
-                "scheme": [
-                  {
-                    "releaseDate": "2018-01-01T09:00:00Z",
-                    "releaseID": "ocds-4f64a2-exbas-01-planning",
-                    "releaseTag": [
-                      "planning"
-                    ],
-                    "value": "CPV"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "releaseDate": "2018-01-01T09:00:00Z",
-                  "releaseID": "ocds-4f64a2-exbas-01-planning",
-                  "releaseTag": [
-                    "planning"
-                  ],
-                  "value": "Chairs"
-                }
-              ],
-              "id": "01"
-            }
-          ],
-          "mainProcurementCategory": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "goods"
-            }
-          ],
-          "minValue": {
-            "amount": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": 2000
-              }
-            ],
-            "currency": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "USD"
-              }
-            ]
-          },
-          "numberOfTenderers": [
-            {
-              "releaseDate": "2018-03-16T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-04-award",
-              "releaseTag": [
-                "award",
-                "contract"
-              ],
-              "value": 8
-            }
-          ],
-          "procurementMethod": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "open"
-            }
-          ],
-          "status": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "planning"
-            },
-            {
-              "releaseDate": "2018-02-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-03-tender",
-              "releaseTag": [
-                "tender"
-              ],
-              "value": "active"
-            }
-          ],
-          "tenderPeriod": {
-            "durationInDays": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": 30
-              }
-            ],
-            "endDate": [
-              {
-                "releaseDate": "2018-02-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-03-tender",
-                "releaseTag": [
-                  "tender"
-                ],
-                "value": "2018-03-01T00:00:00Z"
-              }
-            ],
-            "startDate": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "2018-02-01T00:00:00Z"
-              }
-            ]
-          },
-          "title": [
-            {
-              "releaseDate": "2018-01-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-01-planning",
-              "releaseTag": [
-                "planning"
-              ],
-              "value": "Proposed tender for chairs"
-            },
-            {
-              "releaseDate": "2018-02-01T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-03-tender",
-              "releaseTag": [
-                "tender"
-              ],
-              "value": "Tender for chairs"
-            },
-            {
-              "releaseDate": "2018-03-16T09:00:00Z",
-              "releaseID": "ocds-4f64a2-exbas-04-award",
-              "releaseTag": [
-                "award",
-                "contract"
-              ],
-              "value": "Proposed tender for chairs"
-            }
-          ],
-          "value": {
-            "amount": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": 10000
-              }
-            ],
-            "currency": [
-              {
-                "releaseDate": "2018-01-01T09:00:00Z",
-                "releaseID": "ocds-4f64a2-exbas-01-planning",
-                "releaseTag": [
-                  "planning"
-                ],
-                "value": "USD"
-              }
-            ]
-          }
-        }
+        ]
       }
     }
-  ],
-  "uri": "http://standard.open-contracting.org/examples/1.1/records/ocds-213czf-000-00001.json",
-  "version": "1.1"
+  ]
 }
