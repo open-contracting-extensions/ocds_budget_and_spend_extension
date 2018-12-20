@@ -213,3 +213,14 @@ Through the use of `measures` indicating payment, the following extract shows a 
 ```
 
 > Note: the measures used in these examples ('Committed' / 'Paid' etc.) are arbitrary keys, and any property name may be used within the `measures` object. Tools should not anticipate any specific term, and will need to refer to additional contextual information to interpret the exact fiscal measure a property relates to. 
+
+## Maintenance
+
+The record packages are created using [OCDS Kit](https://pypi.org/project/ocdskit/) and [jq](https://stedolan.github.io/jq/):
+
+```shell
+cat examples/*.json | jq -crM | ocdskit --pretty compile --package --published-date 2018-08-20T13:02:00Z --uri https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01-full-releases.json > examples/record/ocds-4f64a2-exbas-01-full-releases.json
+cat examples/*.json | jq -crM | ocdskit --pretty compile --package --linked-releases --published-date 2018-08-20T13:02:00Z --uri https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01.json > examples/record/ocds-4f64a2-exbas-01.json
+cat examples/*.json | jq -crM | ocdskit --pretty compile --package --linked-releases --published-date 2018-08-20T13:02:00Z --versioned --uri https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/examples/record/ocds-4f64a2-exbas-01-withversions.json > examples/record/ocds-4f64a2-exbas-01-withversions.json
+```
+
