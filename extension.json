@@ -15,6 +15,6 @@
     "release-schema.json"
   ],
   "testDependencies": [
-    "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/extension.json"
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json"
   ]
 }
