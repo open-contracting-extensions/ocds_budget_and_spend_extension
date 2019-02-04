@@ -108,3 +108,7 @@ These user stories were used to identify a set of requirements that the extensio
 | R5 | Provide information on the transaction process, from invoice to payment | Partial | The `measures` in `financialProgress/breakdown` for each contract can be used to describe different moments of payment processing. However, this only provides a full history of the timing of payment processes when used with a detailed version history of releases. An alternative approach of adding details of `transactions` to represent different moments such as requests for payment and payment approvals has not been included in this extension, but may be developed separately in future. |
 | R6 | Allow individual amount allocations of budget to contract within OCDS to be checked against overall budget line allocations in a budget dataset | Yes | Through use of a link to the Fiscal Data Package it is possible to compare the contract-level financial information in OCDS with similarly classified information in an FDP. | 
 | R7 | Provide front end interfaces with the information needed to display budget information to users | Yes | When used in conjunction with a Fiscal Data Package, applications can lookup labels and meta-data for each `classification` and `measure` in order to display information clearly to users. |
+
+## Issues
+
+Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
