@@ -112,3 +112,9 @@ These user stories were used to identify a set of requirements that the extensio
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
+
+## Changelog
+
+### 2019-03-20
+
+* Set `"uniqueItems": true` on array fields, and add `"minLength": 1` on required string fields.
