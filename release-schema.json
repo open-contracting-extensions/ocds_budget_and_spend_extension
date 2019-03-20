@@ -51,7 +51,8 @@
           "type": [
             "string",
             "integer"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
