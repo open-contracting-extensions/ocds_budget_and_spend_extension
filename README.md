@@ -24,7 +24,7 @@ The best way to understand this extension is by looking at worked examples.
 
 * The **[integration example](examples/integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data. 
 
-* The **[flat data example](examples/flat.md)** illustrates how the structured data published using this extension can be analysed using spreadsheet tools.
+* The **[flat data example](examples/flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
 
 ## Key concepts
 
@@ -32,11 +32,11 @@ This extension provides the tools to create data that links **budgets**, **contr
 
 Drawing on definitions from the [Global Initiative for Fiscal Transparency (GIFT)](http://www.fiscaltransparency.net/):
 
-**A budget** is a forward-looking statements of how an organisation proposes to raise revenues, spend resources, and finance its operations. The National Government budget should cover all the activities of a state. Detailed budgets may also exist at the level of agencies and projects. In public contracting, the funding for a contracting process may come from a particular section of the National budget, or from an organisational budget. It may also come wholly or partially from an external funders budget (e.g. an International Development Bank), either directly, or passing through government systems. 
+**A budget** is a forward-looking statements of how an organization proposes to raise revenues, spend resources, and finance its operations. The National Government budget should cover all the activities of a state. Detailed budgets may also exist at the level of agencies and projects. In public contracting, the funding for a contracting process may come from a particular section of the National budget, or from an organizational budget. It may also come wholly or partially from an external funders budget (e.g. an International Development Bank), either directly, or passing through government systems. 
 
 Budget lines are constructed from a set of **classifications** (often described in terms of Functional, Administrative and Economic classifications), and **measures** (such as the original amount committed to a particular set of classifications, or the modified, or executed, amounts).
 
-**Fiscal reports** are records of [an organisations] actual (historical) revenues, **spending** and financing. They may report the fiscal activities of the central government, state governments, or local governments, or of all levels of government in a country (referred to as the general government). Reports may cover a whole government in aggregate as an entity, and/or individual government entities e.g. ministries, departments or agencies. They may be on a cash or accruals basis (full or partial). As payments are made during the execution of a contract, these may be allocated against one or more sections of the budget. In some cases, this may allow the creation of fiscal reporting at the level of individual contracts. 
+**Fiscal reports** are records of [an organization's] actual (historical) revenues, **spending** and financing. They may report the fiscal activities of the central government, state governments, or local governments, or of all levels of government in a country (referred to as the general government). Reports may cover a whole government in aggregate as an entity, and/or individual government entities e.g. ministries, departments or agencies. They may be on a cash or accruals basis (full or partial). As payments are made during the execution of a contract, these may be allocated against one or more sections of the budget. In some cases, this may allow the creation of fiscal reporting at the level of individual contracts. 
 
 The Open Contracting Data Standard is used to share information about **contracting processes**. A contracting process may go through a number of stages over time, including planning, tender, award, contract signature and implementation. 
 
@@ -58,7 +58,7 @@ Note that:
 
 The [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/), developed by Open Knowledge with the support of [GIFT](http://www.fiscaltransparency.net/), provides *"a lightweight and user-oriented format for publishing and consuming fiscal data"*. Unlike OCDS, which requires data to be converted to a set JSON structure before publication, a Fiscal Data Package consists of:
 
-* A data package definition (datapackage.json) which describes the 'logical model' to apply to existing data files. This defines columns, their relationship to fiscal concepts, and how they should be transformed by consuming applications in order to create normalised data.
+* A data package definition (datapackage.json) which describes the 'logical model' to apply to existing data files. This defines columns, their relationship to fiscal concepts, and how they should be transformed by consuming applications in order to create normalized data.
 * Data files, which provide the 'physical model' for budget or spending dataset, and may be the direct exports from existing systems. 
 
 Considerable research and user-testing has taken place to develop the Fiscal Data Package, establishing that, instead of seeking agreement on some global set of fiscal concepts, it is important, given the diversity of budget and spending systems around the world, to allow publishers to provide data using their existing fiscal concepts, and to then annotate these with additional data that can progressively support comparison and analysis across datasets. 
@@ -75,25 +75,25 @@ The budget and spend extension was designed around a set of user stories.
 
 * U1: As a journalist I want to see the budget source of a particular contracting process in order to understand whether funding has come from domestic resources, loans or other international revenue
 
-* U2: As a journalist I want to find all the contracts funded through a particular budget source in order to analyse the extent to which the budget is spent via contracting or other means
+* U2: As a journalist I want to find all the contracts funded through a particular budget source in order to analyze the extent to which the budget is spent via contracting or other means
 
-* U3: As a civil society organisation focussed on infrastructure I want to find all the contracting processes related to a given infrastructure programme or project so that I can carry out a review of compliance with infrastructure project transparency requirements. 
+* U3: As a civil society organization focused on infrastructure I want to find all the contracting processes related to a given infrastructure programme or project so that I can carry out a review of compliance with infrastructure project transparency requirements. 
 
 * U4: As a journalist I want to track (suspicious) contracts in order to identify potential connections between the recipients and the officials and politicians in control of the budgeting and award processes.
 Identifying and confirming budget allocations
 
 * U5: As a potential supplier I want to see when budget availability is confirmed for a given contracting process so that I can plan a pipeline of potential bidding opportunities.
 
-* U6: As a civil society monitoring organisation I want to identify projects without confirmed budget so that I can analyse the funding gap for planned procurement
+* U6: As a civil society monitoring organization I want to identify projects without confirmed budget so that I can analyze the funding gap for planned procurement
 
 * U7: As a treasury official I want to share information on the status of budget allocations and spending for any given contract so that I can demonstrate to the public that the budget is being spent in accordance with approved plans
 
 * U8: As a procurement monitor I want to see how much of the spend on an infrastructure project has come from the capital budget vs the revenue budget so that I can monitor over or underspend
 
-* U9: As a civil society organisation I want to identify how far particular budget lines have spend allocated against them, and the status of that spend over time so that I can report on areas of over or under spending.
+* U9: As a civil society organization I want to identify how far particular budget lines have spend allocated against them, and the status of that spend over time so that I can report on areas of over or under spending.
 Tracking the payment process
 
-* U10: As an academic I want to identify the gap between invoice date and payment date so that I can analyse how prices are affected by payment timelines
+* U10: As an academic I want to identify the gap between invoice date and payment date so that I can analyze how prices are affected by payment timelines
 
 * U11: As an auditor I want to see full details of the billing and payment process so that I can identify potential red flags and investigate particular processes 
 

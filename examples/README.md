@@ -6,7 +6,7 @@ This section contains brief usage examples for the budgets and spend extension. 
 
 * The **[integration example](integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data. 
 
-* The **[flat data example](flat.md)** illustrates how the structured data published using this extension can be analysed using spreadsheet tools.
+* The **[flat data example](flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
 
 ## Describing the budget line that funds a contracting process
 

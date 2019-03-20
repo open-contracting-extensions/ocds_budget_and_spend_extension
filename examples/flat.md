@@ -52,7 +52,7 @@ We use the **Index** formula to then retrieve the value of a particular column a
 
 > For example {=INDEX(contracts!D:D,MATCH(A3&B3&C3,contracts!A:A&contracts!B:B&contracts!C:C,0))} will fetch the value of 'Contracts' sheet, column D. 
 
-Note: Index(Match) is an *array formula**. To tell Excel this, you may need to press `Cntrl-Enter` (or `Cmd-Enter` on mac), rather than just `Enter` when entering the formula. Excel shows it has interpreted the array formula by containing it within { } brackets. 
+Note: Index(Match) is an *array formula**. To tell Excel this, you may need to press `Ctrl-Enter` (or `Cmd-Enter` on mac), rather than just `Enter` when entering the formula. Excel shows it has interpreted the array formula by containing it within { } brackets. 
 
 #### Implementation -> Contracts -> Awards -> Suppliers
 
@@ -84,7 +84,7 @@ Note: n cases where there is more than one supplier for an award, this approach 
 We can use the same Index(Match) approach to merge the data in OCDS, with the data from a Fiscal Data Package file. Assuming:
 
 * The budget/spending data file is published as a single table (or can be converted into one)
-* The buddget/spending data file includes only a single row for each combination of classifications;
+* The budget/spending data file includes only a single row for each combination of classifications;
 * The budget/spending data file is small enough to open in Excel
 
 Then by paste it in as an additional table, you can fetch any measure it contains by using Index(Match) across all the classifications.

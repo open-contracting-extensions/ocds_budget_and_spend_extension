@@ -131,11 +131,11 @@ A suitably sophisticated tool could go further, using the `columnType` data from
 
 ### Making links
 
-Where the systems used to publish OCDS data and Budget/Spending data for public consumption provide RESTFul URI structures then it may be possible to construct links that help users navigate between budget, contracting and spend systems.
+Where the systems used to publish OCDS data and Budget/Spending data for public consumption provide RESTful URI structures then it may be possible to construct links that help users navigate between budget, contracting and spend systems.
 
 For example: 
 
-* a budget system may support querystring parameters for each classification in order to filter the information it displays, such that a URI could be constructed that links from contracting data to the budget information.
+* a budget system may support query string parameters for each classification in order to filter the information it displays, such that a URI could be constructed that links from contracting data to the budget information.
 
 > E.g. http://budget.example.gov/details?Year=2017&Economic=Goods&Func=EQ01&Team=ED01-FAC&Dept=ED01
 
@@ -149,7 +149,7 @@ In this example, the Fiscal Data Package contains budget data at the level of br
 
 To understand how much of the total budget line the contracts in our example make up, we can use the `classifications` information to cross-reference the budget data. 
 
-> Note: depending on how a Fiscal Data Package is implemented, this cross-reference may be possible against the underlying data file (budget-and-spend.csv), or may only be possible against some API (such as the Open Spending API) where any normalisation described by the datapackage.json file has already been carried out. When querying normalised data, it may be necessary to check how measure fields have been normalised in order to construct an appropriate API call. 
+> Note: depending on how a Fiscal Data Package is implemented, this cross-reference may be possible against the underlying data file (budget-and-spend.csv), or may only be possible against some API (such as the Open Spending API) where any normalization described by the datapackage.json file has already been carried out. When querying normalized data, it may be necessary to check how measure fields have been normalized in order to construct an appropriate API call. 
 >
 > This extension does not define the exact behaviour of any API or FDP dataset, and each implementation may need to accommodate cases where a query returns multiple budget lines.
 

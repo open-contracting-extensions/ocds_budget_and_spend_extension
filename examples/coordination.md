@@ -170,7 +170,7 @@ At this point, there is both a contracting process identifier `"ocid": "ocds-4f6
 
 The contract has been awarded for up to USD 10000 for three years, but at present only budget for the first year is secured. 
 
-Where the finance system does not deal at the contract level (recognising that a single contracting process could have many contracts), then integration at the contract level may not be possible, and instead of the approach taken in the following releases, updates would be made to the `planning/budget/budgetBreakdown` section to reflect new budget allocations to a contracting process, rather than to a specific contact. 
+Where the finance system does not deal at the contract level (recognizing that a single contracting process could have many contracts), then integration at the contract level may not be possible, and instead of the approach taken in the following releases, updates would be made to the `planning/budget/budgetBreakdown` section to reflect new budget allocations to a contracting process, rather than to a specific contact. 
 
 (5) The **Finance Department** confirm that USD 5000 is committed to paying for this contract.
 
