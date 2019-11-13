@@ -333,7 +333,7 @@ When a compiledRelease is created, it will combine array entries to provide the 
       "implementation": {
         "documents": [
           {
-            "id": "7.0",
+            "id": "7",
             "documentType": "finalAudit",
             "title": "Final Audit",
             "description": "Final audit report from the delivery of the chairs.",
@@ -437,7 +437,7 @@ Below is the compiledRelease that would be available **at the end of the process
       },
       "id": "GB-COH-11111111",
       "identifier": {
-        "id": "11111111.0",
+        "id": "11111111",
         "legalName": "AnyCorp Ltd",
         "scheme": "GB-COH"
       },
@@ -604,7 +604,7 @@ Below is the compiledRelease that would be available **at the end of the process
             "description": "Final audit report from the delivery of the chairs.",
             "documentType": "finalAudit",
             "format": "text/html",
-            "id": "7.0",
+            "id": "7",
             "language": "en",
             "title": "Final Audit",
             "url": "http://example.com/reports/ocds-4f64a2-exbas-01.html"

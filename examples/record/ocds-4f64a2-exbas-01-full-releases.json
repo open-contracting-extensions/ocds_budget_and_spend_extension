@@ -664,7 +664,7 @@
               "implementation": {
                 "documents": [
                   {
-                    "id": "7.0",
+                    "id": "7",
                     "documentType": "finalAudit",
                     "title": "Final Audit",
                     "description": "Final audit report from the delivery of the chairs.",
@@ -948,7 +948,7 @@
               },
               "documents": [
                 {
-                  "id": "7.0",
+                  "id": "7",
                   "documentType": "finalAudit",
                   "title": "Final Audit",
                   "description": "Final audit report from the delivery of the chairs.",
