@@ -4,7 +4,7 @@ The Budgets and Spend extension extends [budget breakdown](https://github.com/op
 
 A [discussion paper providing background approach taken is available here](https://docs.google.com/document/d/1b43JeG5YQ62tGTTbP7jTE4XqUxYzG-r-emgRILZPRn4/edit).
 
-This repository is under active development, and currently contains a [worked example](examples/) of how this extension can be used to record yearly financial commitments to a contracting process and individual contracts.
+This repository is under active development, and currently contains a [worked example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/tree/master/examples#readme) of how this extension can be used to record yearly financial commitments to a contracting process and individual contracts.
 
 ## In summary
 
