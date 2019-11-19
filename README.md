@@ -20,11 +20,11 @@ In addition, it introduces the `financialProgress` object into `contracts.implem
 
 The best way to understand this extension is by looking at worked examples.
 
-* The **[coordination example](examples/coordination.md)** illustrates how to express data on budget allocation and execution that may be drawn from different data systems (e.g. finance systems and procurement systems).
+* The **[coordination example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/coordination.md)** illustrates how to express data on budget allocation and execution that may be drawn from different data systems (e.g. finance systems and procurement systems).
 
-* The **[integration example](examples/integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data.
+* The **[integration example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data.
 
-* The **[flat data example](examples/flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
+* The **[flat data example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
 
 ## Key concepts
 
@@ -80,7 +80,8 @@ The budget and spend extension was designed around a set of user stories.
 * U3: As a civil society organization focused on infrastructure I want to find all the contracting processes related to a given infrastructure programme or project so that I can carry out a review of compliance with infrastructure project transparency requirements.
 
 * U4: As a journalist I want to track (suspicious) contracts in order to identify potential connections between the recipients and the officials and politicians in control of the budgeting and award processes.
-Identifying and confirming budget allocations
+
+Identifying and confirming budget allocations:
 
 * U5: As a potential supplier I want to see when budget availability is confirmed for a given contracting process so that I can plan a pipeline of potential bidding opportunities.
 
@@ -91,7 +92,8 @@ Identifying and confirming budget allocations
 * U8: As a procurement monitor I want to see how much of the spend on an infrastructure project has come from the capital budget vs the revenue budget so that I can monitor over or underspend
 
 * U9: As a civil society organization I want to identify how far particular budget lines have spend allocated against them, and the status of that spend over time so that I can report on areas of over or under spending.
-Tracking the payment process
+
+Tracking the payment process:
 
 * U10: As an academic I want to identify the gap between invoice date and payment date so that I can analyze how prices are affected by payment timelines
 
