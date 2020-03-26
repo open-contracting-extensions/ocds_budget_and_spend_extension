@@ -12,7 +12,7 @@ This extension introduces three new features that build on the [budget breakdown
 
 * `classifications` - allowing functional, economic and administrative classifications to be provided for each budget breakdown item;
 * `measures` - allowing different budget measures (planned, committed, executed etc.) to be expressed at the contracting process level for each set of budget classifications;
-* `fiscalBreakdownFieldMapping` - providing an approach to link to a [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/) `datapackage.json` file that defines the meaning of each classification and measure, and that provides access to related budget-level data.
+* `fiscalBreakdownFieldMapping` - providing an approach to link to a [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/) datapackage.json file that defines the meaning of each classification and measure, and that provides access to related budget-level data.
 
 In addition, it introduces the `financialProgress` object into `contracts.implementation`, allowing a detailed breakdown of the financial execution of each contract to be expressed, using the same `classifications`, `measures` and `fiscalBreakdownFieldMapping` features as for `budgetBreakdown`.
 
