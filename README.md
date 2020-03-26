@@ -54,6 +54,16 @@ Note that:
 
 * Budget execution data may exist at the transactional level, or may exist at a more aggregated level. This extension currently covers budget execution, but does not cover detailed classification of transactions.
 
+The following diagram shows a mapping between the stages of a transaction to the stages of a contracting process. The stages of a transaction are generally common across different jurisdictions and reflect those in the OFDP, however some jurisdictions may not record all the stages, some may use different terminology and some may have more stages:
+
+![Transaction and contracting process mapping](images/transaction-contracting_process.png)
+
+The joined up data covered by the budget and spend extension would typically be published from procurement systems and Financial Management Information System (FMIS) systems. Examples of how such systems can be integrated include:
+
+    * Before beginning a tender, the procurement system checks with the FMIS to validate that funds are available for the contracting process, creating a reservation in the FMIS.
+    * When a contract is signed, the procurement system creates a commitment in the FMIS for the value of the contract. confirms that funds are available for a contracting process by During the Planning Phase of the OCDS, the connection is the trickiest, since you will have a budget line but that can break in many different contracts.
+    * When the milestones or deliverables in the contract are completed, the procurement systems creates a verification or accrual (in Spanish 'Devengado') in the FMIS.
+
 ## Joined up data standards: connections with the fiscal data package
 
 The [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/), developed by Open Knowledge with the support of [GIFT](http://www.fiscaltransparency.net/), provides *"a lightweight and user-oriented format for publishing and consuming fiscal data"*. Unlike OCDS, which requires data to be converted to a set JSON structure before publication, a Fiscal Data Package consists of:
