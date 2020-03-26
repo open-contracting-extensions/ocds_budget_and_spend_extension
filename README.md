@@ -12,7 +12,7 @@ This extension introduces three new features that build on the [budget breakdown
 
 * `classifications` - allowing functional, economic and administrative classifications to be provided for each budget breakdown item;
 * `measures` - allowing different budget measures (planned, committed, executed etc.) to be expressed at the contracting process level for each set of budget classifications;
-* `fiscalBreakdownFieldMapping` - providing an approach to link to a Fiscal Data Package datapackage.json file that defines the meaning of each classification and measure, and that provides access to related budget-level data.
+* `fiscalBreakdownFieldMapping` - providing an approach to link to a [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/) datapackage.json file that defines the meaning of each classification and measure, and that provides access to related budget-level data.
 
 In addition, it introduces the `financialProgress` object into `contracts.implementation`, allowing a detailed breakdown of the financial execution of each contract to be expressed, using the same `classifications`, `measures` and `fiscalBreakdownFieldMapping` features as for `budgetBreakdown`.
 
@@ -54,6 +54,18 @@ Note that:
 
 * Budget execution data may exist at the transactional level, or may exist at a more aggregated level. This extension currently covers budget execution, but does not cover detailed classification of transactions.
 
+The image below shows a mapping between the stages of a transaction and the stages of a contracting process. The stages of a transaction are generally common across different jurisdictions and reflect those described by the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/); however, some jurisdictions might not record all stages, some might use different terminology, and some might have more stages.
+
+![Transaction and contracting process mapping](images/transaction-contracting_process.png)
+
+The joined-up data covered by this extension is typically sourced from procurement systems and Financial Management Information Systems (FMIS). Examples of how such systems can be integrated include:
+
+* Before beginning a tender, the procurement system checks that funds are available for the contracting process through the FMIS, and creates a reservation in the FMIS.
+
+* When a contract is signed, the procurement system creates a commitment in the FMIS for the value of the contract.
+
+* When a milestone or deliverable of a contract is completed, the procurement system creates a verification or accrual ("devengado" in Spanish) in the FMIS.
+
 ## Joined up data standards: connections with the fiscal data package
 
 The [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/), developed by Open Knowledge with the support of [GIFT](http://www.fiscaltransparency.net/), provides *"a lightweight and user-oriented format for publishing and consuming fiscal data"*. Unlike OCDS, which requires data to be converted to a set JSON structure before publication, a Fiscal Data Package consists of:
@@ -71,7 +83,7 @@ A full exploration of the approach taken in this extension can be found in the [
 
 ### User stories & requirements
 
-The budget and spend extension was designed around a set of user stories.
+This extension was designed around a set of user stories.
 
 * U1: As a journalist I want to see the budget source of a particular contracting process in order to understand whether funding has come from domestic resources, loans or other international revenue
 
