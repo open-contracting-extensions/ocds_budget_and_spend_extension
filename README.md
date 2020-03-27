@@ -42,7 +42,7 @@ The Open Contracting Data Standard is used to share information about **contract
 
 ## Relating budget, contracting and spend
 
-![Budget, Contract and Spending relationships](images/budget-contract-spend.png)
+![Budget, Contract and Spending relationships](https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/images/budget-contract-spend.png)
 
 The image above presents a schematic representation of how budget, contracting and spend datasets may interact.
 
@@ -56,7 +56,7 @@ Note that:
 
 The image below shows a mapping between the stages of a transaction and the stages of a contracting process. The stages of a transaction are generally common across different jurisdictions and reflect those described by the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/); however, some jurisdictions might not record all stages, some might use different terminology, and some might have more stages.
 
-![Transaction and contracting process mapping](images/transaction-contracting_process.png)
+![Transaction and contracting process mapping](https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/images/transaction-contracting_process.png)
 
 The joined-up data covered by this extension is typically sourced from procurement systems and Financial Management Information Systems (FMIS). Examples of how such systems can be integrated include:
 
