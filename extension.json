@@ -6,7 +6,7 @@
     "en": "Extends budget breakdown and contract implementation to allow publication of detailed budget allocations and execution for a contracting process, using classifications that can be mapped to separately published budget and spend data."
   },
   "documentationUrl": {
-    "en": "https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension"
+    "en": "https://extensions.open-contracting.org/en/extensions/budget_and_spend/"
   },
   "compatibility": [
     "1.1"
