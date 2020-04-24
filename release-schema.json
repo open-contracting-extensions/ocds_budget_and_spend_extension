@@ -23,7 +23,8 @@
                     "null"
                   ]
                 }
-              }
+              },
+              "minProperties": 1
             },
             "breakdown": {
               "title": "Financial progress breakdown",
@@ -32,9 +33,11 @@
               "items": {
                 "$ref": "#/definitions/FinancialProgressBreakdown"
               },
-              "uniqueItems": true
+              "uniqueItems": true,
+              "minItems": 1
             }
-          }
+          },
+          "minProperties": 1
         }
       }
     },
@@ -61,7 +64,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "period": {
           "$ref": "#/definitions/Period",
@@ -78,9 +82,11 @@
                 "string",
                 "number",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "measures": {
           "title": "measures",
@@ -93,12 +99,14 @@
                 "null"
               ]
             }
-          }
+          },
+          "minProperties": 1
         },
         "fiscalBreakdownFieldMapping": {
           "$ref": "#/definitions/FiscalBreakdownFieldMapping"
         }
-      }
+      },
+      "minProperties": 1
     },
     "BudgetBreakdown": {
       "properties": {
@@ -112,9 +120,11 @@
                 "string",
                 "number",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "measures": {
           "title": "measures",
@@ -127,7 +137,8 @@
                 "null"
               ]
             }
-          }
+          },
+          "minProperties": 1
         },
         "fiscalBreakdownFieldMapping": {
           "$ref": "#/definitions/FiscalBreakdownFieldMapping"
