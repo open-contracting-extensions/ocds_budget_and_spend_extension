@@ -111,17 +111,22 @@ Tracking the payment process:
 
 * U11: As an auditor I want to see full details of the billing and payment process so that I can identify potential red flags and investigate particular processes
 
-These user stories were used to identify a set of requirements that the extension should meet. The table below outlines the extent to which the current extension meets the requirements that were identified.
+These user stories were used to identify a set of requirements that the extension should meet. The list below outlines the extent to which the current extension meets the requirements that were identified.
 
-| ID | Requirement | Requirement met? | How does the extension meet this requirement? |
-|----|-------------|------------------|-----------------------------------------------|
-| R1 | Uniquely identify each relevant budget line | Yes | BudgetBreakdown is extended with a flexible `classifications` object that can include any number of classification properties, mirroring the terms and column names used within budget datasets. |
-| R2 | Uniquely identify the projects providing funding to a contracting process | Partially | No changes are currently introduced to meet this use case. The core budget object already includes a `projectID` field. |
-| R3 | Provide amounts for different budget phases including confirmed budget allocations | Yes | BudgetBreakdown is extended with a flexible `measures` object that can include any number of measure properties, mirroring the terms and column names used within existing budget and spending datasets. |
-| R4 | Classify transactions against budget lines | No | Disaggregated financial progress information can be classified against budget lines in the contract implementation `financialProgress.breakdown` section, but the extension does not currently modify the `transactions` block to allow classification at the individual transaction level. |
-| R5 | Provide information on the transaction process, from invoice to payment | Partial | The `measures` in `financialProgress.breakdown` for each contract can be used to describe different moments of payment processing. However, this only provides a full history of the timing of payment processes when used with a detailed version history of releases. An alternative approach of adding details of `transactions` to represent different moments such as requests for payment and payment approvals has not been included in this extension, but may be developed separately in future. |
-| R6 | Allow individual amount allocations of budget to contract within OCDS to be checked against overall budget line allocations in a budget dataset | Yes | Through use of a link to the Fiscal Data Package it is possible to compare the contract-level financial information in OCDS with similarly classified information in an FDP. |
-| R7 | Provide front end interfaces with the information needed to display budget information to users | Yes | When used in conjunction with a Fiscal Data Package, applications can lookup labels and meta-data for each `classifications` and `measures` in order to display information clearly to users. |
+* R1: Uniquely identify each relevant budget line
+  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `classifications` object that can include any number of classification properties, mirroring the terms and column names used within budget datasets.
+* R2: Uniquely identify the projects providing funding to a contracting process
+  * **Requirement met?**: Partially. No changes are currently introduced to meet this use case. The core budget object already includes a `projectID` field.
+* R3: Provide amounts for different budget phases including confirmed budget allocations
+  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `measures` object that can include any number of measure properties, mirroring the terms and column names used within existing budget and spending datasets.
+* R4: Classify transactions against budget lines
+  * **Requirement met?**: No. Disaggregated financial progress information can be classified against budget lines in the contract implementation `financialProgress.breakdown` section, but the extension does not currently modify the `transactions` block to allow classification at the individual transaction level.
+* R5: Provide information on the transaction process, from invoice to payment
+  * **Requirement met?**: Partial. The `measures` in `financialProgress.breakdown` for each contract can be used to describe different moments of payment processing. However, this only provides a full history of the timing of payment processes when used with a detailed version history of releases. An alternative approach of adding details of `transactions` to represent different moments such as requests for payment and payment approvals has not been included in this extension, but may be developed separately in future.
+* R6: Allow individual amount allocations of budget to contract within OCDS to be checked against overall budget line allocations in a budget dataset
+  * **Requirement met?**: Yes. Through use of a link to the Fiscal Data Package it is possible to compare the contract-level financial information in OCDS with similarly classified information in an FDP.
+* R7: Provide front end interfaces with the information needed to display budget information to users
+  * **Requirement met?**: Yes. When used in conjunction with a Fiscal Data Package, applications can lookup labels and meta-data for each `classifications` and `measures` in order to display information clearly to users.
 
 ## Issues
 
