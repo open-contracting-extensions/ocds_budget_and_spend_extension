@@ -34,7 +34,7 @@ Each table will contains:
 
 ![Flat table. Identifier columns are in blue and green, and data in orange](images/flat-table.png)
 
-The combination of all the initial `id` columns in a sheet should always be unique, and can be used as a composite 'foreign key' to join tables together. In a spreadsheet it is possible to use 'Index Match' formulas to fetch data across tables. 
+The combination of all the initial `id` columns in a sheet must be unique, and can be used as a composite 'foreign key' to join tables together. In a spreadsheet it is possible to use 'Index Match' formulas to fetch data across tables. 
 
 > Tip: As column headings us the long OCDS field paths (e.g. contracts/0/implementation/financialProgress/breakdown/0/classifications/Dept) it may help to change the alignment of the header row to 'right aligned' so that you see the last, rather than the first, part of each heading. 
 
@@ -52,7 +52,7 @@ We use the **Index** formula to then retrieve the value of a particular column a
 
 > For example {=INDEX(contracts!D:D,MATCH(A3&B3&C3,contracts!A:A&contracts!B:B&contracts!C:C,0))} will fetch the value of 'Contracts' sheet, column D. 
 
-Note: Index(Match) is an *array formula**. To tell Excel this, you may need to press `Ctrl-Enter` (or `Cmd-Enter` on mac), rather than just `Enter` when entering the formula. Excel shows it has interpreted the array formula by containing it within { } brackets. 
+Note: Index(Match) is an *array formula*. To tell Excel this, you may need to press `Ctrl-Enter` (or `Cmd-Enter` on mac), rather than just `Enter` when entering the formula. Excel shows it has interpreted the array formula by containing it within { } brackets. 
 
 #### Implementation -> Contracts -> Awards -> Suppliers
 
@@ -77,7 +77,7 @@ which locates the supplier name from award > suppliers.
 
 With the resulting table, it is possible to filter financial progress information by supplier, or to create a pivot chart based on this. 
 
-Note: n cases where there is more than one supplier for an award, this approach will only fetch the first supplier. It is important to be aware that it may not always be possible to 'flatten' all the data you need in all circumstances without repeated rows. 
+Note: n cases where there is more than one supplier for an award, this approach will only fetch the first supplier. It is important to be aware that it might not be possible to 'flatten' all the data you need in all circumstances without repeated rows. 
 
 #### Joining to Financial Data
 

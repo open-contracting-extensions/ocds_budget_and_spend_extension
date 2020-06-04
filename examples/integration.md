@@ -72,7 +72,7 @@ The columns in this budget file are described by a Fiscal Data Package [datapack
 }
 ```
 
-This contains a `name` field which matches a column from [budget-and-spend.csv](integration/fdp/budget-and-spend.csv), as well as a `title`, and `columnType` for each column. The Fiscal Data Package defines a number of other possible properties, including properties that indicate when one column is `labelOf` another, or when columns should be considered ordered, using a `prior` property. 
+This contains a `name` field which matches a column from [budget-and-spend.csv](integration/fdp/budget-and-spend.csv), as well as a `title`, and `columnType` for each column. The Fiscal Data Package defines a number of other possible properties, including properties that indicate when one column is `labelOf` another, or when columns are ordered, using a `prior` property. 
 
 > Note: In practice, this data might be split across data files by year, and in separate files for budget and spend. Or it may be provided through an API. The coordination example shows how each `budgetBreakdown` or `implementation/financialProgress/breakdown` can make use of a different `fiscalBreakdownFieldMapping` file if required. 
 
@@ -149,7 +149,7 @@ In this example, the Fiscal Data Package contains budget data at the level of br
 
 To understand how much of the total budget line the contracts in our example make up, we can use the `classifications` information to cross-reference the budget data. 
 
-> Note: depending on how a Fiscal Data Package is implemented, this cross-reference may be possible against the underlying data file (budget-and-spend.csv), or may only be possible against some API (such as the Open Spending API) where any normalization described by the datapackage.json file has already been carried out. When querying normalized data, it may be necessary to check how measure fields have been normalized in order to construct an appropriate API call. 
+> Note: Depending on how a Fiscal Data Package is implemented, this cross-reference might be possible against the underlying data file (budget-and-spend.csv), or might be possible against some API (such as the Open Spending API) where any normalization described by the datapackage.json file has already been carried out. When querying normalized data, it may be necessary to check how measure fields have been normalized in order to construct an appropriate API call. 
 >
 > This extension does not define the exact behaviour of any API or FDP dataset, and each implementation may need to accommodate cases where a query returns multiple budget lines.
 

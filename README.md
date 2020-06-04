@@ -134,6 +134,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2020-06-04
+
+* Review normative and non-normative words
+
 ### 2020-04-24
 
 * Add `minProperties`, `minItems` and/or `minLength` properties.
