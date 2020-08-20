@@ -49,7 +49,7 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 (1) The **Department of Education** describes the original plan to procure chairs, as well as including the planned budget.
 
-*Extract from [1-contract-planning.json](1-contract-planning.json)*
+*Extract from [1-contract-planning.json](1-contract-planning.json).*
 
 ```json
 {
@@ -80,7 +80,7 @@ In this worked example there are 10 releases, and then a compiledRelease that pr
 
 (2) The **Finance Department** provide a release using the budgetBreakdown extension with the committed amount (5000) and a set of budget classifications that can be used to lookup the corresponding line of a Fiscal Data Package
 
-*Extract from [2-finance-budget.json](2-finance-budget.json)*
+*Extract from [2-finance-budget.json](2-finance-budget.json).*
 
 ```json
 {
@@ -121,11 +121,11 @@ Note that if a compiledRelease was generated at this point from these two data r
 
 (3) The **Department of Education** then open their tender process, publishing a tender release.
 
-*See [3-contract-tender.json](3-contract-tender.json)*
+*See [3-contract-tender.json](3-contract-tender.json).*
 
 (4) When they award the contract, the Department of Education publish a release containing information on the award, and the contract. 
 
-*Extract from [4-contract-award.json](4-contract-award.json)*
+*Extract from [4-contract-award.json](4-contract-award.json).*
 
 ```json
 {
@@ -174,7 +174,7 @@ Where the finance system does not deal at the contract level (recognizing that a
 
 (5) The **Finance Department** confirm that USD 5000 is committed to paying for this contract.
 
-*Extract from [5-finance-commitment.json](5-finance-commitment.json)*
+*Extract from [5-finance-commitment.json](5-finance-commitment.json).*
 
 ```json 
 {
@@ -212,7 +212,7 @@ Where the finance system does not deal at the contract level (recognizing that a
 
 (6) As invoices are processed, the Finance Department publish a new release showing the amount paid to date in the last financial period
 
-*Extract from [6-finance-update.json](6-finance-update.json)*
+*Extract from [6-finance-update.json](6-finance-update.json).*
 
 ```json
 {
@@ -253,7 +253,7 @@ Where the finance system does not deal at the contract level (recognizing that a
 
 (7) As commitments are made for the next financial year, the **Finance Department** may publish a new release providing an additional entry in the `financialProgress` array. 
 
-*See [7-finance-commitment-2.json](7-finance-commitment-2.json)*
+*See [7-finance-commitment-2.json](7-finance-commitment-2.json).*
 
 In line with the OCDS model for merging data, this release could contain all budget allocations and measures to date (i.e. the allocation from 2018, and that for 2019), **or** it can contain only the new years data, as long as the `id` value for the entry in the `breakdown` array is also new.
 
@@ -261,7 +261,7 @@ When a compiledRelease is created, it will combine array entries to provide the 
 
 (8) The **Finance Department** review spending for 2019 and discover an underspend. They process a budget modification, reducing the allocation for 2019, and allocating a remainder into 2020.
 
-*Extract from [8-finance-commitment-3.json](8-finance-commitment-3.json)*
+*Extract from [8-finance-commitment-3.json](8-finance-commitment-3.json).*
 
 ```json
  {
@@ -311,7 +311,7 @@ When a compiledRelease is created, it will combine array entries to provide the 
 
 (9) The final chairs are delivered, and the **Department of Education** publishes an audit report, and updates the contract status to terminated to indicate all work is complete. 
 
-*Extract from [9-contract-close.json](9-contract-close.json)*
+*Extract from [9-contract-close.json](9-contract-close.json).*
 
 ```json
 {
@@ -351,7 +351,7 @@ When a compiledRelease is created, it will combine array entries to provide the 
 
 (10) The final payments are processed through the finance system, and year end completed. The **Finance Department** publishes a release that shows the final payment made.
 
-*Extract from [10-finance-update-final.json](10-finance-update-final.json)*
+*Extract from [10-finance-update-final.json](10-finance-update-final.json).*
 
 ```json
 {
@@ -633,4 +633,3 @@ This worked example does not currently include the Fiscal Data Package component
 * The Fiscal Data Package description file can be used to provide meta-data about budget measures and dimensions;
 * Financial progress at the `contracts/implementation` level can also be broken down according to budget classifications;
 * The contracting process and contract level budget commitments and execution can be compared to higher-level budget allocation information available in the Fiscal Data Package.
-

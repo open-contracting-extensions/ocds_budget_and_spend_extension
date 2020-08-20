@@ -155,7 +155,6 @@ For example, in the extract below, we see an allocation of aid, combined with an
 }
 ```
 
-
 ## Describing the budget to which payments have been charged
 
 The same `breakdown` structure exists for each contract in a new `financialProgress` block. 

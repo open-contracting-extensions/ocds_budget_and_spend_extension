@@ -1,8 +1,10 @@
-# Sequence diagram
+# Diagrams
 
-This example uses a sequence diagram generated from the source below at https://sequencediagram.org/
+## Sequence diagram
 
-```
+This example uses a sequence diagram generated from the source below at <https://sequencediagram.org/>
+
+```none
 title Budget and contracting system integration
 
 Contracting System->OCDS:Planning release announces\n education department intent\n to procure chairs (1)
@@ -48,10 +50,12 @@ Contracting System->OCDS: Contract ends and \nfinal audit report is published (9
 Finance System->OCDS: Contract implementation \ndetails updated with final spend (10)
 ```
 
-# GraphViz
+## GraphViz
 
 Other graphics are created using GraphViz:
 
-`dot -Tpng images/figure2.dot -o images/figure2.png`
+```shell
+dot -Tpng images/figure2.dot -o images/figure2.png
 
-`dot -Tpng images/figure3.dot -o images/figure3.png`
+dot -Tpng images/figure3.dot -o images/figure3.png
+```

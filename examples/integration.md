@@ -36,7 +36,7 @@ In this example, the information is maintained in a single government wide budge
 
 The columns in this budget file are described by a Fiscal Data Package [datapackage.json](integration/fdp/datapackage.json) file which contains a schema for [budget-and-spend.csv](integration/fdp/budget-and-spend.csv) as shown in the extract below:
 
-*Extract from [datapackage.json](integration/fdp/datapackage.json)*
+*Extract from [datapackage.json](integration/fdp/datapackage.json).*
 
 ```json
 {
@@ -137,7 +137,7 @@ For example:
 
 * a budget system may support query string parameters for each classification in order to filter the information it displays, such that a URI could be constructed that links from contracting data to the budget information.
 
-> E.g. http://budget.example.gov/details?Year=2017&Economic=Goods&Func=EQ01&Team=ED01-FAC&Dept=ED01
+> e.g. <http://budget.example.gov/details?Year=2017&Economic=Goods&Func=EQ01&Team=ED01-FAC&Dept=ED01>
 
 * a contracting system may provide an API that will return all budget or financialProgress related to a particular combination of budget classifications, such that the budget system can list contracts related to a given budget line. 
 

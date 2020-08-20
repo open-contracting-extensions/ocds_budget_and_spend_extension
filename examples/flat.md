@@ -14,7 +14,7 @@ The python package [flatten-tool](https://flatten-tool.readthedocs.io/en/latest/
 
 We can use the [OCDS Data Review Tool](http://standard.open-contracting.org/validator/) to convert our example data into a spreadsheet. It is possible to carry out the same task at the command line using flatten-tool, and to get a collection of CSV files as the output, instead of/in addition to an Excel file.
 
-```
+```shell
 flatten-tool flatten --root-list-path=releases -m releases -r ocid FILE.json
 ```
 
@@ -58,8 +58,8 @@ Note: Index(Match) is an *array formula*. To tell Excel this, you may need to pr
 
 We want to be able to see who the supplier is for each financialProgress breakdown entry. To do this, we need to:
 
-- Lookup the contract related to each breakdown, and find the relevant awardID
-- Find the supplier for that awardID
+* Lookup the contract related to each breakdown, and find the relevant awardID
+* Find the supplier for that awardID
 
 The image below shows the two columns added to achieve this. 
 
