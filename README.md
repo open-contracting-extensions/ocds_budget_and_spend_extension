@@ -21,9 +21,7 @@ In addition, it introduces the `financialProgress` object into `contracts.implem
 The best way to understand this extension is by looking at worked examples.
 
 * The **[coordination example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/coordination.md)** illustrates how to express data on budget allocation and execution that may be drawn from different data systems (e.g. finance systems and procurement systems).
-
 * The **[integration example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data.
-
 * The **[flat data example](https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/blob/master/examples/flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
 
 ## Key concepts
@@ -49,9 +47,7 @@ The image above presents a schematic representation of how budget, contracting a
 Note that:
 
 * This does not represent a linear sequence of events. Data may become available at different points in time, such as when budgeting takes place on an annual cycle, but contracts are signed to cover multiple years. In such cases, the budget information in the `planning` section of an OCDS contracting process may be updated after contracts are awarded and being implemented.
-
 * Budget and spend data may be provided at varying levels of granularity, from a single budget line that funds multiple contracting processes, to the fiscal classification of individual items of spend against a particular contract. Data publishers will vary as to the level of detail that can be extracted reliably from their systems.
-
 * Budget execution data may exist at the transactional level, or may exist at a more aggregated level. This extension currently covers budget execution, but does not cover detailed classification of transactions.
 
 The image below shows a mapping between the stages of a transaction and the stages of a contracting process. The stages of a transaction are generally common across different jurisdictions and reflect those described by the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/); however, some jurisdictions might not record all stages, some might use different terminology, and some might have more stages.
@@ -61,9 +57,7 @@ The image below shows a mapping between the stages of a transaction and the stag
 The joined-up data covered by this extension is typically sourced from procurement systems and Financial Management Information Systems (FMIS). Examples of how such systems can be integrated include:
 
 * Before beginning a tender, the procurement system checks that funds are available for the contracting process through the FMIS, and creates a reservation in the FMIS.
-
 * When a contract is signed, the procurement system creates a commitment in the FMIS for the value of the contract.
-
 * When a milestone or deliverable of a contract is completed, the procurement system creates a verification or accrual ("devengado" in Spanish) in the FMIS.
 
 ## Joined up data standards: connections with the fiscal data package
@@ -86,29 +80,21 @@ A full exploration of the approach taken in this extension can be found in the [
 This extension was designed around a set of user stories.
 
 * U1: As a journalist I want to see the budget source of a particular contracting process in order to understand whether funding has come from domestic resources, loans or other international revenue
-
 * U2: As a journalist I want to find all the contracts funded through a particular budget source in order to analyze the extent to which the budget is spent via contracting or other means
-
 * U3: As a civil society organization focused on infrastructure I want to find all the contracting processes related to a given infrastructure programme or project so that I can carry out a review of compliance with infrastructure project transparency requirements.
-
 * U4: As a journalist I want to track (suspicious) contracts in order to identify potential connections between the recipients and the officials and politicians in control of the budgeting and award processes.
 
 Identifying and confirming budget allocations:
 
 * U5: As a potential supplier I want to see when budget availability is confirmed for a given contracting process so that I can plan a pipeline of potential bidding opportunities.
-
 * U6: As a civil society monitoring organization I want to identify projects without confirmed budget so that I can analyze the funding gap for planned procurement
-
 * U7: As a treasury official I want to share information on the status of budget allocations and spending for any given contract so that I can demonstrate to the public that the budget is being spent in accordance with approved plans
-
 * U8: As a procurement monitor I want to see how much of the spend on an infrastructure project has come from the capital budget vs the revenue budget so that I can monitor over or underspend
-
 * U9: As a civil society organization I want to identify how far particular budget lines have spend allocated against them, and the status of that spend over time so that I can report on areas of over or under spending.
 
 Tracking the payment process:
 
 * U10: As an academic I want to identify the gap between invoice date and payment date so that I can analyze how prices are affected by payment timelines
-
 * U11: As an auditor I want to see full details of the billing and payment process so that I can identify potential red flags and investigate particular processes
 
 These user stories were used to identify a set of requirements that the extension should meet. The list below outlines the extent to which the current extension meets the requirements that were identified.
