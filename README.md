@@ -114,11 +114,11 @@ Tracking the payment process:
 These user stories were used to identify a set of requirements that the extension should meet. The list below outlines the extent to which the current extension meets the requirements that were identified.
 
 * R1: Uniquely identify each relevant budget line
-  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `classifications` object that can include any number of classification properties, mirroring the terms and column names used within budget datasets.
+  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `classifications` object that can include any number of classification fields, mirroring the terms and column names used within budget datasets.
 * R2: Uniquely identify the projects providing funding to a contracting process
   * **Requirement met?**: Partially. No changes are currently introduced to meet this use case. The core budget object already includes a `projectID` field.
 * R3: Provide amounts for different budget phases including confirmed budget allocations
-  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `measures` object that can include any number of measure properties, mirroring the terms and column names used within existing budget and spending datasets.
+  * **Requirement met?**: Yes. BudgetBreakdown is extended with a flexible `measures` object that can include any number of measure fields, mirroring the terms and column names used within existing budget and spending datasets.
 * R4: Classify transactions against budget lines
   * **Requirement met?**: No. Disaggregated financial progress information can be classified against budget lines in the contract implementation `financialProgress.breakdown` section, but the extension does not currently modify the `transactions` block to allow classification at the individual transaction level.
 * R5: Provide information on the transaction process, from invoice to payment
