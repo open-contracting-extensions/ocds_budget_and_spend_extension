@@ -11,7 +11,7 @@ Contracting System->OCDS:Planning release announces\n education department inten
 
 FDP<-Finance System: Budget is allocated\n for purchase of chairs 
 
-note over Contracting System,FDP:At this point the finance and Contracting Systems need to co-ordinate on the contracting process id (ocid)
+note over Contracting System,FDP:At this point the finance and Contracting Systems need to coordinate on the contracting process id (ocid)
 
 Finance System-->Contracting System: Contracting system is notified of budget allocation and classification 
 
@@ -25,7 +25,7 @@ Contracting System->OCDS: Award is made (4)
 
 Contracting System->OCDS: Contract is signed (4)
 
-note over Contracting System,FDP:At this point the finance and Contracting Systems need to co-ordinate on the contract identifier
+note over Contracting System,FDP:At this point the finance and Contracting Systems need to coordinate on the contract identifier
 
 Contracting System-->Finance System: Make sure valid contract identifier is in finance system
 
