@@ -42,9 +42,9 @@
       }
     },
     "FinancialProgressBreakdown": {
-      "type": "object",
       "title": "Financial progress breakdown",
       "description": "This section allows a detailed breakdown of financial progress to be provided, each covering a particular periods, or allocating financial progress against particular funding sources and fiscal classifications.",
+      "type": "object",
       "required": [
         "id"
       ],
