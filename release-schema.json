@@ -68,9 +68,9 @@
           "minLength": 1
         },
         "period": {
-          "$ref": "#/definitions/Period",
           "title": "Budget period",
-          "description": "The period covered by this financial progress breakdown entry. This information may also be duplicated using classifications where relevant."
+          "description": "The period covered by this financial progress breakdown entry. This information may also be duplicated using classifications where relevant.",
+          "$ref": "#/definitions/Period"
         },
         "classifications": {
           "title": "Budget classifications",
