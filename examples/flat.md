@@ -2,7 +2,7 @@
 
 The Open Contracting Data Standard, and the budgets and spend extension, have been structured to support round-tripping data between 'flat' (tabular) and tree structured (JSON) data representation.
 
-The python package [flatten-tool](https://flatten-tool.readthedocs.io/en/latest/) is used in the OCDS Validator to allow creation of spreadsheet or multiple CSV file representations of an OCDS JSON file. The resulting tables should be ready to:
+The python package [flatten-tool](https://flatten-tool.readthedocs.io/en/latest/) is used in the OCDS Data Review Tool to allow creation of spreadsheet or multiple CSV file representations of an OCDS JSON file. The resulting tables should be ready to:
 
 * Join together to have a full picture of each contracting process and contract;
 * Join against fiscal data from a Fiscal Data Package;
@@ -12,7 +12,7 @@ The python package [flatten-tool](https://flatten-tool.readthedocs.io/en/latest/
 
 ### Getting started
 
-We can use the [OCDS Data Review Tool](http://standard.open-contracting.org/validator/) to convert our example data into a spreadsheet. It is possible to carry out the same task at the command line using flatten-tool, and to get a collection of CSV files as the output, instead of/in addition to an Excel file.
+We can use the [OCDS Data Review Tool](https://review.standard.open-contracting.org) to convert our example data into a spreadsheet. It is possible to carry out the same task at the command line using flatten-tool, and to get a collection of CSV files as the output, instead of/in addition to an Excel file.
 
 ```shell
 flatten-tool flatten --root-list-path=releases -m releases -r ocid FILE.json
