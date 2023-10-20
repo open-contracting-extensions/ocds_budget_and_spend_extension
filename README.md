@@ -28,7 +28,7 @@ The best way to understand this extension is by looking at worked examples.
 
 This extension provides the tools to create data that links **budgets**, **contracting processes** and **spending**
 
-Drawing on definitions from the [Global Initiative for Fiscal Transparency (GIFT)](http://www.fiscaltransparency.net/):
+Drawing on definitions from the [Global Initiative for Fiscal Transparency (GIFT)](https://fiscaltransparency.net):
 
 **A budget** is a forward-looking statements of how an organization proposes to raise revenues, spend resources, and finance its operations. The National Government budget should cover all the activities of a state. Detailed budgets may also exist at the level of agencies and projects. In public contracting, the funding for a contracting process may come from a particular section of the National budget, or from an organizational budget. It may also come wholly or partially from an external funders budget (e.g. an International Development Bank), either directly, or passing through government systems.
 
@@ -62,7 +62,7 @@ The joined-up data covered by this extension is typically sourced from procureme
 
 ## Joined up data standards: connections with the fiscal data package
 
-The [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/), developed by Open Knowledge with the support of [GIFT](http://www.fiscaltransparency.net/), provides *"a lightweight and user-oriented format for publishing and consuming fiscal data"*. Unlike OCDS, which requires data to be converted to a set JSON structure before publication, a Fiscal Data Package consists of:
+The [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/), developed by Open Knowledge with the support of [GIFT](https://fiscaltransparency.net), provides *"a lightweight and user-oriented format for publishing and consuming fiscal data"*. Unlike OCDS, which requires data to be converted to a set JSON structure before publication, a Fiscal Data Package consists of:
 
 * A data package definition (datapackage.json) which describes the 'logical model' to apply to existing data files. This defines columns, their relationship to fiscal concepts, and how they should be transformed by consuming applications in order to create normalized data.
 * Data files, which provide the 'physical model' for budget or spending dataset, and may be the direct exports from existing systems.
