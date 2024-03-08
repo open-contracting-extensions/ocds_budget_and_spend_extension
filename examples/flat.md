@@ -36,7 +36,7 @@ Each table will contains:
 
 The combination of all the initial `id` columns in a sheet must be unique, and can be used as a composite 'foreign key' to join tables together. In a spreadsheet it is possible to use 'Index Match' formulas to fetch data across tables. 
 
-> Tip: As column headings us the long OCDS field paths (e.g. contracts/0/implementation/financialProgress/breakdown/0/classifications/Dept) it may help to change the alignment of the header row to 'right aligned' so that you see the last, rather than the first, part of each heading. 
+> Tip: As column headings us the long OCDS field paths (e.g. `contracts/0/implementation/financialProgress/breakdown/0/classifications/Dept`) it may help to change the alignment of the header row to 'right aligned' so that you see the last, rather than the first, part of each heading. 
 
 ### Bringing data together
 

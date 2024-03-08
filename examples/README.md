@@ -3,12 +3,12 @@
 This section contains brief usage examples for the budgets and spend extension. Additionally, three detailed worked examples are provided:
 
 * The **[coordination example](coordination.md)** illustrates how to express data on budget allocation and execution that may be drawn from different data systems (e.g. finance systems and procurement systems).
-* The **[integration example](integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data. 
+* The **[integration example](integration.md)** illustrates how references to a Fiscal Data Package can support display of data to users, and comparison between contracting process level and budget level data.
 * The **[flat data example](flat.md)** illustrates how the structured data published using this extension can be analyzed using spreadsheet tools.
 
 ## Describing the budget line that funds a contracting process
 
-Use the `classifications` and `measures` objects within a `planning/budget/budgetBreakdown` to provide the classifications and measures using the terminology or column headings established in an existing budget dataset. 
+Use the `classifications` and `measures` objects within a `planning.budget.budgetBreakdown` to provide the classifications and measures using the terminology or column headings established in an existing budget dataset.
 
 ```json
 {
@@ -38,15 +38,15 @@ Use the `classifications` and `measures` objects within a `planning/budget/budge
 }
 ```
 
-Note that `Dept`, `Economic`, `Func`, `Team` and `Committed` in the example about are arbitrary keys. Any keys can be used within these objects. 
+Note that `Dept`, `Economic`, `Func`, `Team` and `Committed` in the example about are arbitrary keys. Any keys can be used within these objects.
 
-See the [integration](integration.md) example for details of how to make a link between the classifications provided here, and those used in a Fiscal Data Package dataset which provides full details of the budget. 
+See the [integration](integration.md) example for details of how to make a link between the classifications provided here, and those used in a Fiscal Data Package dataset which provides full details of the budget.
 
 ## Describing a contracting process funded from multiple budget lines
 
-More than one entry in the `budgetBreakdown` array can be provided, showing how the total budget is made up of resources from a number of different budget lines. 
+More than one entry in the `budgetBreakdown` array can be provided, showing how the total budget is made up of resources from a number of different budget lines.
 
-For example, in the case below where a contracting process is anticipated to cover the delivery of goods and the service to maintain them. 
+For example, in the case below where a contracting process is anticipated to cover the delivery of goods and the service to maintain them.
 
 ```json
 {
@@ -92,7 +92,7 @@ For example, in the case below where a contracting process is anticipated to cov
 
 The `sourceParty` field provided by the [budget breakdown](https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension) extension can be used, alongside, if required, different `fiscalBreakdownFieldMapping` fields.
 
-For example, in the extract below, we see an allocation of aid, combined with an allocation from the national budget of a country. 
+For example, in the extract below, we see an allocation of aid, combined with an allocation from the national budget of a country.
 
 ```json
 {
@@ -155,9 +155,9 @@ For example, in the extract below, we see an allocation of aid, combined with an
 
 ## Describing the budget to which payments have been charged
 
-The same `breakdown` structure exists for each contract in a new `financialProgress` block. 
+The same `breakdown` structure exists for each contract in a new `financialProgress` block.
 
-Through the use of `measures` indicating payment, the following extract shows a $10,000 contract which is 70% executed, where $6,000 of the execution to date is charged against a 'goods' budget line, but only $1,000 has been spent to date from the services line. 
+Through the use of `measures` indicating payment, the following extract shows a $10,000 contract which is 70% executed, where $6,000 of the execution to date is charged against a 'goods' budget line, but only $1,000 has been spent to date from the services line.
 
 ```json
 {
