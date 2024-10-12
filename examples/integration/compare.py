@@ -13,12 +13,8 @@ A full implementation would:
 
 import pandas as pd
 
-fdp = pd.read_csv("fdp/budget-and-spend.csv")
-ocds = pd.read_csv("financialProgress-extract.csv")
-
-merged = pd.merge(
-    ocds,
-    fdp,
+pd.read_csv("financialProgress-extract.csv").merge(
+    pd.read_csv("fdp/budget-and-spend.csv"),
     how="left",
     left_on=[
         "classifications/Year",
@@ -34,6 +30,4 @@ merged = pd.merge(
         "Team",
         "Func",
     ],
-)
-
-merged.to_csv("budget-contracting-compared.csv", index=False)
+).to_csv("budget-contracting-compared.csv", index=False)
